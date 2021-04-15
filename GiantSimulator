@@ -1174,7 +1174,7 @@ local function typewrite(object,text)
 	for i = 1, #text,1 do
 		object.Text = string.sub(text, 1, i)
 
-		wait(0.5)
+		wait(0.1)
 	end
 end
 
