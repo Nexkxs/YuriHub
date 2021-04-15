@@ -1,324 +1,507 @@
-local DaHoodFucker = Instance.new("ScreenGui")
-local DHFBack = Instance.new("Frame")
+local DaHoodUi = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local DHFTi = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
+local Head = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local DHFTitle = Instance.new("TextLabel")
-local CloseButton = Instance.new("TextButton")
-local DHFButtonsLeft = Instance.new("ScrollingFrame")
-local Player = Instance.new("TextButton")
-local Combat = Instance.new("TextButton")
-local AutoFarms = Instance.new("TextButton")
-local Teleports = Instance.new("TextButton")
-local Target = Instance.new("TextButton")
-local Extras = Instance.new("TextButton")
-local Target_2 = Instance.new("TextButton")
-local PlayerFrame = Instance.new("Frame")
+local Header = Instance.new("TextLabel")
+local Game = Instance.new("TextLabel")
+local Tabs = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local PlayerScrollingFrame = Instance.new("ScrollingFrame")
-local PlayerTabTitle = Instance.new("TextLabel")
-local Fly = Instance.new("TextButton")
+local UIPadding = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local PlayerTab = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local Noclip = Instance.new("TextButton")
+local CombatTab = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local GodMode = Instance.new("TextButton")
+local TeleportTab = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local GodBlock = Instance.new("TextButton")
+local AutoFarmTab = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local AntiBag = Instance.new("TextButton")
+local ExtrasTab = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local Unban = Instance.new("TextButton")
+local TargetTab = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
-local CombatFrame = Instance.new("Frame")
+local Settings = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local CombatScrollingFrame = Instance.new("ScrollingFrame")
-local CombatTabTitle = Instance.new("TextLabel")
-local FistReach = Instance.new("TextButton")
+local Tab = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
-local BigKnife = Instance.new("TextButton")
+local Button = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local BigSledge = Instance.new("TextButton")
+local SliderHolder = Instance.new("Frame")
+local SliderButton = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local KnifePP = Instance.new("TextButton")
+local Slider = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
-local StopSignPP = Instance.new("TextButton")
+local SliderText = Instance.new("TextLabel")
+local ToggleHolder = Instance.new("Frame")
+local ToggleFrame = Instance.new("Frame")
 local UICorner_15 = Instance.new("UICorner")
-local Aimlock = Instance.new("TextButton")
+local circle = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local TeleportsFrame = Instance.new("Frame")
+local ToggleOn = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local TeleportsScrollingFrame = Instance.new("ScrollingFrame")
-local TeleportsTabTitle = Instance.new("TextLabel")
-local AdminBase = Instance.new("TextButton")
+local ToggleFrame_2 = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
-local Shop1 = Instance.new("TextButton")
+local circle_2 = Instance.new("Frame")
 local UICorner_19 = Instance.new("UICorner")
-local Shop2 = Instance.new("TextButton")
+local ToggleOff = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local Taco = Instance.new("TextButton")
+local PlayerTabHolder = Instance.new("Frame")
 local UICorner_21 = Instance.new("UICorner")
-local PlayGround = Instance.new("TextButton")
+local FlyButton = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
-local Bank = Instance.new("TextButton")
+local PlayerHead = Instance.new("TextLabel")
+local NoclipButton = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
-local AutoFarmsFrame = Instance.new("Frame")
+local GodBlockButton = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
-local AutoFarmsScrollingFrame = Instance.new("ScrollingFrame")
-local AutoFarmsTabTitle = Instance.new("TextLabel")
-local AutoFarm = Instance.new("TextButton")
+local GodModeButton = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
-local P90AutoFarm = Instance.new("TextButton")
+local AntiBagButton = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
-local TargetFrame = Instance.new("Frame")
+local UnbanButton = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
-local TargetScrollingFrame = Instance.new("ScrollingFrame")
-local GoTo = Instance.new("TextButton")
+local CombatTabHolder = Instance.new("Frame")
 local UICorner_28 = Instance.new("UICorner")
-local Kill = Instance.new("TextButton")
+local FistButton = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
-local PlayGround_2 = Instance.new("TextButton")
+local CombatHead = Instance.new("TextLabel")
+local SuperKnifeButton = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
-local Bank_2 = Instance.new("TextButton")
+local PPKnifeButton = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
-local Target_3 = Instance.new("TextBox")
+local SuperSledgeButton = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
-local TargetTabTitle = Instance.new("TextLabel")
-local OpenFrame = Instance.new("Frame")
-local OpenButton = Instance.new("TextButton")
+local PPStopButton = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
+local AimlockButton = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local TeleportsTabHolder = Instance.new("Frame")
+local UICorner_35 = Instance.new("UICorner")
+local BankButton = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local TeleportsHead = Instance.new("TextLabel")
+local TacoButton = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local GunShopButton = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local AdminButton = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local OtherGSButton = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local PlaygroundButton = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local AutoFarmsTabHolder = Instance.new("Frame")
+local UICorner_42 = Instance.new("UICorner")
+local P90AutoButton = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local AutoFarmsHead = Instance.new("TextLabel")
+local AutoFarmButton = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local AntiAFKButton = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local TargetTabHolder = Instance.new("Frame")
+local UICorner_46 = Instance.new("UICorner")
+local TargetHead = Instance.new("TextLabel")
+local GotoButton = Instance.new("TextButton")
+local UICorner_47 = Instance.new("UICorner")
+local SpamCallButton = Instance.new("TextButton")
+local UICorner_48 = Instance.new("UICorner")
+local PlayerName = Instance.new("TextBox")
+local UICorner_49 = Instance.new("UICorner")
+local ExtrasTabHolder = Instance.new("Frame")
+local UICorner_50 = Instance.new("UICorner")
+local ExtrasHead = Instance.new("TextLabel")
+local GotoButton_2 = Instance.new("TextButton")
+local UICorner_51 = Instance.new("UICorner")
+local SettingsTabHolder = Instance.new("Frame")
+local UICorner_52 = Instance.new("UICorner")
+local SettingsHead = Instance.new("TextLabel")
+local GotoButton_3 = Instance.new("TextButton")
+local UICorner_53 = Instance.new("UICorner")
+local CloseOpenText = Instance.new("TextLabel")
+local RightShiftText = Instance.new("TextLabel")
+local WelcomeHolder = Instance.new("Frame")
+local UICorner_54 = Instance.new("UICorner")
+local WelcomeHead = Instance.new("TextLabel")
+local ThankYou = Instance.new("TextLabel")
+local Visible = Instance.new("TextButton")
+local UICorner_55 = Instance.new("UICorner")
 
-DaHoodFucker.Name = "DaHoodFucker"
-DaHoodFucker.Parent = game.CoreGui
-DaHoodFucker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-DHFBack.Name = "DHFBack"
-DHFBack.Parent = DaHoodFucker
-DHFBack.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-DHFBack.BorderSizePixel = 0
-DHFBack.Position = UDim2.new(0.268248171, 0, 0.210332096, 0)
-DHFBack.Size = UDim2.new(0, 507, 0, 314)
+DaHoodUi.Name = "DaHoodUi"
+DaHoodUi.Parent = game.CoreGui
+DaHoodUi.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-UICorner.CornerRadius = UDim.new(0, 10)
-UICorner.Parent = DHFBack
+Main.Name = "Main"
+Main.Parent = DaHoodUi
+Main.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.258211702, 0, 0.195571959, 0)
+Main.Size = UDim2.new(0, 530, 0, 329)
 
-DHFTi.Name = "DHFTi"
-DHFTi.Parent = DHFBack
-DHFTi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DHFTi.BorderColor3 = Color3.fromRGB(27, 42, 53)
-DHFTi.BorderSizePixel = 0
-DHFTi.Position = UDim2.new(0.000232102131, 0, -0.000909890339, 0)
-DHFTi.Size = UDim2.new(0, 507, 0, 58)
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Main
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
-UIGradient.Parent = DHFTi
+Head.Name = "Head"
+Head.Parent = Main
+Head.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Head.BorderSizePixel = 0
+Head.Size = UDim2.new(0, 142, 0, 74)
 
-UICorner_2.CornerRadius = UDim.new(0, 10)
-UICorner_2.Parent = DHFTi
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = Head
 
-DHFTitle.Name = "DHFTitle"
-DHFTitle.Parent = DHFTi
-DHFTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DHFTitle.BackgroundTransparency = 1.000
-DHFTitle.Size = UDim2.new(0, 506, 0, 58)
-DHFTitle.Font = Enum.Font.SciFi
-DHFTitle.Text = "Da Hood Fucker"
-DHFTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-DHFTitle.TextScaled = true
-DHFTitle.TextSize = 14.000
-DHFTitle.TextWrapped = true
+Header.Name = "Header"
+Header.Parent = Head
+Header.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Header.BackgroundTransparency = 1.000
+Header.BorderSizePixel = 0
+Header.Size = UDim2.new(0, 142, 0, 46)
+Header.Font = Enum.Font.GothamBlack
+Header.Text = "Yuri Hub"
+Header.TextColor3 = Color3.fromRGB(255, 255, 255)
+Header.TextSize = 20.000
+Header.TextWrapped = true
 
-CloseButton.Name = "CloseButton"
-CloseButton.Parent = DHFTi
-CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseButton.BackgroundTransparency = 1.000
-CloseButton.BorderSizePixel = 0
-CloseButton.Position = UDim2.new(0.934911251, 0, 0, 0)
-CloseButton.Size = UDim2.new(0, 32, 0, 27)
-CloseButton.Font = Enum.Font.SourceSans
-CloseButton.Text = "x"
-CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-CloseButton.TextScaled = true
-CloseButton.TextSize = 14.000
-CloseButton.TextWrapped = true
-CloseButton.MouseButton1Down:connect(function()
-	DHFBack.Visible = false
-	OpenFrame.Visible = true
+Game.Name = "Game"
+Game.Parent = Head
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.BorderSizePixel = 0
+Game.Position = UDim2.new(0, 0, 0.485156327, 0)
+Game.Size = UDim2.new(0, 142, 0, 10)
+Game.Font = Enum.Font.GothamBold
+Game.Text = "Da Hood"
+Game.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game.TextScaled = true
+Game.TextSize = 20.000
+Game.TextWrapped = true
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(0, 0, 0.158054709, 0)
+Tabs.Size = UDim2.new(0, 142, 0, 277)
+
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = Tabs
+
+UIPadding.Parent = Tabs
+UIPadding.PaddingLeft = UDim.new(0, 10)
+
+UIListLayout.Parent = Tabs
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 8)
+
+PlayerTab.Name = "PlayerTab"
+PlayerTab.Parent = Tabs
+PlayerTab.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+PlayerTab.Position = UDim2.new(0.0704225376, 0, 0, 0)
+PlayerTab.Size = UDim2.new(0, 122, 0, 30)
+PlayerTab.Font = Enum.Font.GothamSemibold
+PlayerTab.Text = "Player"
+PlayerTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTab.TextSize = 14.000
+PlayerTab.MouseButton1Click:Connect(function()
+	PlayerTabHolder.Visible = true
+	CombatTabHolder.Visible = false
+	SettingsTabHolder.Visible = false
+	AutoFarmsTabHolder.Visible = false
+	TargetTabHolder.Visible = false
+	ExtrasTabHolder.Visible = false
+	TeleportsTabHolder.Visible = false
+	WelcomeHolder.Visible = false
 end)
 
-DHFButtonsLeft.Name = "DHFButtonsLeft"
-DHFButtonsLeft.Parent = DHFBack
-DHFButtonsLeft.Active = true
-DHFButtonsLeft.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DHFButtonsLeft.BackgroundTransparency = 1.000
-DHFButtonsLeft.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DHFButtonsLeft.BorderSizePixel = 0
-DHFButtonsLeft.Position = UDim2.new(0.000232102131, 0, 0.181528658, 0)
-DHFButtonsLeft.Size = UDim2.new(0, 114, 0, 257)
+UICorner_4.Parent = PlayerTab
 
-Player.Name = "Player"
-Player.Parent = DHFButtonsLeft
-Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Player.BackgroundTransparency = 1.000
-Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0, 0, 0.0108484626, 0)
-Player.Size = UDim2.new(0, 97, 0, 36)
-Player.Font = Enum.Font.SciFi
-Player.Text = "Player"
-Player.TextColor3 = Color3.fromRGB(255, 255, 255)
-Player.TextSize = 20.000
-Player.TextWrapped = true
-Player.MouseButton1Down:connect(function()
-	PlayerFrame.Visible = true
-	CombatFrame.Visible = false
-	AutoFarmsFrame.Visible = false
-	TeleportsFrame.Visible = false
-	TargetFrame.Visible = false
+CombatTab.Name = "CombatTab"
+CombatTab.Parent = Tabs
+CombatTab.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+CombatTab.Position = UDim2.new(0.0704225376, 0, 0, 0)
+CombatTab.Size = UDim2.new(0, 122, 0, 30)
+CombatTab.Font = Enum.Font.GothamSemibold
+CombatTab.Text = "Combat"
+CombatTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+CombatTab.TextSize = 14.000
+CombatTab.MouseButton1Click:Connect(function()
+	PlayerTabHolder.Visible = false
+	CombatTabHolder.Visible = true
+	SettingsTabHolder.Visible = false
+	AutoFarmsTabHolder.Visible = false
+	TargetTabHolder.Visible = false
+	ExtrasTabHolder.Visible = false
+	TeleportsTabHolder.Visible = false
+	WelcomeHolder.Visible = false
 end)
 
-Combat.Name = "Combat"
-Combat.Parent = DHFButtonsLeft
-Combat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Combat.BackgroundTransparency = 1.000
-Combat.BorderSizePixel = 0
-Combat.Position = UDim2.new(0, 0, 0.0681733042, 0)
-Combat.Size = UDim2.new(0, 97, 0, 36)
-Combat.Font = Enum.Font.SciFi
-Combat.Text = "Combat"
-Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
-Combat.TextSize = 20.000
-Combat.TextWrapped = true
-Combat.MouseButton1Down:connect(function()
-	PlayerFrame.Visible = false
-	CombatFrame.Visible = true
-	AutoFarmsFrame.Visible = false
-	TeleportsFrame.Visible = false
-	TargetFrame.Visible = false
+UICorner_5.Parent = CombatTab
+
+TeleportTab.Name = "TeleportTab"
+TeleportTab.Parent = Tabs
+TeleportTab.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TeleportTab.Position = UDim2.new(0.0704225376, 0, 0, 0)
+TeleportTab.Size = UDim2.new(0, 122, 0, 30)
+TeleportTab.Font = Enum.Font.GothamSemibold
+TeleportTab.Text = "Teleports"
+TeleportTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportTab.TextSize = 14.000
+TeleportTab.MouseButton1Click:Connect(function()
+	PlayerTabHolder.Visible = false
+	CombatTabHolder.Visible = false
+	SettingsTabHolder.Visible = false
+	AutoFarmsTabHolder.Visible = false
+	TargetTabHolder.Visible = false
+	ExtrasTabHolder.Visible = false
+	TeleportsTabHolder.Visible = true
+	WelcomeHolder.Visible = false
 end)
 
-AutoFarms.Name = "AutoFarms"
-AutoFarms.Parent = DHFButtonsLeft
-AutoFarms.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarms.BackgroundTransparency = 1.000
-AutoFarms.BorderSizePixel = 0
-AutoFarms.Position = UDim2.new(-0.00877192989, 0, 0.182822987, 0)
-AutoFarms.Size = UDim2.new(0, 97, 0, 36)
-AutoFarms.Font = Enum.Font.SciFi
-AutoFarms.Text = "AutoFarms"
-AutoFarms.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarms.TextSize = 20.000
-AutoFarms.TextWrapped = true
-AutoFarms.MouseButton1Down:connect(function()
-	PlayerFrame.Visible = false
-	CombatFrame.Visible = false
-	AutoFarmsFrame.Visible = true
-	TeleportsFrame.Visible = false
-	TargetFrame.Visible = fals
+UICorner_6.Parent = TeleportTab
+
+AutoFarmTab.Name = "AutoFarmTab"
+AutoFarmTab.Parent = Tabs
+AutoFarmTab.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AutoFarmTab.Position = UDim2.new(0.0704225376, 0, 0, 0)
+AutoFarmTab.Size = UDim2.new(0, 122, 0, 30)
+AutoFarmTab.Font = Enum.Font.GothamSemibold
+AutoFarmTab.Text = "Auto Farms"
+AutoFarmTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmTab.TextSize = 14.000
+AutoFarmTab.MouseButton1Click:Connect(function()
+	PlayerTabHolder.Visible = false
+	CombatTabHolder.Visible = false
+	SettingsTabHolder.Visible = false
+	AutoFarmsTabHolder.Visible = true
+	TargetTabHolder.Visible = false
+	ExtrasTabHolder.Visible = false
+	TeleportsTabHolder.Visible = false
+	WelcomeHolder.Visible = false
 end)
 
-Teleports.Name = "Teleports"
-Teleports.Parent = DHFButtonsLeft
-Teleports.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Teleports.BackgroundTransparency = 1.000
-Teleports.BorderSizePixel = 0
-Teleports.Position = UDim2.new(-0.00877192989, 0, 0.125498146, 0)
-Teleports.Size = UDim2.new(0, 97, 0, 36)
-Teleports.Font = Enum.Font.SciFi
-Teleports.Text = "Teleports"
-Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
-Teleports.TextSize = 20.000
-Teleports.TextWrapped = true
-Teleports.MouseButton1Down:connect(function()
-	PlayerFrame.Visible = false
-	CombatFrame.Visible = false
-	AutoFarmsFrame.Visible = false
-	TeleportsFrame.Visible = true
-	TargetFrame.Visible = false
+UICorner_7.Parent = AutoFarmTab
+
+ExtrasTab.Name = "ExtrasTab"
+ExtrasTab.Parent = Tabs
+ExtrasTab.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ExtrasTab.Position = UDim2.new(0.0704225376, 0, 0, 0)
+ExtrasTab.Size = UDim2.new(0, 122, 0, 30)
+ExtrasTab.Font = Enum.Font.GothamSemibold
+ExtrasTab.Text = "Extras"
+ExtrasTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExtrasTab.TextSize = 14.000
+ExtrasTab.MouseButton1Click:Connect(function()
+	PlayerTabHolder.Visible = false
+	CombatTabHolder.Visible = false
+	SettingsTabHolder.Visible = false
+	AutoFarmsTabHolder.Visible = false
+	TargetTabHolder.Visible = false
+	ExtrasTabHolder.Visible = true
+	TeleportsTabHolder.Visible = false
+	WelcomeHolder.Visible = false
 end)
 
-Target.Name = "Target"
-Target.Parent = DHFButtonsLeft
-Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Target.BackgroundTransparency = 1.000
-Target.BorderSizePixel = 0
-Target.Position = UDim2.new(-0.00877192989, 0, 0.297472656, 0)
-Target.Size = UDim2.new(0, 97, 0, 36)
-Target.Font = Enum.Font.SciFi
-Target.Text = "Target"
-Target.TextColor3 = Color3.fromRGB(255, 255, 255)
-Target.TextSize = 20.000
-Target.TextWrapped = true
+UICorner_8.Parent = ExtrasTab
 
-Extras.Name = "Extras"
-Extras.Parent = DHFButtonsLeft
-Extras.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Extras.BackgroundTransparency = 1.000
-Extras.BorderSizePixel = 0
-Extras.Position = UDim2.new(-0.00877192989, 0, 0.240147829, 0)
-Extras.Size = UDim2.new(0, 97, 0, 36)
-Extras.Font = Enum.Font.SciFi
-Extras.Text = "Extras"
-Extras.TextColor3 = Color3.fromRGB(255, 255, 255)
-Extras.TextSize = 20.000
-Extras.TextWrapped = true
+TargetTab.Name = "TargetTab"
+TargetTab.Parent = Tabs
+TargetTab.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TargetTab.Position = UDim2.new(0.0704225376, 0, 0, 0)
+TargetTab.Size = UDim2.new(0, 122, 0, 30)
+TargetTab.Font = Enum.Font.GothamSemibold
+TargetTab.Text = "Target"
+TargetTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+TargetTab.TextSize = 14.000
+TargetTab.MouseButton1Click:Connect(function()
+	PlayerTabHolder.Visible = false
+	CombatTabHolder.Visible = false
+	SettingsTabHolder.Visible = false
+	AutoFarmsTabHolder.Visible = false
+	TargetTabHolder.Visible = true
+	ExtrasTabHolder.Visible = false
+	TeleportsTabHolder.Visible = false
+	WelcomeHolder.Visible = false
+end)
 
-Target_2.Name = "Target"
-Target_2.Parent = DHFButtonsLeft
-Target_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Target_2.BackgroundTransparency = 1.000
-Target_2.BorderSizePixel = 0
-Target_2.Position = UDim2.new(0, 0, 0.354797482, 0)
-Target_2.Size = UDim2.new(0, 97, 0, 36)
-Target_2.Font = Enum.Font.SciFi
-Target_2.Text = "Credits"
-Target_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Target_2.TextSize = 20.000
-Target_2.TextWrapped = true
+UICorner_9.Parent = TargetTab
 
-PlayerFrame.Name = "PlayerFrame"
-PlayerFrame.Parent = DHFBack
-PlayerFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-PlayerFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
-PlayerFrame.Size = UDim2.new(0, 378, 0, 235)
-PlayerFrame.Visible = false
+Settings.Name = "Settings"
+Settings.Parent = Tabs
+Settings.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Settings.Position = UDim2.new(0.0704225376, 0, 0, 0)
+Settings.Size = UDim2.new(0, 122, 0, 30)
+Settings.Font = Enum.Font.GothamSemibold
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 14.000
+Settings.MouseButton1Click:Connect(function()
+	PlayerTabHolder.Visible = false
+	CombatTabHolder.Visible = false
+	SettingsTabHolder.Visible = true
+	AutoFarmsTabHolder.Visible = false
+	TargetTabHolder.Visible = false
+	ExtrasTabHolder.Visible = false
+	TeleportsTabHolder.Visible = false
+	WelcomeHolder.Visible = false
+end)
 
-UICorner_3.CornerRadius = UDim.new(0, 6)
-UICorner_3.Parent = PlayerFrame
+UICorner_10.Parent = Settings
 
-PlayerScrollingFrame.Name = "PlayerScrollingFrame"
-PlayerScrollingFrame.Parent = PlayerFrame
-PlayerScrollingFrame.Active = true
-PlayerScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerScrollingFrame.BackgroundTransparency = 1.000
-PlayerScrollingFrame.BorderSizePixel = 0
-PlayerScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+Tab.Name = "Tab"
+Tab.Parent = Main
+Tab.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+Tab.BackgroundTransparency = 1.000
+Tab.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+Tab.Size = UDim2.new(0, 370, 0, 302)
+Tab.Visible = false
 
-PlayerTabTitle.Name = "PlayerTabTitle"
-PlayerTabTitle.Parent = PlayerScrollingFrame
-PlayerTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerTabTitle.BackgroundTransparency = 1.000
-PlayerTabTitle.BorderSizePixel = 0
-PlayerTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
-PlayerTabTitle.Size = UDim2.new(0, 200, 0, 32)
-PlayerTabTitle.Font = Enum.Font.SciFi
-PlayerTabTitle.Text = "Player Tab"
-PlayerTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayerTabTitle.TextScaled = true
-PlayerTabTitle.TextSize = 20.000
-PlayerTabTitle.TextWrapped = true
+UICorner_11.CornerRadius = UDim.new(0, 12)
+UICorner_11.Parent = Tab
 
-Fly.Name = "Fly"
-Fly.Parent = PlayerScrollingFrame
-Fly.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Fly.BorderSizePixel = 0
-Fly.Position = UDim2.new(0.0291005298, 0, 0.0765957385, 0)
-Fly.Size = UDim2.new(0, 355, 0, 28)
-Fly.Font = Enum.Font.Code
-Fly.Text = "Fly (x)"
-Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
-Fly.TextSize = 20.000
-Fly.TextWrapped = true
-Fly.MouseButton1Down:connect(function()
+Button.Name = "Button"
+Button.Parent = Tab
+Button.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Button.Size = UDim2.new(0, 368, 0, 37)
+Button.Font = Enum.Font.GothamSemibold
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextSize = 20.000
+
+UICorner_12.CornerRadius = UDim.new(0, 10)
+UICorner_12.Parent = Button
+
+SliderHolder.Name = "SliderHolder"
+SliderHolder.Parent = Tab
+SliderHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SliderHolder.BackgroundTransparency = 1.000
+SliderHolder.Position = UDim2.new(0, 0, 0.420529813, 0)
+SliderHolder.Size = UDim2.new(0, 368, 0, 63)
+
+SliderButton.Name = "SliderButton"
+SliderButton.Parent = SliderHolder
+SliderButton.BackgroundColor3 = Color3.fromRGB(167, 0, 0)
+SliderButton.BackgroundTransparency = 1.000
+SliderButton.Position = UDim2.new(0, 0, 0.539980948, 0)
+SliderButton.Size = UDim2.new(0, 367, 0, 15)
+SliderButton.Font = Enum.Font.SourceSans
+SliderButton.Text = ""
+SliderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 12)
+UICorner_13.Parent = SliderButton
+
+Slider.Name = "Slider"
+Slider.Parent = SliderButton
+Slider.BackgroundColor3 = Color3.fromRGB(167, 0, 2)
+Slider.Size = UDim2.new(0, 367, 0, 15)
+
+UICorner_14.Parent = Slider
+
+SliderText.Name = "SliderText"
+SliderText.Parent = SliderHolder
+SliderText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SliderText.BackgroundTransparency = 1.000
+SliderText.BorderSizePixel = 0
+SliderText.Position = UDim2.new(0, 0, -0.00804162025, 0)
+SliderText.Size = UDim2.new(0, 368, 0, 27)
+SliderText.Font = Enum.Font.GothamBlack
+SliderText.Text = "Slider"
+SliderText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SliderText.TextSize = 20.000
+SliderText.TextWrapped = true
+
+ToggleHolder.Name = "ToggleHolder"
+ToggleHolder.Parent = Tab
+ToggleHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleHolder.BackgroundTransparency = 1.000
+ToggleHolder.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+ToggleHolder.Size = UDim2.new(0, 368, 0, 87)
+
+ToggleFrame.Name = "ToggleFrame"
+ToggleFrame.Parent = ToggleHolder
+ToggleFrame.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+ToggleFrame.Position = UDim2.new(0.811314404, 0, 0.52775836, 0)
+ToggleFrame.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_15.CornerRadius = UDim.new(0, 15)
+UICorner_15.Parent = ToggleFrame
+
+circle.Name = "circle"
+circle.Parent = ToggleFrame
+circle.BackgroundColor3 = Color3.fromRGB(48, 255, 25)
+circle.Position = UDim2.new(0.537999988, 0, 0.0900000036, 0)
+circle.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_16.CornerRadius = UDim.new(0, 25)
+UICorner_16.Parent = circle
+
+ToggleOn.Name = "ToggleOn"
+ToggleOn.Parent = ToggleHolder
+ToggleOn.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ToggleOn.Position = UDim2.new(0.00543478271, 0, 0.519524992, 0)
+ToggleOn.Size = UDim2.new(0, 285, 0, 33)
+ToggleOn.Font = Enum.Font.GothamSemibold
+ToggleOn.Text = "ToggleOn"
+ToggleOn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleOn.TextSize = 20.000
+
+UICorner_17.CornerRadius = UDim.new(0, 10)
+UICorner_17.Parent = ToggleOn
+
+ToggleFrame_2.Name = "ToggleFrame"
+ToggleFrame_2.Parent = ToggleHolder
+ToggleFrame_2.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+ToggleFrame_2.Position = UDim2.new(0.81099999, 0, 0.0500000007, 0)
+ToggleFrame_2.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_18.CornerRadius = UDim.new(0, 15)
+UICorner_18.Parent = ToggleFrame_2
+
+circle_2.Name = "circle"
+circle_2.Parent = ToggleFrame_2
+circle_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+circle_2.Position = UDim2.new(0.0890000015, 0, 0.0900000036, 0)
+circle_2.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_19.CornerRadius = UDim.new(0, 25)
+UICorner_19.Parent = circle_2
+
+ToggleOff.Name = "ToggleOff"
+ToggleOff.Parent = ToggleHolder
+ToggleOff.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ToggleOff.Position = UDim2.new(0.00499999989, 0, 0.0500000007, 0)
+ToggleOff.Size = UDim2.new(0, 285, 0, 33)
+ToggleOff.Font = Enum.Font.GothamSemibold
+ToggleOff.Text = "ToggleOff"
+ToggleOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleOff.TextSize = 20.000
+
+UICorner_20.CornerRadius = UDim.new(0, 10)
+UICorner_20.Parent = ToggleOff
+
+PlayerTabHolder.Name = "PlayerTabHolder"
+PlayerTabHolder.Parent = Main
+PlayerTabHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+PlayerTabHolder.BackgroundTransparency = 1.000
+PlayerTabHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+PlayerTabHolder.Size = UDim2.new(0, 370, 0, 302)
+PlayerTabHolder.Visible = false
+
+UICorner_21.CornerRadius = UDim.new(0, 12)
+UICorner_21.Parent = PlayerTabHolder
+
+FlyButton.Name = "FlyButton"
+FlyButton.Parent = PlayerTabHolder
+FlyButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FlyButton.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+FlyButton.Size = UDim2.new(0, 368, 0, 37)
+FlyButton.Font = Enum.Font.GothamSemibold
+FlyButton.Text = "Fly (X)"
+FlyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlyButton.TextSize = 20.000
+FlyButton.MouseButton1Click:Connect(function()
 	local plr = game.Players.LocalPlayer
 	local mouse = plr:GetMouse()
 
@@ -430,22 +613,32 @@ Fly.MouseButton1Down:connect(function()
 	start()
 end)
 
-UICorner_4.CornerRadius = UDim.new(0, 3)
-UICorner_4.Parent = Fly
+UICorner_22.CornerRadius = UDim.new(0, 10)
+UICorner_22.Parent = FlyButton
 
-Noclip.Name = "Noclip"
-Noclip.Parent = PlayerScrollingFrame
-Noclip.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Noclip.BorderSizePixel = 0
-Noclip.Position = UDim2.new(0.0291005298, 0, 0.148936167, 0)
-Noclip.Size = UDim2.new(0, 355, 0, 28)
-Noclip.Font = Enum.Font.Code
-Noclip.Text = "Noclip (e)"
-Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
-Noclip.TextSize = 20.000
-Noclip.TextWrapped = true
-Noclip.MouseButton1Down:connect(function()
-	--[[ Press "E" to toggle noclip]]
+PlayerHead.Name = "PlayerHead"
+PlayerHead.Parent = PlayerTabHolder
+PlayerHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerHead.BackgroundTransparency = 1.000
+PlayerHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+PlayerHead.Size = UDim2.new(0, 388, 0, 35)
+PlayerHead.Font = Enum.Font.SourceSansBold
+PlayerHead.Text = "Player"
+PlayerHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerHead.TextScaled = true
+PlayerHead.TextSize = 25.000
+PlayerHead.TextWrapped = true
+
+NoclipButton.Name = "NoclipButton"
+NoclipButton.Parent = PlayerTabHolder
+NoclipButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+NoclipButton.Position = UDim2.new(-0.00270270277, 0, 0.271523178, 0)
+NoclipButton.Size = UDim2.new(0, 368, 0, 37)
+NoclipButton.Font = Enum.Font.GothamSemibold
+NoclipButton.Text = "Noclip (E)"
+NoclipButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoclipButton.TextSize = 20.000
+NoclipButton.MouseButton1Click:Connect(function()
 	noclip = false
 	game:GetService('RunService').Stepped:connect(function()
 		if noclip then
@@ -465,179 +658,171 @@ Noclip.MouseButton1Down:connect(function()
 	print('Press "E" to noclip')
 end)
 
-UICorner_5.CornerRadius = UDim.new(0, 3)
-UICorner_5.Parent = Noclip
+UICorner_23.CornerRadius = UDim.new(0, 10)
+UICorner_23.Parent = NoclipButton
 
-GodMode.Name = "GodMode"
-GodMode.Parent = PlayerScrollingFrame
-GodMode.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-GodMode.BorderSizePixel = 0
-GodMode.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
-GodMode.Size = UDim2.new(0, 355, 0, 28)
-GodMode.Font = Enum.Font.Code
-GodMode.Text = "God Mode"
-GodMode.TextColor3 = Color3.fromRGB(255, 255, 255)
-GodMode.TextSize = 20.000
-GodMode.TextWrapped = true
-GodMode.MouseButton1Down:connect(function()
+GodBlockButton.Name = "GodBlockButton"
+GodBlockButton.Parent = PlayerTabHolder
+GodBlockButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GodBlockButton.Position = UDim2.new(-0.00270270277, 0, 0.556291342, 0)
+GodBlockButton.Size = UDim2.new(0, 368, 0, 37)
+GodBlockButton.Font = Enum.Font.GothamSemibold
+GodBlockButton.Text = "God Block"
+GodBlockButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodBlockButton.TextSize = 20.000
+GodBlockButton.MouseButton1Click:Connect(function()
+	local lIlIIliiIiIillIi1lI1l = {} for llllIl1iII1llIiillI = 0, 255 do local IIIl1lIIiiililli1Ii, I1iil11lllI111ii1iI = string.char(llllIl1iII1llIiillI), string.char(llllIl1iII1llIiillI, 0) lIlIIliiIiIillIi1lI1l[I1iil11lllI111ii1iI] = IIIl1lIIiiililli1Ii end local IiiIIlli1iIlllI1iii = function(lIlIIl11ilIlIlIlIiIii, i111l1IIiIlIliliill, l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1) if l1II1ili1iilIll1Ill >= 256 then l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1 = 0, l1iiI1IIiiIiIiillI1 + 1 if l1iiI1IIiiIiIiillI1 >= 256 then i111l1IIiIlIliliill = {} l1iiI1IIiiIiIiillI1 = 1 end end i111l1IIiIlIliliill[string.char(l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1)] = lIlIIl11ilIlIlIlIiIii l1II1ili1iilIll1Ill = l1II1ili1iilIll1Ill + 1 return i111l1IIiIlIliliill, l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1 end local function lIlIll1111il1lli1l1ll(lI1IiliiIl1l11II1iI) local lIliIl1ii1i1l1lii1lIi = #lI1IiliiIl1l11II1iI local i111l1IIiIlIliliill = {} local l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1 = 0, 1 local ill1li1II1li1IlI11l = {} local iiIliIlIlIllIiii1II = 1 local iiII11llII11IilI1il = string.sub(lI1IiliiIl1l11II1iI, 1, 2) ill1li1II1li1IlI11l[iiIliIlIlIllIiii1II] = lIlIIliiIiIillIi1lI1l[iiII11llII11IilI1il] or i111l1IIiIlIliliill[iiII11llII11IilI1il] iiIliIlIlIllIiii1II = iiIliIlIlIllIiii1II + 1 for llllIl1iII1llIiillI = 3, lIliIl1ii1i1l1lii1lIi, 2 do local iiiIIl11iiiIl11llil = string.sub(lI1IiliiIl1l11II1iI, llllIl1iII1llIiillI, llllIl1iII1llIiillI + 1) local li1ll1iiIl1I1IIli11 = lIlIIliiIiIillIi1lI1l[iiII11llII11IilI1il] or i111l1IIiIlIliliill[iiII11llII11IilI1il] local lII1iI1iI1111iiI1ll = lIlIIliiIiIillIi1lI1l[iiiIIl11iiiIl11llil] or i111l1IIiIlIliliill[iiiIIl11iiiIl11llil] if lII1iI1iI1111iiI1ll then ill1li1II1li1IlI11l[iiIliIlIlIllIiii1II] = lII1iI1iI1111iiI1ll iiIliIlIlIllIiii1II = iiIliIlIlIllIiii1II + 1 i111l1IIiIlIliliill, l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1 = IiiIIlli1iIlllI1iii(li1ll1iiIl1I1IIli11 .. string.sub(lII1iI1iI1111iiI1ll, 1, 1), i111l1IIiIlIliliill, l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1) else local i1Ii1i1i1l1IliIlIIi = li1ll1iiIl1I1IIli11 .. string.sub(li1ll1iiIl1I1IIli11, 1, 1) ill1li1II1li1IlI11l[iiIliIlIlIllIiii1II] = i1Ii1i1i1l1IliIlIIi iiIliIlIlIllIiii1II = iiIliIlIlIllIiii1II + 1 i111l1IIiIlIliliill, l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1 = IiiIIlli1iIlllI1iii(i1Ii1i1i1l1IliIlIIi, i111l1IIiIlIliliill, l1II1ili1iilIll1Ill, l1iiI1IIiiIiIiillI1) end iiII11llII11IilI1il = iiiIIl11iiiIl11llil end return table.concat(ill1li1II1li1IlI11l) end local lIlIlll1lI1lll1iIlliI = function(lI1IiliiIl1l11II1iI) return ({ lI1IiliiIl1l11II1iI:sub(5):gsub("..", function(iliIiiI1i1IliIIliii) return string.char(tonumber(iliIiiI1i1IliIIliii, 16)) end) })[1] end if type(loadstring) ~= "function" then error("Your Lua environment does not support loadstring, therefore you are unable to use the Luraph VM compression feature.") end loadstring(lIlIll1111il1lli1l1ll(lIlIlll1lI1lll1iIlliI("LPH|6C006F00630061006C0020006C0069004900060169006C004900080107016900310069000F013100310020003D002000610073007300650072007400050101010301050108010C010F01490031000C010B0127016C0031006C002C01150120001A016C00650063001D0100010201040109010F010701060110010F010B012B0108012E0174006F006E0075006D0062001B011E0136012000490007012B012A01130111014C01100108012D01160175006E007000610063006B004901200154012C012A014C012801250125013A012E017000360137011F01370110010B0111010E010C012301260110012E011A017400660065006E0076005D01370108016D0170012C01620107010D0149007501650074006D008701610074006100620031017C012101810106016101130106017201830141017900700065009001540124015301110153012C010A01140116016700870178017A0190010B013B01A2013B015F012C01500141016F0073007400720069006E006700AB010D0150012A01A1019601A201400116011B0172006F007200BB01090127013F010A01090161017501B601B80167002E00730075006200AB016E01A10125013B0151010A010701CF01B701B9012E006200790074009C0135012001AC01DA0196014F01BF01280174011601B501E001D201630068006100C701E7010401A4010A01540173012601A3010901DF01D1012E007200650070009D019501C0015201B0011001A5012F01D001E1016700D401D601F801910170012401B101A101A40113010102E1016D008B01F401BB01950125016D014C014D010C012B012E0123007B0032003700340036007D009D0196013A01FB01A3014E0125022E017B00300214022302FB0113010A024E01FA012E0114011402660057013301690043014B01DC01220154010D0193010F0128004C012502920126015101230213012C0020000E0155026001B101FC012A016C0029009D015202DA0152029301610139014A025302AC015502830113011B0216012302A3016401170260010C022800AC01560260026201CD01260151020E01CC017E01250227026F02590235002900590222002E002E002200590245026E004702430151026D012B013C016F026D0179026202690066000501D8019F01DB010E0196019302A401BE011201BD0179025902320062023D001601370014017400680079014B016402CB014E026802EF0105016F01A20139013D0165026C0078020D0183017B02CC0111016101A302600296026F028102060159023100CD022900620204027400750072006E00200022002200200065006C001A01AB0139013E01CC01A3011A024C012E01E90140027E019602810165017802BA023302E902BE02C7029502A101CA0292016900CD023600D0025A029C02230127026E01B60255027401B002B2023B02E002FD023A01930184022E01FA01AC019401FE014F026900EC0224029802E2024F014C015902FC02650233025E02390162021803B5026702000369002E016E000A012000D202D402D60222015301DA010703FB012302DA02DC029C012703D502B9021203E1027D025502DA026E0064003A033C037901640062024402460274004802D6026C0273014D010C02DF021001280041036B0191013E02C5022801830165012701E5029E027301A002820149007F026B028202560297021703BD0123023F02FF011001620312030003EA01FA011D036303510359039301B8023C023E016A034002BE0120002B002000140133034603E8025E036402550340013F0390018F0291027D03CD01A10271016F01280106014D03C8015103810280032B036C005902DB01E0025D02C5025103170305032C039E01EE01CE024A02FA01A001FE01C102C2019D0225029F02BC025B035D0352035F036E0285024B016E0375036603F602B1036903650371032203790333006D03B7039F02B9032E0173036403BF03410279033400260387012803A103BE01A3032201C90104012A007A0336003700D40332003100360078034B019C032B012D039F032000D1033600350035003300D8037903960365019803E3022203D10332003500E50350036D02EA02540393033D038403430345035A02F202EE012C0339012302C002BE0152010E038C034D010F019B03E1022401A803AF0107011703AA03BC02000489039A02FB020D043C010F0462018501020346034F036602FB01A4020C030C0249005902120122015203C40209022E0130005902300020006600C601DA034E016F02FC03C5020E01C1036702AF01090424010B044A023C015201990316020B01200064006F006A0208031D04FC012401C1031A036201360218022601D903320020005E00F903A4032404FF012602DF03F903BE01FB03DC03FD031301FF03A303020427010404A0037E01B1013E025B0432044C019A023E02D801FF014F0264010A036B046B02250456047903140183037C0343041C0460021E044704DB02DD0214028002A1025403990395022E014F0451045102350408048B03380485012D007A03D102C903340381045B0323011A022A0120003C0016016C025B02600484010C0220002500200028009404DD018A03970414017903A504960196044F012A01620261003B037A0320002D042A04830383034203900244034902FA017202DD01FE0253038E03140247037F03F303C2029503DF02E80360018404E4029B04C102320263018B0361044D039503CF04890396042E038D031104F003C5047101F403AC0220002A04B1043C03E70313033803CD0416012A041804C803D3023403B604B204780428002D004F04D1033D01240264015B0453015D04E5043703CC04B5033300AA02D90331006202EC035004A304F6042E0359031902FE03FC04E9031503B503D60359023300030520008F04310030003200BC0357042800A404FA032702FC03FA04310011033D02FD04EA03CD02A90230000405200034003200390034003900D3032D05EF03C404AD039203C20262022F002B053500300033003500390030052C023300370030002F05EF031405B8044F038503BB04D6021D0426016602F804A4021D05A401FD026E0153036F024E034A0174028102C2026001A8033802A703BA022C033B04A604AC03CB026D0284025802B6033D02B303B90368036B05B803C50320001A053002C2036F036B0377037102B20370057703C603AB014A03BD025B047201A6037B0020002403940385050A01590286058A058905880587058B058E058C05040130022C04C70164044F010A058C04CD047A035902380040044204CC03BF01FC0382056C005B00970530046704A60469005D00700459041F05F904490352056101EA011604010463047B04A8053801AA05620248054A013E010A02BF04DC03B1013F041601D8022B042D04A7056604BA05320242025902C70341049D01490445044C0420045204230425046E044D04E9042904C705C70126026401EB016002C5029B05A0039E05D005C304AF0522023901300455015804F7049905210593025E035C0581016F01A605B805CA056F01AA055D0021046401E00507035B046E01DB04A1058005C9010A02A505DF05FE010006CD014C01AC05E004AF02B1027D03F804EA050C026B040401CE041306CB0115060E03150116011401E304E104B404C7017604B2041B0455054B04CC0385017102D2057B0446044D0479038704D6056C046702A6044D04D1035A041406A60254013206720455046F0416012204330673046F047504F503BF05380471032003C40521016A03C1054A0685018B024C06C0054906CC013F012E00F401F6015D0344042D06D405BC05B204E8050F059103C6042701C80436030E059A03DA038103DC039E0384020C04A2035B02CE03510117066005D901DC036305A20247065C02A40255060B0127052B059104ED0429033D04CD0379026601D103D703D4033700D603EF032A036E02E10509051401E003E203E403D9030D05CB04EA035704ED0333057E033505630682035F064905F703490201049D0465014E01CD01B2054E0536022E03A6025805E8015D026D02A00196042802CE048803B5050904D304BD036F05C40378056A0574037B057401E603B0062502B206C4066A01BE057F053F01810507065F059005CE068D05CF068F05D006D3069305DD052E0465049905680422031E069D059F050501C9063E0106061702F7052F04F9059A05AB05AD05EF052005B1054B035405B505A6029B03E506D906BB0546064F0379068201E205C3052A06D702D9029505D70698053104AA05CD059D027602C4067001C606DE063B022C0628061F04210471045404D905FB0628042106FE0609068401C305E305DB069C052000E605A005F606E9051A063A06ED0508055A040901F105F50575065A0364055202AD036802AF03690575056C0541028F045D022E07C506BF01D903C905F306CC05160588025A02FE050A065F0219070306E006A30507065B001607E10501060D061D06B304EB0438062107EC05730650076E011B063B060F061701B2042A042D0424063C0326064A049201290648044E0260077C042F062000310641063D061107570454073C0452073C0610073506FB066A07720726044506B80474027A06F9067B02E5027A07F806C2057D075106F7064E067C0649005706F50172005A067A040C0724015E063C03780484075406FA06F5064A01BC02120198078E063D017E0715032105EB05FA01C2041A04F20249033C025001B201B506660449039F07BE01A1074A014A05F80352014C04DD014E05B1075C03AE06F9010607D204A4076902160184055B0000053100ED030E062000390259025B00360013012D02C307C50720005B001705340017053300CB077D00C60739003C053600D207380230023A027E039E074A03AC074103DD07AA07DF074C03B7072101C40215066101C001ED058506D004A704D90410036202FE063A070107CC05CE04220263035101AA0687055505DB01950141074E01DE0680023C011907C30310015B00D607E403D207E406D806F507330434077202C203FA07FD02C307B107A1053604B5078E0383030308FA05FE026F036900CE073200D6033F05C307C404DE074B03F107DC04270894022908E805E8071201EA074D01EC07D604B706D2040D018E038F0428002A02200036002D053900CD02D703130735003800320086023600E1031205340033008602B0033B05360038004908D303860219055902360030003500A003C1074708860234001805A902420535005508D70350083C082E024508720535006708E2033100610820003B052E022805ED035508E303360086023900220855084F081401300275043300E4034408F207C805F8053B073304F707CA0624021308DA01D5042F08FF079F042D01E7051F07CB043F0197035C040C01DA077E050E0355028202D7051A074D05FC02BF059402BF02DA013B04660415069807E1079208E602B307DF05CE0713053900CA07E9060905EB060C0516069A08B3059E0259023B083200D8076D082C053F05A902E303A0033200300043055508430575081C074A08A9028B06A9023900C107A902630812053000BF082B05D308CE0537005B083C0833003C05F70234006D08E10378083C0813016408EE03D6087205C107A003390035003700CE052C02D8037C082000EC0820003B0843083005A9023700E303CD083700E4085D08C808D3033500340012053800CF0872050A08510813073D083400F2083100380030000809F508CD023B053F087A03C108C608D807CE05330070087A033900DB08C008F8081205560864083600D0074B0805097E08F7023D058602370077082000F0081705A8083502AA08DB01FE055B00190533000D09C3072407AF052607B10515031B039B08B808F3087B0031008A063400D40742097205ED0313091305D8082A0938006D08370037097908300059081805F20843085208680730003800F20834005D0839002D0930093B013209950849005B00E303C408310039091E05F8043C09B408990866024E0541092A02420538004609B908840531005E095D090D096D08DB080E09CD02D00767080C09C308200959092309690519050C09D7083100130936002E051309CE0813098D091705CE05170564082C05320064082D058B097A037E08F208ED036C0896092E026109910131098D0633094E056709D6070A096B09AE056D090B05FB04B50871092701A8037809E708230946089D09340044086708D807D40860086D08000957081809C4097A036C08590842052509D6034F044709BA0844055908E203C8085808320001093C08E103E4083F052209DB08130958084D093C082208D609230825092F05310025094F08C6095C094208D308CB095608D208DF094A09D6091301C80819098A06A5090C036309A809650967098D097E08AE09EA06B0056F09FC01B4099C08B709BC081205FB08CB095D088602EA09F708440928050B0A2B054A0842085608A003880967083D05EE097A03BC099D05BB081205EE03E2092D025F087609860200056A088A06A009EE08590251097B08B709C3087A09D7081A0AD0073E05CE05EA08FE0830050809D8082509DB088A06D70872083C082E05420800055709BC09D6097E08240AE7085B0902095909200A2509D7036D08D5093800F409CE08A003E203D403CD02D6072D09D903F802A609F9099408FA040C01C70754094308FF09B208010AB20970093A017209B6094809AF08CE055B091307450513076308A003260A0A0A8909EE0364084408F409190ACD08CA083A050D09350A48082000CE08640844090A094E094E0A8F09D609BC09CE081F0A1909310AC2095D08A0032F055409CD02C408CD09D9036D083B08D30357092D0242082D05E209D70313092C02DF092F051F096E08F808C808E808E409C3089B09AE02940A7D0959028E0A6807D4095508E403DF08CE08670822081A0A17053B05250A6908CE05E2036708BC0956085A0A750401051C08BA0706082008C007C2070C080007A905320225085F01BD025F0ADF05F503CA0A05081F085B002F0537093000D40A9D07E3072808C20434082E03B8063708E607FD07EB0595028E085307E60AD104E305E90A1505A304F4083800390022090009460AE103D6092109530A1C0A680885096E08520A8E09FD08A902DE0813077E082E050209EB080C0AF9086807E103F409180593091909460AD403FD0A0A0964088A062509EE03E2039609990A7D084205BC098108960583080E089B05740374031C040906FC077C02EC0A3108EA0109079108C2024E05DA06D50A9708600679020D03AC04FD03FB062608E30A2C088E039B02A6094E02FD013C0B2B034D07F4084308180BEE03C20A1A09D1074B096908F2085109C8080A09D509CE053D08860A9F0ACD08250938005C092805E4086908550B33006E0AD709340A6E08D6075F08000B3D089A09730811057A03BB08D3091E0B5A090C0A3300C70A9E09350020004F0784019B08360BCB04210847087708150898070104A6069706BF029707A6073B0462056102D90A9C020C03450BBE0497019608E004BA082E02550A790AB70AD4086C080D0B6E08000B190954087A0330001709100B8D09C60843088609C80823085D095F097608F6086E08E508250ADC08C70958082A092909D203EA081205640BF20813059D09E609B40A1D0BBB0AC8072A04F008E1037A0B11061502CA01AD048001A301800B8F093200830B5001850B0C02870B5205F302990706032B018F07FA02440B7103920B3C04940B16019C0AD807550B8F094E094608FE08BB0855091C09970A52097A034305500A0A0993090D094E0A4205160A37099B090A0B12051905A40A5808E4086C08090B3F0513094F09290A570BE2085C09770B440960097B0BAC04B3057E0BCD0B5A08CF0B390900049501BF044F054C011A08B204430B900BDE0B150C930B2A06E20B8405E103D7035F08B30BE103BF0AD508830AE3033D0AEF0BA30BCD0219056D08E6092E0C68071C09DD093E050B095708C2089A09310CAE021C0BD308D609F80A4608570A100B280CE2039B0B7A09160A2E028C0A2D02790BC50BC7030C0C340BCB0B6602100C710B820B0A03140CC2051C044C022908AA04580C4F02C0042301190C3C031B0C4D021D0C6B06E00B200C4809520A860A77085908360A5A0A500CCA0B5302CC0B0601CE0B560C40065E0C160C3A01610CDB0B640CF5023B0B83013D0B490B8405EB08280CED0351095308B40A5E094405890C6708CE08DF08F70A8E09470883094205FD0B55085B09DD095C090B09640B8C0A3D05C2092208490CA80ADE084F0B640BBE093800EE0B1305520ACE054505770B8F09C70B03037C0B0E0CAA05D50A760CD00B290279093C05E709EE03DD09710B1809A80B7A034F093B0AD808710AEE03FE0803096A087F0A3E05640B580B040956084C0AB20AE708020B12091C0B7708C40AD607090B5D08980941086E0B6A08950C5508540AAB0C4205350AD509770B220BF609950BB80C27093C08BB0C5308D9084A08BF0C0C090F0B4205320AC50C5508C70C5C08D40CCB0C2B05C807BE09A30B5709D00C1305D20CEC097608E108950AD80C4A0A2B05DB0CEB0CE1082B0C8E09E00C120AE20C2B057708C703F008E60C4F041B088F0B650C53051E0C680C830C5A092B095508D0079809D40359082208C2091C09550B6F089609730B97091307A10ABA0CC807DF0C3F0A220D64087E087F0AE4039509010B0B094409420851095709BF098109240C2609C40BD903D808AF0C8703510C730C530C750C110C770C3A045F04860B1403D60B980750019A07DA0B8E0BDD0B1B0D670C820CE80C9E0B110DBB08B30B9E0CD6096908A209120A00092B0A9D0B3C0D630D00051F0BF208C8072A0C3105C608E408FA0B680713053B0A0005500A2E058C0AF80AAF0A4D0B120D080DFC0A22095708BC0BA30B8C0AD703200BC00C9E05710C7D0BB30C7F0B4D0DB60C210C3C085C09160A3E058E091009FB0C2C05970A430C3709990DA20B0F0AC709A10BC807220A3C08C609C107CB0944099B094505C20AC10A680BB50BF1081A0AAE08730AEA08BE09EA0B080A7E08770B520A2B091E0D2208A70C9609AD0A9D054F080E0BE7099F0D3E055E0B86023B0583093C0DA902520A460AAA0D6E08BB08C40A4F08CB09F80A4E0A0E09BC0BA80CBB08400CE609B60B160AC308180ADF0AAD0CCE0CC703180D590D800C1F0C1E0D3D05A60B1B09AF0BC807110A9A09EE0B0A09260C1C09940A330CD807CB097B0A4008DB0DD508EC0B6E0854097B0DE608AD0B72052D02030C650D3B05390D590BF2087A0D2A096D0B020E3F0A680983090E09460A8D0960092E09AE02470DC90B8C0D3202B40C8F0DD10B500DD40B520D9C0A5B09F2095D08710AB50DC00CC40DA80D4C08810A9E0B730BBC0DC208EE03160A430C3E05E60BE208FA0DDB0844086F0AB90B3A05DE082B0A1D095E0D160A6C088C0A7A08FA08C209A30B93097A09D309970BB30A9E05F00830057D0CB907DB0A2103CE07D0093C055D00D00AB9051D080F084C0687082B0B40076C00E10A490D0F0C06014606F00AEF070304E50AB606E70A3608DA043F071902CB0ADC0A23090E09E00A9C07A907A507E40AA808DA06F10AF007680E750EA607770E1502AA057A0E670EEA0A2E0BE90700083308690E820EB906D606F407D20A85085B0E2A0BD8015E0E8B0835023008870E0401D005DA0A5A0C700EC9073400560E8D0ECB050E01600E810E660E8B0E7907E20A760E410B780EA40ED804830E800EEE07AD0E8B0E3F0BA90EA007A8087D0E4A03AA0EEC04CA039A0E1E08210395072001AF074902E00275022B0B0707A404500E9B0E2103FD054806C306C3052B01C804E8035F0214046104E607DC0138047E0E5C05B503AB082E079D03230173062D00A003E00E3102EA07CA067C0227060A03C80EBD0E3C04BF07CC093500AC056006E1021404160629011A079C041A0EF5050D0C07012800CC0784055F005F00B8016400650078002E01C10E6E00A90652028D08C001CF0EB9023F0270068402DD01840E4D0693077D074006E90E080F520ECF07D107560E320248030A020F0F0601AC057E0C7A02CB0114037E021C0C5A0D470B8301C002120F7B06FA06B50C5D003E075908AB02C5057300D902EB047804BE071C0E9C07230FEB0A53052B0F53062D0F7B022F0FA90262023002770492047D032C0F7C073F01F5037D00840EB305BC01AC04DE0E3C012E01710E0E0990010B052204FD017E0E7306BC0E170FEB0E0908D807EF0E9108C802C10297022D060D028F0D8F03EE02900B6502DC03E80E6E0E510EEB0EC10723083900630F960794025103EA02EC019B05150A4308580F6F01CA046F072D03700F9707C90EEB0EC807870A770F20019F07E1027E018102A707750DE00DB90486030C0FC105C9024A040A0128008B022E00110F8B0B27029F0271012704070204047206490696045F05080FD806DC01AE01BF02CC07A0035E0FBB070708DE0A3809450F580FB608BA02AD018402FB0643024F03E3053B04470BEC011A0739020702B1073E02640753020D02C40F3B02A8038A03FC01600A7306BD0F96075306CD0EC80273069E011D0F0B056603AD078C0F54050C03EB053C04730684059C0F5A0A60069F0464033C043D01630EBD073A02BE0F8F0F15034B0DD90129028E066107E00FDF02F40A1401F307260B8E0E9B0513076A0AE302F10F4704990E190D00045E0AEE01E10622033E007102FB0FA10EE4024506EB04550304089E033F012502570EE606DA063909DE0FD80FD70E0A01161084080E107A03AC05A70EE70FC70FBC0240021E10270BE806150FEA01DF0F1F04DF022810FC0FBA032110BF0E0401050FA609A5080506A7062B019B0F8B02E6078D0606036C062F03B50682056B0A2901A7062800220023008D0220009C0FD50E9402170F300B95015F05E40F300278043F109D03FF016D06F9035305490351102802BD055E019802AA0F4F053807910D2F05880A490A7E095E098C0ABB08E409A70CAA0B0B0B68072D02400C730B780DAB0A56080809D703290DF70A02090309CB0DD007B30A6C0D490A2E0DC809CD02F80B1F0BE209010D8109880CA20B4F09090C13054405600980045D02A00F65037001DE02240F810F1C0F6F025F05050FFF036702CD0F9805920149003E107B0C6404980729060D02DF0F28076A0A08022201AB09440537008B0FF9010304ED0ACD0EB406A6095B0572066F02A3103509470A730E80046A0A95049E01EB059C07A0109A10BC10E90167093C0A6A09F40A820F320864109B078004DE0E6603C4044210B910AC10E8024B0466096809AE02B3105804710F93083D0BF50E9E039E02DA10BD1058081C09D907430B170CE205BD011F0414013E00B50A790B1010A610EE102C0873013B0F7602CC047B0F750CED107606F8102501F40A9A061B0FD20E660FBC103602CD107E049C01FF10AD01A20302117905A50FDD0314101101A605F61000110F110A112506FA049A10A70F15103D01E11079022B032A10B1031211131053032008F007B610050760029F0E17110E11A91022103B0392058E02A206060FAB10E610A210E9016E06AF099F073602D5050608730240072901D504EE014D05B20F25014511EB01C20232088101550221045602C9044D02C20514050A074C02F7101911C610BA10AD10DB10B010AD09580FB510EA072C11B8103811A110C910AF1036093809B70F3C09A2053309280BE5106611AE100B01FC09EA10DF10810CCB047B02F00F7002D810391167117311DD10CD10C1105F03520FE202A004B506C710BB107211DC10CC10AC058F04CF101903D7052802CC0FFE01A40347061702D5056C025504C4020F0F23016203D60FF80471011F052203430B2A1162115E02600220007E001E06170EA41161110204E40E0401AA1121060C0C760324049C119B052011890B2211810CD903A511AF1194110401160530037F049705DD019B113C0223017E07550DA111F0106301640E7B04C6114211D20B1603B3029411CE035A05A403C6103810CA067B046002A3026501A60FA40296044807B0056D11E3105D005D03F206AC0F0703A2081C11E1117B0225020E076C11D60AE31002054511B511C711D3116900D002BC05310350039A11D21123111703E0059511D8112201DA11FD0139107602ED112611D510E311B9110408E2102311E811F902E40D0D11A810F010A911AB11EB04EC102F1118129F011A12B311C80B99110F030112BC114006E511F411231139071E12EF1020128F04170DFE112412D111AC04FA11740E001235122B12AA0429121212BC118303A3087B027301A1117402A30FFA0FF2062910AD052111BC01810CF7113812AF03BC11D0054012E50EB407A211C10395024112FE05DE042010140111101D11E2111510A00E590E4C0771020412D711B106AF105212A0084312550232113E035F063C025403A6066502940BFF1125123912BC11C2113F033511BA0445039F105B11E7103B11CB03F7043E11EA02680316086E021F0554014E10F3113D12C91187117F123A11AF10E910FE09601161042B11A71164117011C8108A11BE10DF0A7611C210A604F40EC5108F12D91091127F118C11CE106210D0107B0C380756118C031811A9105A11A5127E11DC10AC09B210580FD410A70F7A11AA109A1289115D118011DF10EB01A7065F01FB07B802BE110B0264042000F210E2041A0CAE11C812A811C2112D04FF0FF00FEC11F20F10080510D60A07102C038C0E0C1062129D083C12BB119D11E010BA114B12C911E6036A0A5D050507A30822030310FF06580EE706F40A1012B90FE512E4029A043F0759042510D50A47041010EE111311281130100D102411E90109022510E902750C9C04510F4D026E0F630E7903890447123110F112E012F412FB112210FE115D12EF11141120086112E706C3078605F5037907CB11DE04A10F7412F212E6113A120C0FDD11C412FD0274017A122B0436117E12B3128A113C118312B80EEA02A5105711B0121912A4127D119C123E05B1109F128311540385110F01B2123C13BF12A8128E11AA129011D8019211BE0FCE12B710EF0A6D0471115D116911C010BE0F12136E11E41052139B12BF12FD09D907D310E60EE211BB1245135313E810A81280044F10B405AC069C10A411B9126213C70F70021E06720E570F1C126913AB0656057B111713FE12E311A1091513DD02ED066A137813BC123504F20E0E03F40E48076E13791170136A095B001E043108A60257123E016D122511E0117B131F115813E711700F5C02D50F5712E41153058113720113016D1234119105A513D106A4139E1065115C13A31033136B13EB0536136B114A1259136413AB13CA1093125F131A042D120111831388115C11E810B6124013680284113C09BC139012B412CB1069098D112511F5054B13080793109612A611B011B413BE12BD1055137611891393088B13D313BE13B613671357139F137713A11314016D1361138A13AA06A50172137313AC117613F80EE21356120D121E1115117D13C3119C018013E113B605FA101802E302FD102911D813D610A2138D130611260708114E1193137006370362119D13F613ED13B6051508FD1227110F12981313123D03A4139005A913BD12DC132201AD135605AF1328018612EA0F8812FE052C014511A00FB8054811A003DF0FB10C4D1147065011810CF7044E1171033713AF1230113A137C116513B613C013800F411371014313C51331134713C913A9125B05CD13AD124E13D013BF11C9123B1337146811BF107611121427123614B51392125E13D713E513D913E713DB1380129212A8128D0438010011BB0F70041B04BF0122046403BD11A012C31319025D077B12860330134613AC138212AE131F0E0C01D50EFE137E03D710AA13D413DD13411468138C12E1126F115B13791453147511D1053813341420124A1452147F1139148211C2134213C4135914A6128B114114491343141F03CE134614510F4814A811881481147311D613DC0B17122E12F910E0045D08170E780437039510A9035202CE07EE0EFB0ECD07B713C3071D057D141313F80F42056202A2049A06C6079F141601A4044F136311C1119E093700B714B50AC808C813DE10A30F4E0FF50346120D0810132812B3145913B9087A131014370290085905980FD10A12101A07D804CE0F6504260235102D040A04BB0F980276068705CD0F3F02550DD60A5A02D6026E00020F74005011C30E7C0BF6043C019205DE061507EC135505E21306040D0475029602A311EB14ED146E062E145702F312D206980E4204EC100F140E123702E004660FD60E99081902CE07AC0520060D1503084604390135090E060B100F130113AC119C026E006F001D017A07F00F0803C90FA605D714A805D914AC05FC12C60F7209AC06A4012615F302DA107012A20EEF139513D31415111B131810B302810F9F087C0FFE01C103E614530CD20B3F15780725063C159F01E81493089E13B305F713A602CB072215C70F2415990362033115D814810F6900460FB204B7045A155C153C033A02BD02C6113302B6053100CE079E0E040F2F13781419147D0670141C14721440116F03D21189122314910125142F04271474145614FF133E146E147A14C714AE12CA018614A31451149D14B5123F1395129914CF12991280146A1566099F148C147A063C148F149C148C15C614CD109414CC1396144514780FCF14F51193155A147F115414DC0BC71250134D077A09EA04C80BA71494105503AA1407016515E811BE07B0142E01B214B213F5118F044F08C314B914CD07BB14A304A114BB13F40AB715A104C414C607C012C8147D0C9C02A315BF14A515DE08A614480F5A02AA15CD036B06AD15D207AE1474119412BC1425132A12781268070A09B8157E0D5E11B712BC14BD1559113012DC15C115B9159515C307C40BDB0B3B02B80E23047C02FC034912E412B3133006070294012A037103A907A90F0915F11329114F142301E811D2140A151511D8158D125B12FC05941312100216FD159C152713D00BB60FCB14D10A1C15DC06430480151F12F9105112FB155F123815ED15FE02900F000279033915FB055612F6150810D10A1A13DD121C13580D0116FC15E4110C16BC11BB03AC05B2111E13FC12F0131A160B16B4150D160E143516F0110316FE152010D9070B11F903621420118B137407B80F6314451602051F135F066015380184019013C707C30717148B159F1540113D046D15EA0F0C011F14E70243118A128414331416161011831594153E135F11CF138815A4159E1591149D126A117C143816501469155516D515B813D30F791576147B1171166B16C4158F15C3103D149014C713C41597151E08600C9A15611024162C032616351509162C16C81598125F0EDC121B15DE12570C47148915040175040C04851461161401181687165411F91579059D16F81548034C102E0008165E123C162716911629163F121916A8162D166F16FF15231642122516A8052203B8044D169A109D041301CE07CD1016015316BD1355161B1497016E155B16711522142D0B4611261406084911B9102A142C107402D50EBE148E167F169C128E1557132E168E1263167216B11560130704E61309036A168016DE13960767148E146914D4164014C71482166310AC12D210B9139916A2146216791680168B14BE0FD901DC0EFC02C4020A03FD035A0F5702DF0788137616BB12C11271065F0C350BFC027B11CB0FEE0FFA067209C0110B1550038D0D55054C115C03FC0E2000FE0E000F020F67157C129202ED065D1000080B0F1C0FAB15B407BD01FB1131026E0EC4061615B8020313BF049F13810C23028D137006CD031F0FE80656106C112717FA1307088C1314153617A5020708D00BA31315175F00EC1477001717030FBE162F131C1772021E17FC0730170E0F7303DA0E0111500F8A0326013E103517F7163C175A134E02C105180349032F170D0F1E0F4E17AC053A175617FD141115F7052617631710153E1770040F11511782054D0F240BEE121710020713166105F8162C07CD0B6C023C142011A111FA01E806D514E801EF0F1906ED0AED023404B01174025D052F155D14B90F64143E02210F04101203FE162E0717154B037A0FAF12A00119155A021515540D7A02630E0C0C5917DE0B64025C1721163C073310BD07A61618132811F7113D0291176D0293177F05E91262105001AC05460F31037E0C9017670FAD17070894179B13CA0197174D07DB0E6705670C6201170E2A1705175B172E17A3175A0EBD16C4070C0F2402CE0EF20ACC020F17A0080811A803BA17AF175402900F1001B317D90A47164416E713461643165F1465144515630CC715F7166705F91678179B08510F71127D17AC05CB12AC11240562152C1515112300BF0F72062E14C20F0205E10A9F172C1707175D07B812A7063202691465104C065617C50E6402A404E7178302E917D1170714350799086002FD050B17CA0BC30224172B163616AF16F2159913150F02188104E0064606B816F81763155B00E0152E131A1737111814C1166C15C31659166F150003C61672098D0B7F15A710F1167B154B148A1486156E161B182B12E1163D13A1157C16A112C4108611DA167A164813CB138316D1104D137516DE165714E0164518E2167B14981463099A148A15C0166B169F14AD119416A415F210ED03F410C80B8D16D213B506F10EFC108C03750C6118C0110311EE030511CE0E0711FF070514F413CE155B18C915111136150A164807D216B01106141204F016BE155D18E203170EE215B1126318FB10FB1366181A13BA13E315C4146C18650F03146F1892137118821835141818AE1692189F019313941819131A1811127E1424116818C91220168918B112B716991023185016760F19176C14F31632132C18830F3F11C51635127215C81675151802CB1628149E01CE16C3125502D1167318D3163E1854134D143A148D149115E716BF18661393144818EC169111C7065E01A2183514AB18BF12F5169B15B0167F14571880164018EE0F0117DA13C6187D15CD105A186816C9157F185F18B2029F189B14150285183E0987187818BD18D21330126B1801146D188E18911325017E13F5137918691875188B161918E5182B017B18141635187E18F3108118CE188714E718FA13E91887139618F910EE1836008C18B610F3028F18F4189118041982159918FF120A191219E40DFC1804013C00FF185811B112B211B3153C18BC11B2112905EB13E117BA0F6514281228198C1767070018A4181117A61897025B003800521668152A189114C216AE188512B603871289123218321415163618E816BF133A185318F60495164419CA10D616D3182319D916D018E810D8184C1878114E187714381951187E15F6163B14A21244185019DD18CA138F1199159B071B198A16A7169A181B198E171E1939132012E21803197D18591184180719F30E9E0116116F19B1120C190E198F13B8177018411618190D021619E3117E199818AD1667193E163210CB17641980199713D81663127218E0188E167519601636189313F90961154F163319E609361928186D14381856160B032D18AF183D1920143F1944117415E8037615B6188B12D4185A13D6183F18831441186814A31250183D13471861198416EE1653190E126313DC185B14521859051419F21657193D13D2188C0FF7184914B319C0189E12DC0B1F151D01CC19A71796133D168C192A10E115C019E813E104620275132C1949162B1933024816DF174A165B15E404221862155016730E46179B195E191A14AD1884122801D50EE516C418B219E919A712C818B6194A18CC18B410EC18F818C819D513C1183B189C18B414BC19A015AF19EF169219BE15011A85156616D9184D187A154A19BD19C7141016EF12DA06F115FF19D0148E195418491918163B169A18C9178D191E13E11935033119E4193319900D2718AA18C219DB103A19EC195A16A2195C16AA062901AA194E19D518C613AE199412B019E616F119271AC718EA16C918AB12CB18B812DA185814071AE8158715171A6916FB194B19FD19041A4219061A471A921239148A19D119AB19600EE8187319CD0B7711BA198B1379190A069013680F9419E31997196F02530E9A19261A54163919EB1935131E142C1A3118A519E901A719B518760555114A1A001970194D1A3918091A9607C619E618F2198D15491AB919BA12DB18751A921459194D19141A9D15811A7316C11390155C194413421A81163C1A44146319C715791AB4061B12A815CD15B60175009C0160107D01D011CD017712D91604169D18BD11931AC0144F04DF18451A7418E904C417C5119E1A4F124F197012CC1123138501470F81067A0B7200991AF211AB194D127612AE1AE4021B08CF1530171A0E5F0595194E169B10BB1635196506211A601ABB16EE0EC91A82013219611A9919CE1A9619C61A6415C1070716C41AB91624189E0ED31AC51ABA16D61A0D19DD1ADA1A50166C08D81A5F1AD51A0808E61AA518221AD11A6A09E21AD01ABB16D00BEF1AEC1ABB167A09EA1ACA1AE81AD207F31ACB1AD61AF71ACF1AF41A6415E00AFB1AE81A1705FE1AD41ADF1A5116031B081BB712ED0FAE073611B1039F114212CC11180C6202770068000A019C01981A9C017F179C1AAD19DB1085170D179B132706E411DA19DF17210FDD17E2173E026114DD19DE17601445060A07E9029903F00F62019503C212970233153B01351B331B590CE2028C1ACE155D0521179D03AD157B1A620A6C083519FB179C198914A410A01426107D02331B2503370FCD15730298053810320428146504DE045F0C5E144B166E12E404F616A01095028A0B6502351B5C11551BB3073A1BC70F8816C402A10185170507E70A1D0FED11111B5912A211DB0432043014CA02CA05170460188F0B361B28158C041006B20256104D11CA025B02EC11DF11FA18A816641BDA10661B391B0407691B3C1B5E14DB0B4116EC155A0D0011A008DA140802260275024C0448104C00D402610070006800200053006300B701700074003A00D90251060A18FA075B054A0374198A17DE1960141605AC052D04D8026202510622003A00D702A4161502D20B3502B001EC0178027D1B8C1B0F013E0722005B005E003A005D002B003A00250064002A00BB1B4B109E106E1AC902A7020D01DB04CE1979022C070F15BB17F1023C17F402A802D7029E1B7200A01BA21BA41BA61BA81BCF1B2200D819961AB51AC605E119780E2E127B17C1010C120D03961B50052904921B5F0688084B025217EB02D0041A0231150B03CB0E221BA711D60F8006CA03011CC20F7A0F6D01341042167B0F4F056B0ADA14EA0FDF0708041908091C3403C30E0E0308182A0F7502B5097B0C131C051CE60E071C57122900620CA103ED103A0BB3079D1B500048007C002E02450022084700A70C5409330047000E090C09300046003500381C300043004600F70A3000410018050E09320047003100440045003300460041004B1C321C45003B1C4100371C321C43003200450077084700501C36004B1C471C5B1C5E1C571C521C581C601C45005C1C571C5C1C3000501C3100501C41004300360043003900501C521C43004200721C4D1C541C671C45004A1C611C4D1C631C5A1C791C4600761C4E1C591C5B1C501C4500511C4400331C821C7E1C851C32004600691C691C571C4E1C921C6E1C641C521C3700751C3300321C44005C1C6B1C661C4300450046003400821C961C4D1CA31C4F1C32009C1C45009E1C551C871C931C511C7D1C571C3800881C8A1C7C1C831C641C661C871CB41CA51CB71C7F1C651C501CA01C911C4500AF1C6D1CC30B491C4B1C4D1C51093F1C4C1C701CBC1CBC1C4500751CB61C781C651CCF1C841C791CB21CB41C1805C71C4C1C531C4300DB1CB11C46005C1C4A08BE1C521C5C1C5E0BE11C741C5E1C691C6F1C651C3800420032006E1CA21CE103A81CAA1CAC1CF01C871C921CBB1CE41C7D1CD61C651CD31C551CDF1C441C420033004300430035008F1C4400310042003100051D811C4F09430041004200691C3500DE1C0C092B09531CF309E609460044008F1C3300EF1CF60DD8082B093B05441CC308D308511CE31C110EE40B3200531C2F05511CE3033E1C6608C1078A06EF1C640B511C031D301D150A3609D6036908360DDB088E1CED03FC0B511CA70C381D870D4100410546003609EF0C711CCB1C381D431C2D05401D8A064100451D471D491D4B1D531C4D1D6908321C51092C058A06E3032208360D4B1D4300371C291D44054F1D19051D1D471CDE0D780D00053D054B1D4600631D440578103F1DBD09461C6F1DEF0C00055708571C3F1D461D2D05421D701D2E02180519056A1DEF0D3C1D4B1D44007F1D890F2C028E1C781D130B1909791D321C481D7C1D4B1D431D641D5F1D3D056C1DBE084C1C3C053D1C0E09450067105F09511CE609381D5C0935009E1DE203C31C60084400461D7810E103430066081305410077083900A21C520A1805041D39003E1CB81D391C3E1C5409BA1D1805BC1DA21D720E8D093E1C471C720E2D05B91D3E1C3100BC1D640BC41DCB1D701D3C05BE1DC51D0E09CC1D0E093600BC1D2C02D71DD11DD91DCD1DC61DCF1DD81DC61DDA1DDD1DCB1DE11DD31DE41D9110DC1D110ECF1DEB08C01DCF1DC31D461CC01D37003E1C3700DE1C2C02330E0009C51C121D6F02E91C121D300042005E098F1C241DEF1D8B1C00057F1C561C781C061EBE1C4B1CBE1C5C1C041EAD1C781CAA1D0E09B31C411C3500461D4400421C011ED31D9C1D691C9F1D5409760935009C1C3B054200411C3600871DD603391CAE0234004400D007711C770823099E1D190B34003E1C44008A06360041003B053B051B1D58093700441C271D7E084B10D80FAB15FD03DB0FF902")))()
+end)
+
+UICorner_24.CornerRadius = UDim.new(0, 10)
+UICorner_24.Parent = GodBlockButton
+
+GodModeButton.Name = "GodModeButton"
+GodModeButton.Parent = PlayerTabHolder
+GodModeButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GodModeButton.Position = UDim2.new(-0.00270270277, 0, 0.41390729, 0)
+GodModeButton.Size = UDim2.new(0, 368, 0, 37)
+GodModeButton.Font = Enum.Font.GothamSemibold
+GodModeButton.Text = "God Mode"
+GodModeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodModeButton.TextSize = 20.000
+GodModeButton.MouseButton1Click:connect(function()
 	local Plr = game.Players.LocalPlayer; Plr.Character.RagdollConstraints:Destroy(); Plr.Character.Head.Neck:Destroy(); repeat wait() until Plr.Character and Plr.Character:FindFirstChild("BodyEffects") and Plr.Character:FindFirstChild("Head") and Plr.Character.Head:FindFirstChild("Neck"); Plr.Character.BodyEffects.BreakingParts:Destroy(); wait(1); local pp = Instance.new("Folder", Plr.Character); pp.Name = "FULLY_LOADED_CHAR"
 end)
 
-UICorner_6.CornerRadius = UDim.new(0, 3)
-UICorner_6.Parent = GodMode
+UICorner_25.CornerRadius = UDim.new(0, 10)
+UICorner_25.Parent = GodModeButton
 
-GodBlock.Name = "GodBlock"
-GodBlock.Parent = PlayerScrollingFrame
-GodBlock.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-GodBlock.BorderSizePixel = 0
-GodBlock.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
-GodBlock.Size = UDim2.new(0, 355, 0, 28)
-GodBlock.Font = Enum.Font.Code
-GodBlock.Text = "God Block"
-GodBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
-GodBlock.TextSize = 20.000
-GodBlock.TextWrapped = true
-GodBlock.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/8dYyXr7n"))()
-end)
+AntiBagButton.Name = "AntiBagButton"
+AntiBagButton.Parent = PlayerTabHolder
+AntiBagButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AntiBagButton.Position = UDim2.new(-0.00270270277, 0, 0.698675513, 0)
+AntiBagButton.Size = UDim2.new(0, 368, 0, 37)
+AntiBagButton.Font = Enum.Font.GothamSemibold
+AntiBagButton.Text = "Anti Bag"
+AntiBagButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiBagButton.TextSize = 20.000
 
-UICorner_7.CornerRadius = UDim.new(0, 3)
-UICorner_7.Parent = GodBlock
+UICorner_26.CornerRadius = UDim.new(0, 10)
+UICorner_26.Parent = AntiBagButton
 
-AntiBag.Name = "AntiBag"
-AntiBag.Parent = PlayerScrollingFrame
-AntiBag.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-AntiBag.BorderSizePixel = 0
-AntiBag.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
-AntiBag.Size = UDim2.new(0, 355, 0, 28)
-AntiBag.Font = Enum.Font.Code
-AntiBag.Text = "Anti Bag"
-AntiBag.TextColor3 = Color3.fromRGB(255, 255, 255)
-AntiBag.TextSize = 20.000
-AntiBag.TextWrapped = true
-
-UICorner_8.CornerRadius = UDim.new(0, 3)
-UICorner_8.Parent = AntiBag
-
-Unban.Name = "Unban"
-Unban.Parent = PlayerScrollingFrame
-Unban.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Unban.BorderSizePixel = 0
-Unban.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
-Unban.Size = UDim2.new(0, 355, 0, 28)
-Unban.Font = Enum.Font.Code
-Unban.Text = "Unban"
-Unban.TextColor3 = Color3.fromRGB(255, 255, 255)
-Unban.TextSize = 20.000
-Unban.TextWrapped = true
-Unban.MouseButton1Down:connect(function()
---[[
+UnbanButton.Name = "UnbanButton"
+UnbanButton.Parent = PlayerTabHolder
+UnbanButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+UnbanButton.Position = UDim2.new(-0.00270270277, 0, 0.841059566, 0)
+UnbanButton.Size = UDim2.new(0, 368, 0, 37)
+UnbanButton.Font = Enum.Font.GothamSemibold
+UnbanButton.Text = "Unban"
+UnbanButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnbanButton.TextSize = 20.000
+UnbanButton.MouseButton1Click:connect(function()
+	--[[
 IronBrew:tm: obfuscation; Version 2.7.2
 ]]
 	return(function(new_IIIIllIllIIIlIIIlIIIIll,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl)local new_llllllllIllllIlllII=string.char;local new_IIlIlIlllIIIIIllIl=string.sub;local new_IIIIllIlIIlIIIIIlII=table.concat;local new_IIIlIllllIIIllIllll=math.ldexp;local new_IllllIllIllIIlIll=getfenv or function()return _ENV end;local new_llIIlllIlIlIIIlllIIllIIll=select;local new_IllIlIIlIlIIllllIIIlIII=unpack or table.unpack;local new_lIlllIIlllIIIIlIII=tonumber;local function new_lIlIlIIIllIlIIlIllI(new_IllIlIIIlIII)local new_IlIIIlIlllIlIllIlIIII,new_IlIllllIIIIlIIIIIIlI,new_IlIllllIlIllIIIlIIllIllI="","",{}local new_IIlIIIlIllIIlll=256;local new_IllIlIIlIlIIllllIIIlIII={}for new_IllIIlllIlIllIllIl=0,new_IIlIIIlIllIIlll-1 do new_IllIlIIlIlIIllllIIIlIII[new_IllIIlllIlIllIllIl]=new_llllllllIllllIlllII(new_IllIIlllIlIllIllIl)end;local new_IllIIlllIlIllIllIl=1;local function new_IIIIllIllIIIlIIIlIIIIll()local new_IlIIIlIlllIlIllIlIIII=new_lIlllIIlllIIIIlIII(new_IIlIlIlllIIIIIllIl(new_IllIlIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl),36)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;local new_IlIllllIIIIlIIIIIIlI=new_lIlllIIlllIIIIlIII(new_IIlIlIlllIIIIIllIl(new_IllIlIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1),36)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII;return new_IlIllllIIIIlIIIIIIlI end;new_IlIIIlIlllIlIllIlIIII=new_llllllllIllllIlllII(new_IIIIllIllIIIlIIIlIIIIll())new_IlIllllIlIllIIIlIIllIllI[1]=new_IlIIIlIlllIlIllIlIIII;while new_IllIIlllIlIllIllIl<#new_IllIlIIIlIII do local new_IllIIlllIlIllIllIl=new_IIIIllIllIIIlIIIlIIIIll()if new_IllIlIIlIlIIllllIIIlIII[new_IllIIlllIlIllIllIl]then new_IlIllllIIIIlIIIIIIlI=new_IllIlIIlIlIIllllIIIlIII[new_IllIIlllIlIllIllIl]else new_IlIllllIIIIlIIIIIIlI=new_IlIIIlIlllIlIllIlIIII..new_IIlIlIlllIIIIIllIl(new_IlIIIlIlllIlIllIlIIII,1,1)end;new_IllIlIIlIlIIllllIIIlIII[new_IIlIIIlIllIIlll]=new_IlIIIlIlllIlIllIlIIII..new_IIlIlIlllIIIIIllIl(new_IlIllllIIIIlIIIIIIlI,1,1)new_IlIllllIlIllIIIlIIllIllI[#new_IlIllllIlIllIIIlIIllIllI+1],new_IlIIIlIlllIlIllIlIIII,new_IIlIIIlIllIIlll=new_IlIllllIIIIlIIIIIIlI,new_IlIllllIIIIlIIIIIIlI,new_IIlIIIlIllIIlll+1 end;return table.concat(new_IlIllllIlIllIIIlIIllIllI)end;local new_lIlllIIlllIIIIlIII=new_lIlIlIIIllIlIIlIllI('22A22727522621Z275227161X21O21N21A1X2182162262242791X21621K22621Y2791S21821P2162161X1821M21222622327921421A1Y27I21X2791821621N1S21621P21L21227H2262202791C1W27U27Y280288275161Y21A2142161321A2192161Z2812791128527I27827521P28H21021P1W1Z29222N2791D21A21821021429D21M1X21728M1Z28N23G22622128L29E29U28J27921529D1Y1T181D27K27922724V1W1F2932751S21221H27I2222791Q1B2121Y23H2A92AA2752AS27521F2621F2AV22723J25L2AE2AL28S28U28W22622J27921P21921J21A21O21O28B21221723922O22O23E23C23D2BQ23E23B2262B52271S1W29P21727P27921K28N21021O21R29K27I28K2AG2BY29Q162C022G2BB2BD2BF2BH21N2BJ2BL22O23F2BQ23H23F23E23H23E23I23E2A12751V1Z21A21I2121X21422722629W279131W1W21R2162C029X2751P29E21M2862B022722Z1F22722V27922L22F2792262792332AT22722522722L2762272AS2E42E12272822752DZ2E92E22AL2E82822DH2AA2E22EB2E02752E22E82DX2DX2EC2E52DX2EP2E22E22CA2752882DN2E527K2E223J2AA27827Q2E82E221W2DY2EO2E921V2E32AU22721U2DT2752822FK2752E82AL2FO2EK2272AL2E229H2D72272882EP21T2E921S2DY2BA2EX2E92E827K2FX2FH2EA22722M2FL2FU2272GB2E829X2E82FT29X2FW2E52G22F52E522K2272BA2FA2FY2ET2EE2G82E227K22I2DT2CG28222H2E02EL2E92F62E92CG2DV2HC2E222E22722D2B12FE22C2HJ2HL2E922B2272742AT2ES2AT');local new_IllIIlllIlIllIllIl=(bit or bit32);local new_IlIllllIlIllIIIlIIllIllI=new_IllIIlllIlIllIllIl and new_IllIIlllIlIllIllIl.bxor or function(new_IllIIlllIlIllIllIl,new_IlIllllIIIIlIIIIIIlI)local new_IlIIIlIlllIlIllIlIIII,new_IlIllllIlIllIIIlIIllIllI,new_IIlIlIlllIIIIIllIl=1,0,10 while new_IllIIlllIlIllIllIl>0 and new_IlIllllIIIIlIIIIIIlI>0 do local new_IllIlIIlIlIIllllIIIlIII,new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl%2,new_IlIllllIIIIlIIIIIIlI%2 if new_IllIlIIlIlIIllllIIIlIII~=new_IIlIlIlllIIIIIllIl then new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIlIllIIIlIIllIllI+new_IlIIIlIlllIlIllIlIIII end new_IllIIlllIlIllIllIl,new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII=(new_IllIIlllIlIllIllIl-new_IllIlIIlIlIIllllIIIlIII)/2,(new_IlIllllIIIIlIIIIIIlI-new_IIlIlIlllIIIIIllIl)/2,new_IlIIIlIlllIlIllIlIIII*2 end if new_IllIIlllIlIllIllIl<new_IlIllllIIIIlIIIIIIlI then new_IllIIlllIlIllIllIl=new_IlIllllIIIIlIIIIIIlI end while new_IllIIlllIlIllIllIl>0 do local new_IlIllllIIIIlIIIIIIlI=new_IllIIlllIlIllIllIl%2 if new_IlIllllIIIIlIIIIIIlI>0 then new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIlIllIIIlIIllIllI+new_IlIIIlIlllIlIllIlIIII end new_IllIIlllIlIllIllIl,new_IlIIIlIlllIlIllIlIIII=(new_IllIIlllIlIllIllIl-new_IlIllllIIIIlIIIIIIlI)/2,new_IlIIIlIlllIlIllIlIIII*2 end return new_IlIllllIlIllIIIlIIllIllI end local function new_IlIllllIIIIlIIIIIIlI(new_IlIIIlIlllIlIllIlIIII,new_IllIIlllIlIllIllIl,new_IlIllllIIIIlIIIIIIlI)if new_IlIllllIIIIlIIIIIIlI then local new_IllIIlllIlIllIllIl=(new_IlIIIlIlllIlIllIlIIII/2^(new_IllIIlllIlIllIllIl-1))%2^((new_IlIllllIIIIlIIIIIIlI-1)-(new_IllIIlllIlIllIllIl-1)+1);return new_IllIIlllIlIllIllIl-new_IllIIlllIlIllIllIl%1;else local new_IllIIlllIlIllIllIl=2^(new_IllIIlllIlIllIllIl-1);return(new_IlIIIlIlllIlIllIlIIII%(new_IllIIlllIlIllIllIl+new_IllIIlllIlIllIllIl)>=new_IllIIlllIlIllIllIl)and 1 or 0;end;end;local new_IllIIlllIlIllIllIl=1;local function new_IlIIIlIlllIlIllIlIIII()local new_IIlIlIlllIIIIIllIl,new_IllIlIIlIlIIllllIIIlIII,new_IlIIIlIlllIlIllIlIIII,new_IlIllllIIIIlIIIIIIlI=new_IIIIllIllIIIlIIIlIIIIll(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+3);new_IIlIlIlllIIIIIllIl=new_IlIllllIlIllIIIlIIllIllI(new_IIlIlIlllIIIIIllIl,79)new_IllIlIIlIlIIllllIIIlIII=new_IlIllllIlIllIIIlIIllIllI(new_IllIlIIlIlIIllllIIIlIII,79)new_IlIIIlIlllIlIllIlIIII=new_IlIllllIlIllIIIlIIllIllI(new_IlIIIlIlllIlIllIlIIII,79)new_IlIllllIIIIlIIIIIIlI=new_IlIllllIlIllIIIlIIllIllI(new_IlIllllIIIIlIIIIIIlI,79)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+4;return(new_IlIllllIIIIlIIIIIIlI*16777216)+(new_IlIIIlIlllIlIllIlIIII*65536)+(new_IllIlIIlIlIIllllIIIlIII*256)+new_IIlIlIlllIIIIIllIl;end;local function new_IllIlIIIlIII()local new_IlIIIlIlllIlIllIlIIII=new_IlIllllIlIllIIIlIIllIllI(new_IIIIllIllIIIlIIIlIIIIll(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl),79);new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;return new_IlIIIlIlllIlIllIlIIII;end;local function new_IIlIIIlIllIIlll()local new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII=new_IIIIllIllIIIlIIIlIIIIll(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+2);new_IlIllllIIIIlIIIIIIlI=new_IlIllllIlIllIIIlIIllIllI(new_IlIllllIIIIlIIIIIIlI,79)new_IlIIIlIlllIlIllIlIIII=new_IlIllllIlIllIIIlIIllIllI(new_IlIIIlIlllIlIllIlIIII,79)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+2;return(new_IlIIIlIlllIlIllIlIIII*256)+new_IlIllllIIIIlIIIIIIlI;end;local function new_lIlIlIIIllIlIIlIllI()local new_IlIllllIlIllIIIlIIllIllI=new_IlIIIlIlllIlIllIlIIII();local new_IllIIlllIlIllIllIl=new_IlIIIlIlllIlIllIlIIII();local new_IIlIlIlllIIIIIllIl=1;local new_IlIllllIlIllIIIlIIllIllI=(new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,1,20)*(2^32))+new_IlIllllIlIllIIIlIIllIllI;local new_IlIIIlIlllIlIllIlIIII=new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,21,31);local new_IllIIlllIlIllIllIl=((-1)^new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,32));if(new_IlIIIlIlllIlIllIlIIII==0)then if(new_IlIllllIlIllIIIlIIllIllI==0)then return new_IllIIlllIlIllIllIl*0;else new_IlIIIlIlllIlIllIlIIII=1;new_IIlIlIlllIIIIIllIl=0;end;elseif(new_IlIIIlIlllIlIllIlIIII==2047)then return(new_IlIllllIlIllIIIlIIllIllI==0)and(new_IllIIlllIlIllIllIl*(1/0))or(new_IllIIlllIlIllIllIl*(0/0));end;return new_IIIlIllllIIIllIllll(new_IllIIlllIlIllIllIl,new_IlIIIlIlllIlIllIlIIII-1023)*(new_IIlIlIlllIIIIIllIl+(new_IlIllllIlIllIIIlIIllIllI/(2^52)));end;local new_Illlllll=new_IlIIIlIlllIlIllIlIIII;local function new_IIIlIllllIIIllIllll(new_IlIIIlIlllIlIllIlIIII)local new_IlIllllIIIIlIIIIIIlI;if(not new_IlIIIlIlllIlIllIlIIII)then new_IlIIIlIlllIlIllIlIIII=new_Illlllll();if(new_IlIIIlIlllIlIllIlIIII==0)then return'';end;end;new_IlIllllIIIIlIIIIIIlI=new_IIlIlIlllIIIIIllIl(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1);new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII;local new_IlIIIlIlllIlIllIlIIII={}for new_IllIIlllIlIllIllIl=1,#new_IlIllllIIIIlIIIIIIlI do new_IlIIIlIlllIlIllIlIIII[new_IllIIlllIlIllIllIl]=new_llllllllIllllIlllII(new_IlIllllIlIllIIIlIIllIllI(new_IIIIllIllIIIlIIIlIIIIll(new_IIlIlIlllIIIIIllIl(new_IlIllllIIIIlIIIIIIlI,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl)),79))end return new_IIIIllIlIIlIIIIIlII(new_IlIIIlIlllIlIllIlIIII);end;local new_IllIIlllIlIllIllIl=new_IlIIIlIlllIlIllIlIIII;local function new_Illlllll(...)return{...},new_llIIlllIlIlIIIlllIIllIIll('#',...)end local function new_llllllllIllllIlllII()local new_llIIlllIlIlIIIlllIIllIIll={};local new_lIlllIIlllIIIIlIII={};local new_IllIIlllIlIllIllIl={};local new_IIIIllIllIIIlIIIlIIIIll={[#{{294;243;590;992};{332;957;100;785};}]=new_lIlllIIlllIIIIlIII,[#{{548;773;809;936};"1 + 1 = 111";"1 + 1 = 111";}]=nil,[#{"1 + 1 = 111";{700;808;208;757};"1 + 1 = 111";"1 + 1 = 111";}]=new_IllIIlllIlIllIllIl,[#{"1 + 1 = 111";}]=new_llIIlllIlIlIIIlllIIllIIll,};local new_IllIIlllIlIllIllIl=new_IlIIIlIlllIlIllIlIIII()local new_IIlIlIlllIIIIIllIl={}for new_IlIllllIIIIlIIIIIIlI=1,new_IllIIlllIlIllIllIl do local new_IlIIIlIlllIlIllIlIIII=new_IllIlIIIlIII();local new_IllIIlllIlIllIllIl;if(new_IlIIIlIlllIlIllIlIIII==0)then new_IllIIlllIlIllIllIl=(new_IllIlIIIlIII()~=0);elseif(new_IlIIIlIlllIlIllIlIIII==3)then new_IllIIlllIlIllIllIl=new_lIlIlIIIllIlIIlIllI();elseif(new_IlIIIlIlllIlIllIlIIII==1)then new_IllIIlllIlIllIllIl=new_IIIlIllllIIIllIllll();end;new_IIlIlIlllIIIIIllIl[new_IlIllllIIIIlIIIIIIlI]=new_IllIIlllIlIllIllIl;end;new_IIIIllIllIIIlIIIlIIIIll[3]=new_IllIlIIIlIII();for new_IIIIllIllIIIlIIIlIIIIll=1,new_IlIIIlIlllIlIllIlIIII()do local new_IllIIlllIlIllIllIl=new_IllIlIIIlIII();if(new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,1,1)==0)then local new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,2,3);local new_IllIlIIlIlIIllllIIIlIII=new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,4,6);local new_IllIIlllIlIllIllIl={new_IIlIIIlIllIIlll(),new_IIlIIIlIllIIlll(),nil,nil};if(new_IlIllllIlIllIIIlIIllIllI==0)then new_IllIIlllIlIllIllIl[#("uU1")]=new_IIlIIIlIllIIlll();new_IllIIlllIlIllIllIl[#("I3ln")]=new_IIlIIIlIllIIlll();elseif(new_IlIllllIlIllIIIlIIllIllI==1)then new_IllIIlllIlIllIllIl[#("bk5")]=new_IlIIIlIlllIlIllIlIIII();elseif(new_IlIllllIlIllIIIlIIllIllI==2)then new_IllIIlllIlIllIllIl[#("CCz")]=new_IlIIIlIlllIlIllIlIIII()-(2^16)elseif(new_IlIllllIlIllIIIlIIllIllI==3)then new_IllIIlllIlIllIllIl[#("ShH")]=new_IlIIIlIlllIlIllIlIIII()-(2^16)new_IllIIlllIlIllIllIl[#("JQW3")]=new_IIlIIIlIllIIlll();end;if(new_IlIllllIIIIlIIIIIIlI(new_IllIlIIlIlIIllllIIIlIII,1,1)==1)then new_IllIIlllIlIllIllIl[#("5V")]=new_IIlIlIlllIIIIIllIl[new_IllIIlllIlIllIllIl[#("BG")]]end if(new_IlIllllIIIIlIIIIIIlI(new_IllIlIIlIlIIllllIIIlIII,2,2)==1)then new_IllIIlllIlIllIllIl[#("dH4")]=new_IIlIlIlllIIIIIllIl[new_IllIIlllIlIllIllIl[#("rdl")]]end if(new_IlIllllIIIIlIIIIIIlI(new_IllIlIIlIlIIllllIIIlIII,3,3)==1)then new_IllIIlllIlIllIllIl[#("kv5A")]=new_IIlIlIlllIIIIIllIl[new_IllIIlllIlIllIllIl[#("xe0L")]]end new_llIIlllIlIlIIIlllIIllIIll[new_IIIIllIllIIIlIIIlIIIIll]=new_IllIIlllIlIllIllIl;end end;for new_IllIIlllIlIllIllIl=1,new_IlIIIlIlllIlIllIlIIII()do new_lIlllIIlllIIIIlIII[new_IllIIlllIlIllIllIl-1]=new_llllllllIllllIlllII();end;return new_IIIIllIllIIIlIIIlIIIIll;end;local function new_IIIlIllllIIIllIllll(new_IllIIlllIlIllIllIl,new_IlIIIlIlllIlIllIlIIII,new_IllIlIIIlIII)new_IllIIlllIlIllIllIl=(new_IllIIlllIlIllIllIl==true and new_llllllllIllllIlllII())or new_IllIIlllIlIllIllIl;return(function(...)local new_IlIllllIlIllIIIlIIllIllI=new_IllIIlllIlIllIllIl[1];local new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[3];local new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl[2];local new_llllllllIllllIlllII=new_Illlllll local new_IlIIIlIlllIlIllIlIIII=1;local new_IIlIIIlIllIIlll=-1;local new_lIlIlIIIllIlIIlIllI={};local new_IIIIllIllIIIlIIIlIIIIll={...};local new_lIlllIIlllIIIIlIII=new_llIIlllIlIlIIIlllIIllIIll('#',...)-1;local new_IllIIlllIlIllIllIl={};local new_IlIllllIIIIlIIIIIIlI={};for new_IllIIlllIlIllIllIl=0,new_lIlllIIlllIIIIlIII do if(new_IllIIlllIlIllIllIl>=new_IIlIlIlllIIIIIllIl)then new_lIlIlIIIllIlIIlIllI[new_IllIIlllIlIllIllIl-new_IIlIlIlllIIIIIllIl]=new_IIIIllIllIIIlIIIlIIIIll[new_IllIIlllIlIllIllIl+1];else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_IIIIllIllIIIlIIIlIIIIll[new_IllIIlllIlIllIllIl+#{{311;373;604;964};}];end;end;local new_IllIIlllIlIllIllIl=new_lIlllIIlllIIIIlIII-new_IIlIlIlllIIIIIllIl+1 local new_IllIIlllIlIllIllIl;local new_IIlIlIlllIIIIIllIl;while true do new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("P")];if new_IIlIlIlllIIIIIllIl<=#("x5HoznD6QVU1")then if new_IIlIlIlllIIIIIllIl<=#("lcPAD")then if new_IIlIlIlllIIIIIllIl<=#("db")then if new_IIlIlIlllIIIIIllIl<=#("")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Kz")]]=new_IllIIlllIlIllIllIl[#("cxY")];elseif new_IIlIlIlllIIIIIllIl>#("d")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("rF")]]=new_IllIIlllIlIllIllIl[#("TAj")];else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("VH")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("ElO")]][new_IllIIlllIlIllIllIl[#("KqiB")]];end;elseif new_IIlIlIlllIIIIIllIl<=#("5vL")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("uZ")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("iFq")]];elseif new_IIlIlIlllIIIIIllIl==#("5xeE")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("2E")]][new_IllIIlllIlIllIllIl[#{{525;111;766;49};{742;869;750;37};"1 + 1 = 111";}]]=new_IllIIlllIlIllIllIl[#("Jr05")];else do return end;end;elseif new_IIlIlIlllIIIIIllIl<=#("ZiXUkgnQ")then if new_IIlIlIlllIIIIIllIl<=#("DRdpCD")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("OX")]][new_IllIIlllIlIllIllIl[#("res")]]=new_IllIIlllIlIllIllIl[#("kbrr")];elseif new_IIlIlIlllIIIIIllIl==#("cZH2vjp")then local new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl[#("bo")]new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IllIIlllIlIllIllIl+1,new_IIlIIIlIllIIlll))else local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#{{116;213;167;12};"1 + 1 = 111";}];local new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("j2n")]];new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII+1]=new_IlIllllIlIllIIIlIIllIllI;new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIlIllIIIlIIllIllI[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{150;285;955;601};}]];end;elseif new_IIlIlIlllIIIIIllIl<=#("sE12iUyQxZ")then if new_IIlIlIlllIIIIIllIl>#("31Qsr0uUm")then local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Cb")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("02Z")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("BS")]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("IPf")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("qQ")]][new_IllIIlllIlIllIllIl[#("vD6")]]=new_IllIIlllIlIllIllIl[#("Jfjn")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("tP")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";{243;813;31;458};"1 + 1 = 111";}]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";"1 + 1 = 111";}]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("DQD")]][new_IllIIlllIlIllIllIl[#("qRXF")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("R6")]]=new_IllIIlllIlIllIllIl[#("p2V")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("A6")]]=new_IllIIlllIlIllIllIl[#("B04")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("fr")]]=new_IllIIlllIlIllIllIl[#("dMs")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("er")]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("mxP")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("rz")]][new_IllIIlllIlIllIllIl[#("vxs")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("xuCN")]];else local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("RG")]local new_IlIllllIlIllIIIlIIllIllI,new_IllIIlllIlIllIllIl=new_llllllllIllllIlllII(new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("AMQ")])))new_IIlIIIlIllIIlll=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1 local new_IllIIlllIlIllIllIl=0;for new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII,new_IIlIIIlIllIIlll do new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIlIllIIIlIIllIllI[new_IllIIlllIlIllIllIl];end;end;elseif new_IIlIlIlllIIIIIllIl>#("2P4h43HHM7P")then local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("kZ")]new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("4Lc")]))else local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("8u")]local new_IlIllllIlIllIIIlIIllIllI,new_IllIIlllIlIllIllIl=new_llllllllIllllIlllII(new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("0VT")])))new_IIlIIIlIllIIlll=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1 local new_IllIIlllIlIllIllIl=0;for new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII,new_IIlIIIlIllIIlll do new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIlIllIIIlIIllIllI[new_IllIIlllIlIllIllIl];end;end;elseif new_IIlIlIlllIIIIIllIl<=#("tBRpuHSebQBfJbxHoc")then if new_IIlIlIlllIIIIIllIl<=#{"1 + 1 = 111";{926;235;975;938};"1 + 1 = 111";"1 + 1 = 111";{969;892;160;206};{778;89;836;399};{298;865;140;487};"1 + 1 = 111";{396;934;18;226};{489;620;355;883};"1 + 1 = 111";{857;959;697;559};{666;833;528;497};{148;4;577;799};{157;925;557;339};}then if new_IIlIlIlllIIIIIllIl<=#("oMcFXbiuloZJ2")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("3e")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("zOH")]];elseif new_IIlIlIlllIIIIIllIl>#("arJ6o0la2sKs1n")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("1I")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("hz0")]][new_IllIIlllIlIllIllIl[#("rVV6")]];else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Jp")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("VgL")]];end;elseif new_IIlIlIlllIIIIIllIl<=#("5JyKEi5mHny4XpKh")then local new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl[#("Dt")]new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IllIIlllIlIllIllIl+1,new_IIlIIIlIllIIlll))elseif new_IIlIlIlllIIIIIllIl==#("xu00l4CjxoTT4Fk4C")then local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("IO")]new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("jfZ")]))else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("ox")]][new_IllIIlllIlIllIllIl[#("oNl")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("rZ1s")]];end;elseif new_IIlIlIlllIIIIIllIl<=#("PC9zyeebT15yUsly6GxbU")then if new_IIlIlIlllIIIIIllIl<=#("5Ag3lENTmava5Pm77WW")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("ov")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";{10;609;79;600};"1 + 1 = 111";}]];elseif new_IIlIlIlllIIIIIllIl==#("lLn9EBHGJPIAF9GJrE2L")then local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("K8")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("lxF")]][new_IllIIlllIlIllIllIl[#("ieNu")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("RN")]]=new_IllIIlllIlIllIllIl[#("XGi")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("2o")]]=new_IllIIlllIlIllIllIl[#("2ZC")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("uT")]]=new_IllIIlllIlIllIllIl[#("ZQE")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("SG")]]=new_IllIIlllIlIllIllIl[#("HLS")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("Ao")]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("b6o")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("vF")]][new_IllIIlllIlIllIllIl[#("Wgi")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("bPin")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";{386;282;641;621};}]][new_IllIIlllIlIllIllIl[#("KNh")]]=new_IllIIlllIlIllIllIl[#("Eg47")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{{184;164;447;416};"1 + 1 = 111";}]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("F3W")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("36")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("3a4")]][new_IllIIlllIlIllIllIl[#{{541;86;452;31};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]];else do return end;end;elseif new_IIlIlIlllIIIIIllIl<=#("aO5bUxGl8ILpLDumhzV6gjI")then if new_IIlIlIlllIIIIIllIl==#("5F5jOPD3lUl6r7UdbuKg6j")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("UT")]][new_IllIIlllIlIllIllIl[#("8s2")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("0KOb")]];else local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("zt")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("Oqg")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#{{555;58;986;332};"1 + 1 = 111";}]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("joJ")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("PR")]][new_IllIIlllIlIllIllIl[#("r1M")]]=new_IllIIlllIlIllIllIl[#("MKEU")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{{508;983;257;617};"1 + 1 = 111";}]][new_IllIIlllIlIllIllIl[#("hQe")]]=new_IllIIlllIlIllIllIl[#{{679;270;20;667};"1 + 1 = 111";{112;712;746;24};{360;429;370;336};}];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("RZ")]][new_IllIIlllIlIllIllIl[#("x5S")]]=new_IllIIlllIlIllIllIl[#("mdCn")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("zZ")]][new_IllIIlllIlIllIllIl[#("Scd")]]=new_IllIIlllIlIllIllIl[#("SlnU")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];do return end;end;elseif new_IIlIlIlllIIIIIllIl==#("GlxkehOs0gDfpCxHsfSe0ry4")then local new_IIIIllIllIIIlIIIlIIIIll;local new_llIIlllIlIlIIIlllIIllIIll,new_lIlIlIIIllIlIIlIllI;local new_lIlllIIlllIIIIlIII;local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("92")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("3Sd")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("yi")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("QCt")]][new_IllIIlllIlIllIllIl[#("k0X5")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("mS")]]=new_IllIIlllIlIllIllIl[#("d4k")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("q8")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("aKc")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("8L")];new_lIlllIIlllIIIIlIII=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("dvh")]];new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl+1]=new_lIlllIIlllIIIIlIII;new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_lIlllIIlllIIIIlIII[new_IllIIlllIlIllIllIl[#{{252;882;507;823};"1 + 1 = 111";"1 + 1 = 111";{36;276;365;175};}]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Ns")]]=new_IllIIlllIlIllIllIl[#("rHN")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("XH")]new_llIIlllIlIlIIIlllIIllIIll,new_lIlIlIIIllIlIIlIllI=new_llllllllIllllIlllII(new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("6o2")])))new_IIlIIIlIllIIlll=new_lIlIlIIIllIlIIlIllI+new_IIlIlIlllIIIIIllIl-1 new_IIIIllIllIIIlIIIlIIIIll=0;for new_IllIIlllIlIllIllIl=new_IIlIlIlllIIIIIllIl,new_IIlIIIlIllIIlll do new_IIIIllIllIIIlIIIlIIIIll=new_IIIIllIllIIIlIIIlIIIIll+1;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_llIIlllIlIlIIIlllIIllIIll[new_IIIIllIllIIIlIIIlIIIIll];end;new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#{{773;433;582;199};{23;386;333;405};}]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IIlIIIlIllIIlll))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("bu")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Er")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("nkP")]][new_IllIIlllIlIllIllIl[#("JALH")]];else local new_IlIllllIlIllIIIlIIllIllI=new_IllIIlllIlIllIllIl[#("VF")];local new_IlIIIlIlllIlIllIlIIII=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("kce")]];new_IlIllllIIIIlIIIIIIlI[new_IlIllllIlIllIIIlIIllIllI+1]=new_IlIIIlIlllIlIllIlIIII;new_IlIllllIIIIlIIIIIIlI[new_IlIllllIlIllIIIlIIllIllI]=new_IlIIIlIlllIlIllIlIIII[new_IllIIlllIlIllIllIl[#("Blyi")]];end;new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;end;end);end;return new_IIIlIllllIIIllIllll(true,{},new_IllllIllIllIIlIll())();end)(string.byte,table.insert,setmetatable);
 end)
 
-UICorner_9.CornerRadius = UDim.new(0, 3)
-UICorner_9.Parent = Unban
+UICorner_27.CornerRadius = UDim.new(0, 10)
+UICorner_27.Parent = UnbanButton
 
-CombatFrame.Name = "CombatFrame"
-CombatFrame.Parent = DHFBack
-CombatFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-CombatFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
-CombatFrame.Size = UDim2.new(0, 378, 0, 235)
-CombatFrame.Visible = false
+CombatTabHolder.Name = "CombatTabHolder"
+CombatTabHolder.Parent = Main
+CombatTabHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+CombatTabHolder.BackgroundTransparency = 1.000
+CombatTabHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+CombatTabHolder.Size = UDim2.new(0, 370, 0, 302)
+CombatTabHolder.Visible = false
 
-UICorner_10.CornerRadius = UDim.new(0, 6)
-UICorner_10.Parent = CombatFrame
+UICorner_28.CornerRadius = UDim.new(0, 12)
+UICorner_28.Parent = CombatTabHolder
 
-CombatScrollingFrame.Name = "CombatScrollingFrame"
-CombatScrollingFrame.Parent = CombatFrame
-CombatScrollingFrame.Active = true
-CombatScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CombatScrollingFrame.BackgroundTransparency = 1.000
-CombatScrollingFrame.BorderSizePixel = 0
-CombatScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+FistButton.Name = "FistButton"
+FistButton.Parent = CombatTabHolder
+FistButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FistButton.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+FistButton.Size = UDim2.new(0, 368, 0, 37)
+FistButton.Font = Enum.Font.GothamSemibold
+FistButton.Text = "Fist Reach"
+FistButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FistButton.TextSize = 20.000
+FistButton.MouseButton1Click:connect(function()
+	for i,v in ipairs(LP.Character:GetDescendants()) do
+		if v:IsA("MeshPart") then v.Massless = true
+			v.CanCollide = false
+			v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
 
-CombatTabTitle.Name = "CombatTabTitle"
-CombatTabTitle.Parent = CombatScrollingFrame
-CombatTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CombatTabTitle.BackgroundTransparency = 1.000
-CombatTabTitle.BorderSizePixel = 0
-CombatTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
-CombatTabTitle.Size = UDim2.new(0, 200, 0, 32)
-CombatTabTitle.Font = Enum.Font.SciFi
-CombatTabTitle.Text = "Combat Tab"
-CombatTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-CombatTabTitle.TextScaled = true
-CombatTabTitle.TextSize = 20.000
-CombatTabTitle.TextWrapped = true
+		end
+	end
 
-FistReach.Name = "FistReach"
-FistReach.Parent = CombatScrollingFrame
-FistReach.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-FistReach.BorderSizePixel = 0
-FistReach.Position = UDim2.new(0.0291005298, 0, 0.0765957385, 0)
-FistReach.Size = UDim2.new(0, 355, 0, 28)
-FistReach.Font = Enum.Font.Code
-FistReach.Text = "Fist Reack"
-FistReach.TextColor3 = Color3.fromRGB(255, 255, 255)
-FistReach.TextSize = 20.000
-FistReach.TextWrapped = true
-FistReach.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://pastebin.com/raw/aZHK690D'))()
+	for i,v in ipairs(game.workspace:GetDescendants()) do
+		if v:IsA("Seat") then 
+			v.Disabled = true
+		end
+	end
+	x = 35
+	y = 35
+	z = 35
+
+
+
+	LP.Character.RightHand.Size = penis
+
+	LP.Character.RightHand.Transparency = 1
+	local selectionBox = Instance.new("SelectionBox",LP.Character.RightHand)
+	selectionBox.Adornee = LP.Character.RightHand
+	selectionBox.Color3 = Color3.new(1, 0.333333, 1)
+
+	LP.Character.LeftHand.Size = penis
+	LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
+
+	LP.Character.LeftHand.Transparency = 1
+	local selectionBox = Instance.new("SelectionBox",LP.Character.LeftHand)
+	selectionBox.Adornee = LP.Character.LeftHand
+	selectionBox.Color3 = Color3.new(1, 0.333333, 1)
 end)
 
-UICorner_11.CornerRadius = UDim.new(0, 3)
-UICorner_11.Parent = FistReach
+UICorner_29.CornerRadius = UDim.new(0, 10)
+UICorner_29.Parent = FistButton
 
-BigKnife.Name = "BigKnife"
-BigKnife.Parent = CombatScrollingFrame
-BigKnife.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-BigKnife.BorderSizePixel = 0
-BigKnife.Position = UDim2.new(0.0291005298, 0, 0.148936167, 0)
-BigKnife.Size = UDim2.new(0, 355, 0, 28)
-BigKnife.Font = Enum.Font.Code
-BigKnife.Text = "Super Knife"
-BigKnife.TextColor3 = Color3.fromRGB(255, 255, 255)
-BigKnife.TextSize = 20.000
-BigKnife.TextWrapped = true
-BigKnife.MouseButton1Down:connect(function()
+CombatHead.Name = "CombatHead"
+CombatHead.Parent = CombatTabHolder
+CombatHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CombatHead.BackgroundTransparency = 1.000
+CombatHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+CombatHead.Size = UDim2.new(0, 388, 0, 35)
+CombatHead.Font = Enum.Font.SourceSansBold
+CombatHead.Text = "Combat"
+CombatHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+CombatHead.TextScaled = true
+CombatHead.TextSize = 25.000
+CombatHead.TextWrapped = true
+
+SuperKnifeButton.Name = "SuperKnifeButton"
+SuperKnifeButton.Parent = CombatTabHolder
+SuperKnifeButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SuperKnifeButton.Position = UDim2.new(-0.00270270277, 0, 0.271523178, 0)
+SuperKnifeButton.Size = UDim2.new(0, 368, 0, 37)
+SuperKnifeButton.Font = Enum.Font.GothamSemibold
+SuperKnifeButton.Text = "Super Knife"
+SuperKnifeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperKnifeButton.TextSize = 20.000
+SuperKnifeButton.MouseButton1Click:connect(function()
 	game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(50, 50, 50)
 end)
 
-UICorner_12.CornerRadius = UDim.new(0, 3)
-UICorner_12.Parent = BigKnife
+UICorner_30.CornerRadius = UDim.new(0, 10)
+UICorner_30.Parent = SuperKnifeButton
 
-BigSledge.Name = "BigSledge"
-BigSledge.Parent = CombatScrollingFrame
-BigSledge.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-BigSledge.BorderSizePixel = 0
-BigSledge.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
-BigSledge.Size = UDim2.new(0, 355, 0, 28)
-BigSledge.Font = Enum.Font.Code
-BigSledge.Text = "Super Sledge"
-BigSledge.TextColor3 = Color3.fromRGB(255, 255, 255)
-BigSledge.TextSize = 20.000
-BigSledge.TextWrapped = true
-BigSledge.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Backpack["[SledgeHammer]"].Handle.Size = Vector3.new(50, 50, 50)
-end)
-
-UICorner_13.CornerRadius = UDim.new(0, 3)
-UICorner_13.Parent = BigSledge
-
-KnifePP.Name = "KnifePP"
-KnifePP.Parent = CombatScrollingFrame
-KnifePP.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-KnifePP.BorderSizePixel = 0
-KnifePP.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
-KnifePP.Size = UDim2.new(0, 355, 0, 28)
-KnifePP.Font = Enum.Font.Code
-KnifePP.Text = "PP Knife"
-KnifePP.TextColor3 = Color3.fromRGB(255, 255, 255)
-KnifePP.TextSize = 20.000
-KnifePP.TextWrapped = true
-KnifePP.MouseButton1Down:connect(function()
+PPKnifeButton.Name = "PPKnifeButton"
+PPKnifeButton.Parent = CombatTabHolder
+PPKnifeButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PPKnifeButton.Position = UDim2.new(-0.00270270277, 0, 0.556291342, 0)
+PPKnifeButton.Size = UDim2.new(0, 368, 0, 37)
+PPKnifeButton.Font = Enum.Font.GothamSemibold
+PPKnifeButton.Text = "PP Knife"
+PPKnifeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+PPKnifeButton.TextSize = 20.000
+PPKnifeButton.MouseButton1Down:connect(function()
 	local Plr = game.Players.LocalPlayer
 	local LastPos = Plr.Character.HumanoidRootPart.CFrame
 	wait(0.1)
@@ -649,21 +834,35 @@ KnifePP.MouseButton1Down:connect(function()
 
 end)
 
-UICorner_14.CornerRadius = UDim.new(0, 3)
-UICorner_14.Parent = KnifePP
+UICorner_31.CornerRadius = UDim.new(0, 10)
+UICorner_31.Parent = PPKnifeButton
 
-StopSignPP.Name = "StopSignPP"
-StopSignPP.Parent = CombatScrollingFrame
-StopSignPP.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-StopSignPP.BorderSizePixel = 0
-StopSignPP.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
-StopSignPP.Size = UDim2.new(0, 355, 0, 28)
-StopSignPP.Font = Enum.Font.Code
-StopSignPP.Text = "PP Stop Sign"
-StopSignPP.TextColor3 = Color3.fromRGB(255, 255, 255)
-StopSignPP.TextSize = 20.000
-StopSignPP.TextWrapped = true
-StopSignPP.MouseButton1Down:connect(function()
+SuperSledgeButton.Name = "SuperSledgeButton"
+SuperSledgeButton.Parent = CombatTabHolder
+SuperSledgeButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SuperSledgeButton.Position = UDim2.new(-0.00270270277, 0, 0.41390729, 0)
+SuperSledgeButton.Size = UDim2.new(0, 368, 0, 37)
+SuperSledgeButton.Font = Enum.Font.GothamSemibold
+SuperSledgeButton.Text = "Super Sledge"
+SuperSledgeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperSledgeButton.TextSize = 20.000
+SuperSledgeButton.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Backpack["[SledgeHammer]"].Handle.Size = Vector3.new(50, 50, 50)
+end)
+
+UICorner_32.CornerRadius = UDim.new(0, 10)
+UICorner_32.Parent = SuperSledgeButton
+
+PPStopButton.Name = "PPStopButton"
+PPStopButton.Parent = CombatTabHolder
+PPStopButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PPStopButton.Position = UDim2.new(-0.00270270277, 0, 0.698675513, 0)
+PPStopButton.Size = UDim2.new(0, 368, 0, 37)
+PPStopButton.Font = Enum.Font.GothamSemibold
+PPStopButton.Text = "PP Stop Sign"
+PPStopButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+PPStopButton.TextSize = 20.000
+PPStopButton.MouseButton1Down:connect(function()
 	local Plr = game.Players.LocalPlayer
 	local LastPos = Plr.Character.HumanoidRootPart.CFrame
 	local pp = Plr.Character["[StopSign]"]
@@ -677,21 +876,19 @@ StopSignPP.MouseButton1Down:connect(function()
 	pp.Grip = CFrame.new(-1, 2, 1.45000005, 0, -0, -1, -0, 1, -0, 1, 0, -0)
 end)
 
-UICorner_15.CornerRadius = UDim.new(0, 3)
-UICorner_15.Parent = StopSignPP
+UICorner_33.CornerRadius = UDim.new(0, 10)
+UICorner_33.Parent = PPStopButton
 
-Aimlock.Name = "Aimlock"
-Aimlock.Parent = CombatScrollingFrame
-Aimlock.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Aimlock.BorderSizePixel = 0
-Aimlock.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
-Aimlock.Size = UDim2.new(0, 355, 0, 28)
-Aimlock.Font = Enum.Font.Code
-Aimlock.Text = "Aim Lock (Right Click)"
-Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
-Aimlock.TextSize = 20.000
-Aimlock.TextWrapped = true
-Aimlock.MouseButton1Down:connect(function()
+AimlockButton.Name = "AimlockButton"
+AimlockButton.Parent = CombatTabHolder
+AimlockButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AimlockButton.Position = UDim2.new(-0.00270270277, 0, 0.841059566, 0)
+AimlockButton.Size = UDim2.new(0, 368, 0, 37)
+AimlockButton.Font = Enum.Font.GothamSemibold
+AimlockButton.Text = "Aimlock (rightclick)"
+AimlockButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimlockButton.TextSize = 20.000
+AimlockButton.MouseButton1Down:connect(function()
 	local CC = game:GetService'Workspace'.CurrentCamera
 	local Plr
 	local enabled = false
@@ -817,202 +1014,176 @@ Aimlock.MouseButton1Down:connect(function()
 	end)
 end)
 
-UICorner_16.CornerRadius = UDim.new(0, 3)
-UICorner_16.Parent = Aimlock
+UICorner_34.CornerRadius = UDim.new(0, 10)
+UICorner_34.Parent = AimlockButton
 
-TeleportsFrame.Name = "TeleportsFrame"
-TeleportsFrame.Parent = DHFBack
-TeleportsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-TeleportsFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
-TeleportsFrame.Size = UDim2.new(0, 378, 0, 235)
-TeleportsFrame.Visible = false
+TeleportsTabHolder.Name = "TeleportsTabHolder"
+TeleportsTabHolder.Parent = Main
+TeleportsTabHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+TeleportsTabHolder.BackgroundTransparency = 1.000
+TeleportsTabHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+TeleportsTabHolder.Size = UDim2.new(0, 370, 0, 302)
+TeleportsTabHolder.Visible = false
 
-UICorner_17.CornerRadius = UDim.new(0, 6)
-UICorner_17.Parent = TeleportsFrame
+UICorner_35.CornerRadius = UDim.new(0, 12)
+UICorner_35.Parent = TeleportsTabHolder
 
-TeleportsScrollingFrame.Name = "TeleportsScrollingFrame"
-TeleportsScrollingFrame.Parent = TeleportsFrame
-TeleportsScrollingFrame.Active = true
-TeleportsScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TeleportsScrollingFrame.BackgroundTransparency = 1.000
-TeleportsScrollingFrame.BorderSizePixel = 0
-TeleportsScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+BankButton.Name = "BankButton"
+BankButton.Parent = TeleportsTabHolder
+BankButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+BankButton.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+BankButton.Size = UDim2.new(0, 368, 0, 37)
+BankButton.Font = Enum.Font.GothamSemibold
+BankButton.Text = "Bank"
+BankButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BankButton.TextSize = 20.000
 
-TeleportsTabTitle.Name = "TeleportsTabTitle"
-TeleportsTabTitle.Parent = TeleportsScrollingFrame
-TeleportsTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TeleportsTabTitle.BackgroundTransparency = 1.000
-TeleportsTabTitle.BorderSizePixel = 0
-TeleportsTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
-TeleportsTabTitle.Size = UDim2.new(0, 200, 0, 32)
-TeleportsTabTitle.Font = Enum.Font.SciFi
-TeleportsTabTitle.Text = "Teleports Tab"
-TeleportsTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-TeleportsTabTitle.TextScaled = true
-TeleportsTabTitle.TextSize = 20.000
-TeleportsTabTitle.TextWrapped = true
+UICorner_36.CornerRadius = UDim.new(0, 10)
+UICorner_36.Parent = BankButton
 
--- for tps
+TeleportsHead.Name = "TeleportsHead"
+TeleportsHead.Parent = TeleportsTabHolder
+TeleportsHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsHead.BackgroundTransparency = 1.000
+TeleportsHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+TeleportsHead.Size = UDim2.new(0, 388, 0, 35)
+TeleportsHead.Font = Enum.Font.SourceSansBold
+TeleportsHead.Text = "Teleports"
+TeleportsHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsHead.TextScaled = true
+TeleportsHead.TextSize = 25.000
+TeleportsHead.TextWrapped = true
 
-local Plr = game.Players.LocalPlayer
-
-function TP(cframe)
-	Plr.Character.HumanoidRootPart.CFrame = cframe
-end
-
-
-AdminBase.Name = "AdminBase"
-AdminBase.Parent = TeleportsScrollingFrame
-AdminBase.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-AdminBase.BorderSizePixel = 0
-AdminBase.Position = UDim2.new(0.0291005298, 0, 0.0765957385, 0)
-AdminBase.Size = UDim2.new(0, 355, 0, 28)
-AdminBase.Font = Enum.Font.Code
-AdminBase.Text = "Admin Base"
-AdminBase.TextColor3 = Color3.fromRGB(255, 255, 255)
-AdminBase.TextSize = 20.000
-AdminBase.TextWrapped = true
-AdminBase.MouseButton1Click:connect(function()
-	TP(CFrame.new(-729.9, -37.6, -885))
-end)
-
-UICorner_18.CornerRadius = UDim.new(0, 3)
-UICorner_18.Parent = AdminBase
-
-Shop1.Name = "Shop1"
-Shop1.Parent = TeleportsScrollingFrame
-Shop1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Shop1.BorderSizePixel = 0
-Shop1.Position = UDim2.new(0.0291005298, 0, 0.148936167, 0)
-Shop1.Size = UDim2.new(0, 355, 0, 28)
-Shop1.Font = Enum.Font.Code
-Shop1.Text = "Gun Shop"
-Shop1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Shop1.TextSize = 20.000
-Shop1.TextWrapped = true
-Shop1.MouseButton1Click:connect(function()
-	TP(CFrame.new(-582, 7.1, -739))
-end)
-
-UICorner_19.CornerRadius = UDim.new(0, 3)
-UICorner_19.Parent = Shop1
-
-Shop2.Name = "Shop2"
-Shop2.Parent = TeleportsScrollingFrame
-Shop2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Shop2.BorderSizePixel = 0
-Shop2.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
-Shop2.Size = UDim2.new(0, 355, 0, 28)
-Shop2.Font = Enum.Font.Code
-Shop2.Text = "Other Gun Shop"
-Shop2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Shop2.TextSize = 20.000
-Shop2.TextWrapped = true
-Shop2.MouseButton1Click:connect(function()
-	TP(CFrame.new(481.5, 48, -621.5))
-end)
-
-UICorner_20.CornerRadius = UDim.new(0, 3)
-UICorner_20.Parent = Shop2
-
-Taco.Name = "Taco"
-Taco.Parent = TeleportsScrollingFrame
-Taco.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Taco.BorderSizePixel = 0
-Taco.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
-Taco.Size = UDim2.new(0, 355, 0, 28)
-Taco.Font = Enum.Font.Code
-Taco.Text = "Taco"
-Taco.TextColor3 = Color3.fromRGB(255, 255, 255)
-Taco.TextSize = 20.000
-Taco.TextWrapped = true
-Taco.MouseButton1Click:connect(function()
+TacoButton.Name = "TacoButton"
+TacoButton.Parent = TeleportsTabHolder
+TacoButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TacoButton.Position = UDim2.new(-0.00270270277, 0, 0.271523178, 0)
+TacoButton.Size = UDim2.new(0, 368, 0, 37)
+TacoButton.Font = Enum.Font.GothamSemibold
+TacoButton.Text = "Taco"
+TacoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TacoButton.TextSize = 20.000
+TacoButton.MouseButton1Click:connect(function()
 	TP(CFrame.new(584.5401, 51.061409, -479.443848))
 end)
 
-UICorner_21.CornerRadius = UDim.new(0, 3)
-UICorner_21.Parent = Taco
+UICorner_37.CornerRadius = UDim.new(0, 10)
+UICorner_37.Parent = TacoButton
 
-PlayGround.Name = "PlayGround"
-PlayGround.Parent = TeleportsScrollingFrame
-PlayGround.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-PlayGround.BorderSizePixel = 0
-PlayGround.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
-PlayGround.Size = UDim2.new(0, 355, 0, 28)
-PlayGround.Font = Enum.Font.Code
-PlayGround.Text = "PlayGround"
-PlayGround.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayGround.TextSize = 20.000
-PlayGround.TextWrapped = true
-PlayGround.MouseButton1Click:connect(function()
+GunShopButton.Name = "GunShopButton"
+GunShopButton.Parent = TeleportsTabHolder
+GunShopButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GunShopButton.Position = UDim2.new(-0.00270270277, 0, 0.556291342, 0)
+GunShopButton.Size = UDim2.new(0, 368, 0, 37)
+GunShopButton.Font = Enum.Font.GothamSemibold
+GunShopButton.Text = "Gun Shop"
+GunShopButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunShopButton.TextSize = 20.000
+GunShopButton.MouseButton1Click:connect(function()
+	TP(CFrame.new(-582, 7.1, -739))
+end)
+
+UICorner_38.CornerRadius = UDim.new(0, 10)
+UICorner_38.Parent = GunShopButton
+
+AdminButton.Name = "AdminButton"
+AdminButton.Parent = TeleportsTabHolder
+AdminButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AdminButton.Position = UDim2.new(-0.00270270277, 0, 0.41390729, 0)
+AdminButton.Size = UDim2.new(0, 368, 0, 37)
+AdminButton.Font = Enum.Font.GothamSemibold
+AdminButton.Text = "Admin Base"
+AdminButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminButton.TextSize = 20.000
+AdminButton.MouseButton1Click:connect(function()
+	TP(CFrame.new(-729.9, -37.6, -885))
+end)
+
+UICorner_39.CornerRadius = UDim.new(0, 10)
+UICorner_39.Parent = AdminButton
+
+OtherGSButton.Name = "OtherGSButton"
+OtherGSButton.Parent = TeleportsTabHolder
+OtherGSButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+OtherGSButton.Position = UDim2.new(-0.00270270277, 0, 0.698675513, 0)
+OtherGSButton.Size = UDim2.new(0, 368, 0, 37)
+OtherGSButton.Font = Enum.Font.GothamSemibold
+OtherGSButton.Text = "Other Gun Shop"
+OtherGSButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherGSButton.TextSize = 20.000
+OtherGSButton.MouseButton1Click:connect(function()
+	TP(CFrame.new(481.5, 48, -621.5))
+end)
+
+UICorner_40.CornerRadius = UDim.new(0, 10)
+UICorner_40.Parent = OtherGSButton
+
+PlaygroundButton.Name = "PlaygroundButton"
+PlaygroundButton.Parent = TeleportsTabHolder
+PlaygroundButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PlaygroundButton.Position = UDim2.new(-0.00270270277, 0, 0.841059566, 0)
+PlaygroundButton.Size = UDim2.new(0, 368, 0, 37)
+PlaygroundButton.Font = Enum.Font.GothamSemibold
+PlaygroundButton.Text = "Playground"
+PlaygroundButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlaygroundButton.TextSize = 20.000
+PlaygroundButton.MouseButton1Click:connect(function()
 	TP(CFrame.new(-217.894958, 29.3668556, -742.85022))
 end)
 
-UICorner_22.CornerRadius = UDim.new(0, 3)
-UICorner_22.Parent = PlayGround
+UICorner_41.CornerRadius = UDim.new(0, 10)
+UICorner_41.Parent = PlaygroundButton
 
-Bank.Name = "Bank"
-Bank.Parent = TeleportsScrollingFrame
-Bank.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Bank.BorderSizePixel = 0
-Bank.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
-Bank.Size = UDim2.new(0, 355, 0, 28)
-Bank.Font = Enum.Font.Code
-Bank.Text = "Bank"
-Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
-Bank.TextSize = 20.000
-Bank.TextWrapped = true
-Bank.MouseButton1Click:connect(function()
-	TP(CFrame.new(-485.7, 23.6, -285.2))
+AutoFarmsTabHolder.Name = "AutoFarmsTabHolder"
+AutoFarmsTabHolder.Parent = Main
+AutoFarmsTabHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+AutoFarmsTabHolder.BackgroundTransparency = 1.000
+AutoFarmsTabHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+AutoFarmsTabHolder.Size = UDim2.new(0, 370, 0, 302)
+AutoFarmsTabHolder.Visible = false
+
+UICorner_42.CornerRadius = UDim.new(0, 12)
+UICorner_42.Parent = AutoFarmsTabHolder
+
+P90AutoButton.Name = "P90AutoButton"
+P90AutoButton.Parent = AutoFarmsTabHolder
+P90AutoButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+P90AutoButton.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+P90AutoButton.Size = UDim2.new(0, 368, 0, 37)
+P90AutoButton.Font = Enum.Font.GothamSemibold
+P90AutoButton.Text = "P90 Auto Farm"
+P90AutoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+P90AutoButton.TextSize = 20.000
+P90AutoButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/E6LCcnrP'),true))()
 end)
 
-UICorner_23.CornerRadius = UDim.new(0, 3)
-UICorner_23.Parent = Bank
+UICorner_43.CornerRadius = UDim.new(0, 10)
+UICorner_43.Parent = P90AutoButton
 
-AutoFarmsFrame.Name = "AutoFarmsFrame"
-AutoFarmsFrame.Parent = DHFBack
-AutoFarmsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-AutoFarmsFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
-AutoFarmsFrame.Size = UDim2.new(0, 378, 0, 235)
-AutoFarmsFrame.Visible = false
+AutoFarmsHead.Name = "AutoFarmsHead"
+AutoFarmsHead.Parent = AutoFarmsTabHolder
+AutoFarmsHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmsHead.BackgroundTransparency = 1.000
+AutoFarmsHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+AutoFarmsHead.Size = UDim2.new(0, 388, 0, 35)
+AutoFarmsHead.Font = Enum.Font.SourceSansBold
+AutoFarmsHead.Text = "Auto Farms"
+AutoFarmsHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmsHead.TextScaled = true
+AutoFarmsHead.TextSize = 25.000
+AutoFarmsHead.TextWrapped = true
 
-UICorner_24.CornerRadius = UDim.new(0, 6)
-UICorner_24.Parent = AutoFarmsFrame
-
-AutoFarmsScrollingFrame.Name = "AutoFarmsScrollingFrame"
-AutoFarmsScrollingFrame.Parent = AutoFarmsFrame
-AutoFarmsScrollingFrame.Active = true
-AutoFarmsScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarmsScrollingFrame.BackgroundTransparency = 1.000
-AutoFarmsScrollingFrame.BorderSizePixel = 0
-AutoFarmsScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
-
-AutoFarmsTabTitle.Name = "AutoFarmsTabTitle"
-AutoFarmsTabTitle.Parent = AutoFarmsScrollingFrame
-AutoFarmsTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarmsTabTitle.BackgroundTransparency = 1.000
-AutoFarmsTabTitle.BorderSizePixel = 0
-AutoFarmsTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
-AutoFarmsTabTitle.Size = UDim2.new(0, 200, 0, 32)
-AutoFarmsTabTitle.Font = Enum.Font.SciFi
-AutoFarmsTabTitle.Text = "AutoFarms Tab"
-AutoFarmsTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarmsTabTitle.TextScaled = true
-AutoFarmsTabTitle.TextSize = 20.000
-AutoFarmsTabTitle.TextWrapped = true
-
-AutoFarm.Name = "AutoFarm"
-AutoFarm.Parent = AutoFarmsScrollingFrame
-AutoFarm.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-AutoFarm.BorderSizePixel = 0
-AutoFarm.Position = UDim2.new(0.0291005298, 0, 0.0680851117, 0)
-AutoFarm.Size = UDim2.new(0, 355, 0, 78)
-AutoFarm.Font = Enum.Font.Code
-AutoFarm.Text = "AutoFarm"
-AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarm.TextSize = 20.000
-AutoFarm.TextWrapped = true
-AutoFarm.MouseButton1Down:connect(function()
+AutoFarmButton.Name = "AutoFarmButton"
+AutoFarmButton.Parent = AutoFarmsTabHolder
+AutoFarmButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoFarmButton.Position = UDim2.new(-0.00270270277, 0, 0.271523178, 0)
+AutoFarmButton.Size = UDim2.new(0, 368, 0, 37)
+AutoFarmButton.Font = Enum.Font.GothamSemibold
+AutoFarmButton.Text = "Auto Farm"
+AutoFarmButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmButton.TextSize = 20.000
+AutoFarmButton.MouseButton1Down:connect(function()
 	local plr = game.Players.LocalPlayer
 
 	local ATMEnabled,HospitalEnabled,ShoeEnabled = false,false,false
@@ -1147,156 +1318,322 @@ AutoFarm.MouseButton1Down:connect(function()
 
 end)
 
-UICorner_25.CornerRadius = UDim.new(0, 3)
-UICorner_25.Parent = AutoFarm
+UICorner_44.CornerRadius = UDim.new(0, 10)
+UICorner_44.Parent = AutoFarmButton
 
-P90AutoFarm.Name = "P90AutoFarm"
-P90AutoFarm.Parent = AutoFarmsScrollingFrame
-P90AutoFarm.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-P90AutoFarm.BorderSizePixel = 0
-P90AutoFarm.Position = UDim2.new(0.0291005298, 0, 0.255319178, 0)
-P90AutoFarm.Size = UDim2.new(0, 355, 0, 76)
-P90AutoFarm.Font = Enum.Font.Code
-P90AutoFarm.Text = "P90 AutoFarm"
-P90AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
-P90AutoFarm.TextSize = 20.000
-P90AutoFarm.TextWrapped = true
-P90AutoFarm.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/E6LCcnrP'),true))()
+AntiAFKButton.Name = "AntiAFKButton"
+AntiAFKButton.Parent = AutoFarmsTabHolder
+AntiAFKButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AntiAFKButton.Position = UDim2.new(-0.00270270277, 0, 0.841059566, 0)
+AntiAFKButton.Size = UDim2.new(0, 368, 0, 37)
+AntiAFKButton.Font = Enum.Font.GothamSemibold
+AntiAFKButton.Text = "Anti-AFK"
+AntiAFKButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFKButton.TextSize = 20.000
+AntiAFKButton.MouseButton1Click:Connect(function()
+	local VirtualUser=game:service'VirtualUser'
+	game:service'Players'.LocalPlayer.Idled:connect(function()
+		VirtualUser:CaptureController()
+		VirtualUser:ClickButton2(Vector2.new())
+	end)
 end)
 
-UICorner_26.CornerRadius = UDim.new(0, 3)
-UICorner_26.Parent = P90AutoFarm
+UICorner_45.CornerRadius = UDim.new(0, 10)
+UICorner_45.Parent = AntiAFKButton
 
-TargetFrame.Name = "TargetFrame"
-TargetFrame.Parent = DHFBack
-TargetFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-TargetFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
-TargetFrame.Size = UDim2.new(0, 378, 0, 235)
-TargetFrame.Visible = false
+TargetTabHolder.Name = "TargetTabHolder"
+TargetTabHolder.Parent = Main
+TargetTabHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+TargetTabHolder.BackgroundTransparency = 1.000
+TargetTabHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+TargetTabHolder.Size = UDim2.new(0, 370, 0, 302)
+TargetTabHolder.Visible = false
 
-UICorner_27.CornerRadius = UDim.new(0, 6)
-UICorner_27.Parent = TargetFrame
+UICorner_46.CornerRadius = UDim.new(0, 12)
+UICorner_46.Parent = TargetTabHolder
 
-TargetScrollingFrame.Name = "TargetScrollingFrame"
-TargetScrollingFrame.Parent = TargetFrame
-TargetScrollingFrame.Active = true
-TargetScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TargetScrollingFrame.BackgroundTransparency = 1.000
-TargetScrollingFrame.BorderSizePixel = 0
-TargetScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+TargetHead.Name = "TargetHead"
+TargetHead.Parent = TargetTabHolder
+TargetHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TargetHead.BackgroundTransparency = 1.000
+TargetHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+TargetHead.Size = UDim2.new(0, 388, 0, 35)
+TargetHead.Font = Enum.Font.SourceSansBold
+TargetHead.Text = "Target"
+TargetHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+TargetHead.TextScaled = true
+TargetHead.TextSize = 25.000
+TargetHead.TextWrapped = true
 
-GoTo.Name = "GoTo"
-GoTo.Parent = TargetScrollingFrame
-GoTo.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-GoTo.BorderSizePixel = 0
-GoTo.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
-GoTo.Size = UDim2.new(0, 355, 0, 28)
-GoTo.Font = Enum.Font.Code
-GoTo.Text = "GoTo"
-GoTo.TextColor3 = Color3.fromRGB(255, 255, 255)
-GoTo.TextSize = 20.000
-GoTo.TextWrapped = true
+GotoButton.Name = "GotoButton"
+GotoButton.Parent = TargetTabHolder
+GotoButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GotoButton.Position = UDim2.new(-0.00270270277, 0, 0.271523178, 0)
+GotoButton.Size = UDim2.new(0, 368, 0, 37)
+GotoButton.Font = Enum.Font.GothamSemibold
+GotoButton.Text = "Goto Player"
+GotoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GotoButton.TextSize = 20.000
+GotoButton.MouseButton1Down:connect(function()
+	local tp_namedplayer = PlayerName.Text
+	local tp_player = game:GetService("Players")[tp_namedplayer]
+	local PLR = game:GetService("Players").LocalPlayer
+	local p = PlayerName.Text
 
-UICorner_28.CornerRadius = UDim.new(0, 3)
-UICorner_28.Parent = GoTo
-
-Kill.Name = "Kill"
-Kill.Parent = TargetScrollingFrame
-Kill.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Kill.BorderSizePixel = 0
-Kill.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
-Kill.Size = UDim2.new(0, 355, 0, 28)
-Kill.Font = Enum.Font.Code
-Kill.Text = "Kill"
-Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
-Kill.TextSize = 20.000
-Kill.TextWrapped = true
-
-UICorner_29.CornerRadius = UDim.new(0, 3)
-UICorner_29.Parent = Kill
-
-PlayGround_2.Name = "PlayGround"
-PlayGround_2.Parent = TargetScrollingFrame
-PlayGround_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-PlayGround_2.BorderSizePixel = 0
-PlayGround_2.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
-PlayGround_2.Size = UDim2.new(0, 355, 0, 28)
-PlayGround_2.Font = Enum.Font.Code
-PlayGround_2.Text = "Im Too Lazy to make it"
-PlayGround_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayGround_2.TextSize = 20.000
-PlayGround_2.TextWrapped = true
-
-UICorner_30.CornerRadius = UDim.new(0, 3)
-UICorner_30.Parent = PlayGround_2
-
-Bank_2.Name = "Bank"
-Bank_2.Parent = TargetScrollingFrame
-Bank_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Bank_2.BorderSizePixel = 0
-Bank_2.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
-Bank_2.Size = UDim2.new(0, 355, 0, 28)
-Bank_2.Font = Enum.Font.Code
-Bank_2.Text = "Help"
-Bank_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Bank_2.TextSize = 20.000
-Bank_2.TextWrapped = true
-
-UICorner_31.CornerRadius = UDim.new(0, 3)
-UICorner_31.Parent = Bank_2
-
-Target_3.Name = "Target"
-Target_3.Parent = TargetScrollingFrame
-Target_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Target_3.BorderSizePixel = 0
-Target_3.Position = UDim2.new(0.0291005298, 0, 0.0914893597, 0)
-Target_3.Size = UDim2.new(0, 355, 0, 25)
-Target_3.Font = Enum.Font.SourceSans
-Target_3.Text = ""
-Target_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Target_3.TextSize = 14.000
-
-UICorner_32.CornerRadius = UDim.new(0, 4)
-UICorner_32.Parent = Target_3
-
-TargetTabTitle.Name = "TargetTabTitle"
-TargetTabTitle.Parent = TargetScrollingFrame
-TargetTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TargetTabTitle.BackgroundTransparency = 1.000
-TargetTabTitle.BorderSizePixel = 0
-TargetTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
-TargetTabTitle.Size = UDim2.new(0, 200, 0, 32)
-TargetTabTitle.Font = Enum.Font.SciFi
-TargetTabTitle.Text = "Target Tab"
-TargetTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-TargetTabTitle.TextScaled = true
-TargetTabTitle.TextSize = 20.000
-TargetTabTitle.TextWrapped = true
-
-OpenFrame.Name = "OpenFrame"
-OpenFrame.Parent = DaHoodFucker
-OpenFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OpenFrame.BackgroundTransparency = 1.000
-OpenFrame.BorderSizePixel = 0
-OpenFrame.Position = UDim2.new(0.382299274, 0, 0, 0)
-OpenFrame.Size = UDim2.new(0, 135, 0, 34)
-
-OpenButton.Name = "OpenButton"
-OpenButton.Parent = OpenFrame
-OpenButton.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-OpenButton.BorderSizePixel = 0
-OpenButton.Position = UDim2.new(0.575661719, 0, 0.279053897, 0)
-OpenButton.Size = UDim2.new(0, 100, 0, 27)
-OpenButton.Font = Enum.Font.SourceSans
-OpenButton.Text = "Open"
-OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-OpenButton.TextScaled = true
-OpenButton.TextSize = 14.000
-OpenButton.TextWrapped = true
-OpenButton.MouseButton1Down:connect(function()
-	DHFBack.Visible = true
-	OpenFrame.Visible = false
+	if tp_player then 
+		for i = 1,20 do
+			wait()
+			PLR.Character.HumanoidRootPart.CFrame = tp_player.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+		end
+	end
 end)
 
-UICorner_33.Parent = OpenButton
+UICorner_47.CornerRadius = UDim.new(0, 10)
+UICorner_47.Parent = GotoButton
+
+SpamCallButton.Name = "SpamCallButton"
+SpamCallButton.Parent = TargetTabHolder
+SpamCallButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SpamCallButton.Position = UDim2.new(-0.00270270277, 0, 0.41390729, 0)
+SpamCallButton.Size = UDim2.new(0, 368, 0, 37)
+SpamCallButton.Font = Enum.Font.GothamSemibold
+SpamCallButton.Text = "Spam Call Player"
+SpamCallButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamCallButton.TextSize = 20.000
+SpamCallButton.MouseButton1Click:Connect(function()
+	local playername = PlayerName.Text
+	while true do
+		wait(00.1)
+		game.ReplicatedStorage.MainEvent:FireServer("PhoneCall", playername)
+	end
+end)
+
+UICorner_48.CornerRadius = UDim.new(0, 10)
+UICorner_48.Parent = SpamCallButton
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = TargetTabHolder
+PlayerName.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+PlayerName.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+PlayerName.Size = UDim2.new(0, 368, 0, 30)
+PlayerName.Font = Enum.Font.SourceSansBold
+PlayerName.Text = "Player Name"
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextSize = 20.000
+
+UICorner_49.CornerRadius = UDim.new(0, 10)
+UICorner_49.Parent = PlayerName
+
+ExtrasTabHolder.Name = "ExtrasTabHolder"
+ExtrasTabHolder.Parent = Main
+ExtrasTabHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+ExtrasTabHolder.BackgroundTransparency = 1.000
+ExtrasTabHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+ExtrasTabHolder.Size = UDim2.new(0, 370, 0, 302)
+ExtrasTabHolder.Visible = false
+
+UICorner_50.CornerRadius = UDim.new(0, 12)
+UICorner_50.Parent = ExtrasTabHolder
+
+ExtrasHead.Name = "ExtrasHead"
+ExtrasHead.Parent = ExtrasTabHolder
+ExtrasHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtrasHead.BackgroundTransparency = 1.000
+ExtrasHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+ExtrasHead.Size = UDim2.new(0, 388, 0, 35)
+ExtrasHead.Font = Enum.Font.SourceSansBold
+ExtrasHead.Text = "Extras"
+ExtrasHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExtrasHead.TextScaled = true
+ExtrasHead.TextSize = 25.000
+ExtrasHead.TextWrapped = true
+
+GotoButton_2.Name = "GotoButton"
+GotoButton_2.Parent = ExtrasTabHolder
+GotoButton_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GotoButton_2.Position = UDim2.new(0.00270270277, 0, 0.115894035, 0)
+GotoButton_2.Size = UDim2.new(0, 368, 0, 37)
+GotoButton_2.Font = Enum.Font.GothamSemibold
+GotoButton_2.Text = "Coming Soon <3"
+GotoButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+GotoButton_2.TextSize = 20.000
+
+UICorner_51.CornerRadius = UDim.new(0, 10)
+UICorner_51.Parent = GotoButton_2
+
+SettingsTabHolder.Name = "SettingsTabHolder"
+SettingsTabHolder.Parent = Main
+SettingsTabHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+SettingsTabHolder.BackgroundTransparency = 1.000
+SettingsTabHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+SettingsTabHolder.Size = UDim2.new(0, 370, 0, 302)
+SettingsTabHolder.Visible = false
+
+UICorner_52.CornerRadius = UDim.new(0, 12)
+UICorner_52.Parent = SettingsTabHolder
+
+SettingsHead.Name = "SettingsHead"
+SettingsHead.Parent = SettingsTabHolder
+SettingsHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsHead.BackgroundTransparency = 1.000
+SettingsHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+SettingsHead.Size = UDim2.new(0, 388, 0, 35)
+SettingsHead.Font = Enum.Font.SourceSansBold
+SettingsHead.Text = "Settings"
+SettingsHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsHead.TextScaled = true
+SettingsHead.TextSize = 25.000
+SettingsHead.TextWrapped = true
+
+GotoButton_3.Name = "GotoButton"
+GotoButton_3.Parent = SettingsTabHolder
+GotoButton_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GotoButton_3.Position = UDim2.new(0.00270270277, 0, 0.28807947, 0)
+GotoButton_3.Size = UDim2.new(0, 368, 0, 37)
+GotoButton_3.Font = Enum.Font.GothamSemibold
+GotoButton_3.Text = "Destroy Gui"
+GotoButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+GotoButton_3.TextSize = 20.000
+GotoButton_3.MouseButton1Click:connect(function()
+	DaHoodUi:Destroy()
+end)
+
+UICorner_53.CornerRadius = UDim.new(0, 10)
+UICorner_53.Parent = GotoButton_3
+
+CloseOpenText.Name = "CloseOpenText"
+CloseOpenText.Parent = SettingsTabHolder
+CloseOpenText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpenText.BackgroundTransparency = 1.000
+CloseOpenText.Position = UDim2.new(0.00270270277, 0, 0.162251651, 0)
+CloseOpenText.Size = UDim2.new(0, 126, 0, 28)
+CloseOpenText.Font = Enum.Font.SourceSansBold
+CloseOpenText.Text = "Close/Open Gui :"
+CloseOpenText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpenText.TextScaled = true
+CloseOpenText.TextSize = 25.000
+CloseOpenText.TextWrapped = true
+
+RightShiftText.Name = "RightShiftText"
+RightShiftText.Parent = SettingsTabHolder
+RightShiftText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RightShiftText.BackgroundTransparency = 1.000
+RightShiftText.Position = UDim2.new(0.656756759, 0, 0.162251651, 0)
+RightShiftText.Size = UDim2.new(0, 126, 0, 28)
+RightShiftText.Font = Enum.Font.SourceSansBold
+RightShiftText.Text = "RightShift"
+RightShiftText.TextColor3 = Color3.fromRGB(255, 255, 255)
+RightShiftText.TextScaled = true
+RightShiftText.TextSize = 25.000
+RightShiftText.TextWrapped = true
+
+WelcomeHolder.Name = "WelcomeHolder"
+WelcomeHolder.Parent = Main
+WelcomeHolder.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+WelcomeHolder.BackgroundTransparency = 1.000
+WelcomeHolder.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+WelcomeHolder.Size = UDim2.new(0, 370, 0, 302)
+
+UICorner_54.CornerRadius = UDim.new(0, 12)
+UICorner_54.Parent = WelcomeHolder
+
+WelcomeHead.Name = "WelcomeHead"
+WelcomeHead.Parent = WelcomeHolder
+WelcomeHead.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeHead.BackgroundTransparency = 1.000
+WelcomeHead.Position = UDim2.new(-0.024324324, 0, -0.0264900681, 0)
+WelcomeHead.Size = UDim2.new(0, 388, 0, 35)
+WelcomeHead.Font = Enum.Font.SourceSansBold
+WelcomeHead.Text = "Da Hood"
+WelcomeHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeHead.TextScaled = true
+WelcomeHead.TextSize = 25.000
+WelcomeHead.TextWrapped = true
+
+ThankYou.Name = "ThankYou"
+ThankYou.Parent = WelcomeHolder
+ThankYou.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThankYou.BackgroundTransparency = 1.000
+ThankYou.Position = UDim2.new(-0.024324324, 0, 0.13907285, 0)
+ThankYou.Size = UDim2.new(0, 388, 0, 274)
+ThankYou.Font = Enum.Font.SourceSansBold
+ThankYou.Text = ""
+ThankYou.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThankYou.TextSize = 35.000
+ThankYou.TextWrapped = true
+
+Visible.Name = "Visible"
+Visible.Parent = Main
+Visible.BackgroundColor3 = Color3.fromRGB(225, 0, 0)
+Visible.Position = UDim2.new(0.949226439, 0, 0.0210790187, 0)
+Visible.Size = UDim2.new(0, 19, 0, 19)
+Visible.Font = Enum.Font.SourceSans
+Visible.TextColor3 = Color3.fromRGB(0, 0, 0)
+Visible.TextSize = 14.000
+local on = false
+
+Visible.MouseButton1Click:Connect(function()
+	on = not on
+	if on then
+		Visible.BackgroundColor3 = Color3.fromRGB(0,225,0)
+		on = true
+		Main:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Quint", 0.5)
+		Tabs.Visible = false
+		WelcomeHolder.Visible = false
+	end
+	if on == false then
+		Visible.BackgroundColor3 = Color3.fromRGB(225,0,0)
+		on = false
+		Main:TweenSize(UDim2.new(0, 530, 0, 329), "Out", "Quint", 0.5)
+		wait(0.3)
+		Main:TweenSize(UDim2.new(0, 530, 0, 329), "Out", "Quint", 0.5)
+		Tabs.Visible = true
+	end
+end)
+
+UICorner_55.CornerRadius = UDim.new(1, 30)
+UICorner_55.Parent = Visible
+
+
+-- Misc 
+
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+LP = game.Players.LocalPlayer
+penis = Vector3.new(x,y,z)
+
+-- TP Misc
+
+local Plr = game.Players.LocalPlayer
+
+function TP(cframe)
+	Plr.Character.HumanoidRootPart.CFrame = cframe
+end
+
+-- Welcome Misc
+
+local textlabel = ThankYou
+
+
+local function typewrite(object,text)
+	for i = 1, #text,1 do
+		object.Text = string.sub(text, 1, i)
+
+		wait(0.1)
+	end
+end
+
+typewrite(textlabel, "Thank you for using Yuri Hub! <3")
+
+
+-- Righshift to close
+
+local frame = Main -- path to the frame
+local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+
+mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+	key = key:lower() -- i do this in all my key events, though i don't remember why
+	if key == 'RightShift' then -- if key pressed is h
+		frame.Visible = not frame.Visible -- flip between visible/invisible
+	end
+end)
