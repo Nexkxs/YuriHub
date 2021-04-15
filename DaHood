@@ -1,0 +1,1302 @@
+local DaHoodFucker = Instance.new("ScreenGui")
+local DHFBack = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local DHFTi = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local DHFTitle = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
+local DHFButtonsLeft = Instance.new("ScrollingFrame")
+local Player = Instance.new("TextButton")
+local Combat = Instance.new("TextButton")
+local AutoFarms = Instance.new("TextButton")
+local Teleports = Instance.new("TextButton")
+local Target = Instance.new("TextButton")
+local Extras = Instance.new("TextButton")
+local Target_2 = Instance.new("TextButton")
+local PlayerFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local PlayerScrollingFrame = Instance.new("ScrollingFrame")
+local PlayerTabTitle = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local GodMode = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local GodBlock = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local AntiBag = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Unban = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local CombatFrame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local CombatScrollingFrame = Instance.new("ScrollingFrame")
+local CombatTabTitle = Instance.new("TextLabel")
+local FistReach = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local BigKnife = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local BigSledge = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local KnifePP = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local StopSignPP = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Aimlock = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TeleportsFrame = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local TeleportsScrollingFrame = Instance.new("ScrollingFrame")
+local TeleportsTabTitle = Instance.new("TextLabel")
+local AdminBase = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Shop1 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Shop2 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Taco = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local PlayGround = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Bank = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local AutoFarmsFrame = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local AutoFarmsScrollingFrame = Instance.new("ScrollingFrame")
+local AutoFarmsTabTitle = Instance.new("TextLabel")
+local AutoFarm = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local P90AutoFarm = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local TargetFrame = Instance.new("Frame")
+local UICorner_27 = Instance.new("UICorner")
+local TargetScrollingFrame = Instance.new("ScrollingFrame")
+local GoTo = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local Kill = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local PlayGround_2 = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local Bank_2 = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Target_3 = Instance.new("TextBox")
+local UICorner_32 = Instance.new("UICorner")
+local TargetTabTitle = Instance.new("TextLabel")
+local OpenFrame = Instance.new("Frame")
+local OpenButton = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+
+DaHoodFucker.Name = "DaHoodFucker"
+DaHoodFucker.Parent = game.CoreGui
+DaHoodFucker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+DHFBack.Name = "DHFBack"
+DHFBack.Parent = DaHoodFucker
+DHFBack.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+DHFBack.BorderSizePixel = 0
+DHFBack.Position = UDim2.new(0.268248171, 0, 0.210332096, 0)
+DHFBack.Size = UDim2.new(0, 507, 0, 314)
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = DHFBack
+
+DHFTi.Name = "DHFTi"
+DHFTi.Parent = DHFBack
+DHFTi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DHFTi.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DHFTi.BorderSizePixel = 0
+DHFTi.Position = UDim2.new(0.000232102131, 0, -0.000909890339, 0)
+DHFTi.Size = UDim2.new(0, 507, 0, 58)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
+UIGradient.Parent = DHFTi
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = DHFTi
+
+DHFTitle.Name = "DHFTitle"
+DHFTitle.Parent = DHFTi
+DHFTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DHFTitle.BackgroundTransparency = 1.000
+DHFTitle.Size = UDim2.new(0, 506, 0, 58)
+DHFTitle.Font = Enum.Font.SciFi
+DHFTitle.Text = "Da Hood Fucker"
+DHFTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+DHFTitle.TextScaled = true
+DHFTitle.TextSize = 14.000
+DHFTitle.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = DHFTi
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.934911251, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 32, 0, 27)
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "x"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+CloseButton.MouseButton1Down:connect(function()
+	DHFBack.Visible = false
+	OpenFrame.Visible = true
+end)
+
+DHFButtonsLeft.Name = "DHFButtonsLeft"
+DHFButtonsLeft.Parent = DHFBack
+DHFButtonsLeft.Active = true
+DHFButtonsLeft.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DHFButtonsLeft.BackgroundTransparency = 1.000
+DHFButtonsLeft.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DHFButtonsLeft.BorderSizePixel = 0
+DHFButtonsLeft.Position = UDim2.new(0.000232102131, 0, 0.181528658, 0)
+DHFButtonsLeft.Size = UDim2.new(0, 114, 0, 257)
+
+Player.Name = "Player"
+Player.Parent = DHFButtonsLeft
+Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player.BackgroundTransparency = 1.000
+Player.BorderSizePixel = 0
+Player.Position = UDim2.new(0, 0, 0.0108484626, 0)
+Player.Size = UDim2.new(0, 97, 0, 36)
+Player.Font = Enum.Font.SciFi
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextSize = 20.000
+Player.TextWrapped = true
+Player.MouseButton1Down:connect(function()
+	PlayerFrame.Visible = true
+	CombatFrame.Visible = false
+	AutoFarmsFrame.Visible = false
+	TeleportsFrame.Visible = false
+	TargetFrame.Visible = false
+end)
+
+Combat.Name = "Combat"
+Combat.Parent = DHFButtonsLeft
+Combat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Combat.BackgroundTransparency = 1.000
+Combat.BorderSizePixel = 0
+Combat.Position = UDim2.new(0, 0, 0.0681733042, 0)
+Combat.Size = UDim2.new(0, 97, 0, 36)
+Combat.Font = Enum.Font.SciFi
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combat.TextSize = 20.000
+Combat.TextWrapped = true
+Combat.MouseButton1Down:connect(function()
+	PlayerFrame.Visible = false
+	CombatFrame.Visible = true
+	AutoFarmsFrame.Visible = false
+	TeleportsFrame.Visible = false
+	TargetFrame.Visible = false
+end)
+
+AutoFarms.Name = "AutoFarms"
+AutoFarms.Parent = DHFButtonsLeft
+AutoFarms.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarms.BackgroundTransparency = 1.000
+AutoFarms.BorderSizePixel = 0
+AutoFarms.Position = UDim2.new(-0.00877192989, 0, 0.182822987, 0)
+AutoFarms.Size = UDim2.new(0, 97, 0, 36)
+AutoFarms.Font = Enum.Font.SciFi
+AutoFarms.Text = "AutoFarms"
+AutoFarms.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarms.TextSize = 20.000
+AutoFarms.TextWrapped = true
+AutoFarms.MouseButton1Down:connect(function()
+	PlayerFrame.Visible = false
+	CombatFrame.Visible = false
+	AutoFarmsFrame.Visible = true
+	TeleportsFrame.Visible = false
+	TargetFrame.Visible = fals
+end)
+
+Teleports.Name = "Teleports"
+Teleports.Parent = DHFButtonsLeft
+Teleports.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.BackgroundTransparency = 1.000
+Teleports.BorderSizePixel = 0
+Teleports.Position = UDim2.new(-0.00877192989, 0, 0.125498146, 0)
+Teleports.Size = UDim2.new(0, 97, 0, 36)
+Teleports.Font = Enum.Font.SciFi
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 20.000
+Teleports.TextWrapped = true
+Teleports.MouseButton1Down:connect(function()
+	PlayerFrame.Visible = false
+	CombatFrame.Visible = false
+	AutoFarmsFrame.Visible = false
+	TeleportsFrame.Visible = true
+	TargetFrame.Visible = false
+end)
+
+Target.Name = "Target"
+Target.Parent = DHFButtonsLeft
+Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Target.BackgroundTransparency = 1.000
+Target.BorderSizePixel = 0
+Target.Position = UDim2.new(-0.00877192989, 0, 0.297472656, 0)
+Target.Size = UDim2.new(0, 97, 0, 36)
+Target.Font = Enum.Font.SciFi
+Target.Text = "Target"
+Target.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target.TextSize = 20.000
+Target.TextWrapped = true
+
+Extras.Name = "Extras"
+Extras.Parent = DHFButtonsLeft
+Extras.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Extras.BackgroundTransparency = 1.000
+Extras.BorderSizePixel = 0
+Extras.Position = UDim2.new(-0.00877192989, 0, 0.240147829, 0)
+Extras.Size = UDim2.new(0, 97, 0, 36)
+Extras.Font = Enum.Font.SciFi
+Extras.Text = "Extras"
+Extras.TextColor3 = Color3.fromRGB(255, 255, 255)
+Extras.TextSize = 20.000
+Extras.TextWrapped = true
+
+Target_2.Name = "Target"
+Target_2.Parent = DHFButtonsLeft
+Target_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Target_2.BackgroundTransparency = 1.000
+Target_2.BorderSizePixel = 0
+Target_2.Position = UDim2.new(0, 0, 0.354797482, 0)
+Target_2.Size = UDim2.new(0, 97, 0, 36)
+Target_2.Font = Enum.Font.SciFi
+Target_2.Text = "Credits"
+Target_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target_2.TextSize = 20.000
+Target_2.TextWrapped = true
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = DHFBack
+PlayerFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+PlayerFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
+PlayerFrame.Size = UDim2.new(0, 378, 0, 235)
+PlayerFrame.Visible = false
+
+UICorner_3.CornerRadius = UDim.new(0, 6)
+UICorner_3.Parent = PlayerFrame
+
+PlayerScrollingFrame.Name = "PlayerScrollingFrame"
+PlayerScrollingFrame.Parent = PlayerFrame
+PlayerScrollingFrame.Active = true
+PlayerScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerScrollingFrame.BackgroundTransparency = 1.000
+PlayerScrollingFrame.BorderSizePixel = 0
+PlayerScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+
+PlayerTabTitle.Name = "PlayerTabTitle"
+PlayerTabTitle.Parent = PlayerScrollingFrame
+PlayerTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabTitle.BackgroundTransparency = 1.000
+PlayerTabTitle.BorderSizePixel = 0
+PlayerTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
+PlayerTabTitle.Size = UDim2.new(0, 200, 0, 32)
+PlayerTabTitle.Font = Enum.Font.SciFi
+PlayerTabTitle.Text = "Player Tab"
+PlayerTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTabTitle.TextScaled = true
+PlayerTabTitle.TextSize = 20.000
+PlayerTabTitle.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = PlayerScrollingFrame
+Fly.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.0291005298, 0, 0.0765957385, 0)
+Fly.Size = UDim2.new(0, 355, 0, 28)
+Fly.Font = Enum.Font.Code
+Fly.Text = "Fly (x)"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 20.000
+Fly.TextWrapped = true
+Fly.MouseButton1Down:connect(function()
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+
+	localplayer = plr
+
+	if workspace:FindFirstChild("Core") then
+		workspace.Core:Destroy()
+	end
+
+	local Core = Instance.new("Part")
+	Core.Name = "Core"
+	Core.Size = Vector3.new(0.05, 0.05, 0.05)
+
+	spawn(function()
+		Core.Parent = workspace
+		local Weld = Instance.new("Weld", Core)
+		Weld.Part0 = Core
+		Weld.Part1 = localplayer.Character.LowerTorso
+		Weld.C0 = CFrame.new(0, 0, 0)
+	end)
+
+	workspace:WaitForChild("Core")
+
+	local torso = workspace.Core
+	flying = true
+	local speed=10
+	local keys={a=false,d=false,w=false,s=false} 
+	local e1
+	local e2
+	local function start()
+		local pos = Instance.new("BodyPosition",torso)
+		local gyro = Instance.new("BodyGyro",torso)
+		pos.Name="EPIXPOS"
+		pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+		pos.position = torso.Position
+		gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		gyro.cframe = torso.CFrame
+		repeat
+			wait()
+			localplayer.Character.Humanoid.PlatformStand=true
+			local new=gyro.cframe - gyro.cframe.p + pos.position
+			if not keys.w and not keys.s and not keys.a and not keys.d then
+				speed=5
+			end
+			if keys.w then 
+				new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+				speed=speed+0
+			end
+			if keys.s then 
+				new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+				speed=speed+0
+			end
+			if keys.d then 
+				new = new * CFrame.new(speed,0,0)
+				speed=speed+0
+			end
+			if keys.a then 
+				new = new * CFrame.new(-speed,0,0)
+				speed=speed+0
+			end
+			if speed>10 then
+				speed=5
+			end
+			pos.position=new.p
+			if keys.w then
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
+			elseif keys.s then
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
+			else
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+			end
+		until flying == false
+		if gyro then gyro:Destroy() end
+		if pos then pos:Destroy() end
+		flying=false
+		localplayer.Character.Humanoid.PlatformStand=false
+		speed=10
+	end
+	e1=mouse.KeyDown:connect(function(key)
+		if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+		if key=="w" then
+			keys.w=true
+		elseif key=="s" then
+			keys.s=true
+		elseif key=="a" then
+			keys.a=true
+		elseif key=="d" then
+			keys.d=true
+		elseif key=="x" then
+			if flying==true then
+				flying=false
+			else
+				flying=true
+				start()
+			end
+		end
+	end)
+	e2=mouse.KeyUp:connect(function(key)
+		if key=="w" then
+			keys.w=false
+		elseif key=="s" then
+			keys.s=false
+		elseif key=="a" then
+			keys.a=false
+		elseif key=="d" then
+			keys.d=false
+		end
+	end)
+	start()
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = Fly
+
+Noclip.Name = "Noclip"
+Noclip.Parent = PlayerScrollingFrame
+Noclip.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.0291005298, 0, 0.148936167, 0)
+Noclip.Size = UDim2.new(0, 355, 0, 28)
+Noclip.Font = Enum.Font.Code
+Noclip.Text = "Noclip (e)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 20.000
+Noclip.TextWrapped = true
+Noclip.MouseButton1Down:connect(function()
+	--[[ Press "E" to toggle noclip]]
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+
+		if key == "e" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	print('Loaded')
+	print('Press "E" to noclip')
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = Noclip
+
+GodMode.Name = "GodMode"
+GodMode.Parent = PlayerScrollingFrame
+GodMode.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+GodMode.BorderSizePixel = 0
+GodMode.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
+GodMode.Size = UDim2.new(0, 355, 0, 28)
+GodMode.Font = Enum.Font.Code
+GodMode.Text = "God Mode"
+GodMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodMode.TextSize = 20.000
+GodMode.TextWrapped = true
+GodMode.MouseButton1Down:connect(function()
+	local Plr = game.Players.LocalPlayer; Plr.Character.RagdollConstraints:Destroy(); Plr.Character.Head.Neck:Destroy(); repeat wait() until Plr.Character and Plr.Character:FindFirstChild("BodyEffects") and Plr.Character:FindFirstChild("Head") and Plr.Character.Head:FindFirstChild("Neck"); Plr.Character.BodyEffects.BreakingParts:Destroy(); wait(1); local pp = Instance.new("Folder", Plr.Character); pp.Name = "FULLY_LOADED_CHAR"
+end)
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = GodMode
+
+GodBlock.Name = "GodBlock"
+GodBlock.Parent = PlayerScrollingFrame
+GodBlock.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+GodBlock.BorderSizePixel = 0
+GodBlock.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
+GodBlock.Size = UDim2.new(0, 355, 0, 28)
+GodBlock.Font = Enum.Font.Code
+GodBlock.Text = "God Block"
+GodBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodBlock.TextSize = 20.000
+GodBlock.TextWrapped = true
+GodBlock.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/8dYyXr7n"))()
+end)
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = GodBlock
+
+AntiBag.Name = "AntiBag"
+AntiBag.Parent = PlayerScrollingFrame
+AntiBag.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AntiBag.BorderSizePixel = 0
+AntiBag.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
+AntiBag.Size = UDim2.new(0, 355, 0, 28)
+AntiBag.Font = Enum.Font.Code
+AntiBag.Text = "Anti Bag"
+AntiBag.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiBag.TextSize = 20.000
+AntiBag.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = AntiBag
+
+Unban.Name = "Unban"
+Unban.Parent = PlayerScrollingFrame
+Unban.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Unban.BorderSizePixel = 0
+Unban.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
+Unban.Size = UDim2.new(0, 355, 0, 28)
+Unban.Font = Enum.Font.Code
+Unban.Text = "Unban"
+Unban.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unban.TextSize = 20.000
+Unban.TextWrapped = true
+Unban.MouseButton1Down:connect(function()
+--[[
+IronBrew:tm: obfuscation; Version 2.7.2
+]]
+	return(function(new_IIIIllIllIIIlIIIlIIIIll,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl)local new_llllllllIllllIlllII=string.char;local new_IIlIlIlllIIIIIllIl=string.sub;local new_IIIIllIlIIlIIIIIlII=table.concat;local new_IIIlIllllIIIllIllll=math.ldexp;local new_IllllIllIllIIlIll=getfenv or function()return _ENV end;local new_llIIlllIlIlIIIlllIIllIIll=select;local new_IllIlIIlIlIIllllIIIlIII=unpack or table.unpack;local new_lIlllIIlllIIIIlIII=tonumber;local function new_lIlIlIIIllIlIIlIllI(new_IllIlIIIlIII)local new_IlIIIlIlllIlIllIlIIII,new_IlIllllIIIIlIIIIIIlI,new_IlIllllIlIllIIIlIIllIllI="","",{}local new_IIlIIIlIllIIlll=256;local new_IllIlIIlIlIIllllIIIlIII={}for new_IllIIlllIlIllIllIl=0,new_IIlIIIlIllIIlll-1 do new_IllIlIIlIlIIllllIIIlIII[new_IllIIlllIlIllIllIl]=new_llllllllIllllIlllII(new_IllIIlllIlIllIllIl)end;local new_IllIIlllIlIllIllIl=1;local function new_IIIIllIllIIIlIIIlIIIIll()local new_IlIIIlIlllIlIllIlIIII=new_lIlllIIlllIIIIlIII(new_IIlIlIlllIIIIIllIl(new_IllIlIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl),36)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;local new_IlIllllIIIIlIIIIIIlI=new_lIlllIIlllIIIIlIII(new_IIlIlIlllIIIIIllIl(new_IllIlIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1),36)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII;return new_IlIllllIIIIlIIIIIIlI end;new_IlIIIlIlllIlIllIlIIII=new_llllllllIllllIlllII(new_IIIIllIllIIIlIIIlIIIIll())new_IlIllllIlIllIIIlIIllIllI[1]=new_IlIIIlIlllIlIllIlIIII;while new_IllIIlllIlIllIllIl<#new_IllIlIIIlIII do local new_IllIIlllIlIllIllIl=new_IIIIllIllIIIlIIIlIIIIll()if new_IllIlIIlIlIIllllIIIlIII[new_IllIIlllIlIllIllIl]then new_IlIllllIIIIlIIIIIIlI=new_IllIlIIlIlIIllllIIIlIII[new_IllIIlllIlIllIllIl]else new_IlIllllIIIIlIIIIIIlI=new_IlIIIlIlllIlIllIlIIII..new_IIlIlIlllIIIIIllIl(new_IlIIIlIlllIlIllIlIIII,1,1)end;new_IllIlIIlIlIIllllIIIlIII[new_IIlIIIlIllIIlll]=new_IlIIIlIlllIlIllIlIIII..new_IIlIlIlllIIIIIllIl(new_IlIllllIIIIlIIIIIIlI,1,1)new_IlIllllIlIllIIIlIIllIllI[#new_IlIllllIlIllIIIlIIllIllI+1],new_IlIIIlIlllIlIllIlIIII,new_IIlIIIlIllIIlll=new_IlIllllIIIIlIIIIIIlI,new_IlIllllIIIIlIIIIIIlI,new_IIlIIIlIllIIlll+1 end;return table.concat(new_IlIllllIlIllIIIlIIllIllI)end;local new_lIlllIIlllIIIIlIII=new_lIlIlIIIllIlIIlIllI('22A22727522621Z275227161X21O21N21A1X2182162262242791X21621K22621Y2791S21821P2162161X1821M21222622327921421A1Y27I21X2791821621N1S21621P21L21227H2262202791C1W27U27Y280288275161Y21A2142161321A2192161Z2812791128527I27827521P28H21021P1W1Z29222N2791D21A21821021429D21M1X21728M1Z28N23G22622128L29E29U28J27921529D1Y1T181D27K27922724V1W1F2932751S21221H27I2222791Q1B2121Y23H2A92AA2752AS27521F2621F2AV22723J25L2AE2AL28S28U28W22622J27921P21921J21A21O21O28B21221723922O22O23E23C23D2BQ23E23B2262B52271S1W29P21727P27921K28N21021O21R29K27I28K2AG2BY29Q162C022G2BB2BD2BF2BH21N2BJ2BL22O23F2BQ23H23F23E23H23E23I23E2A12751V1Z21A21I2121X21422722629W279131W1W21R2162C029X2751P29E21M2862B022722Z1F22722V27922L22F2792262792332AT22722522722L2762272AS2E42E12272822752DZ2E92E22AL2E82822DH2AA2E22EB2E02752E22E82DX2DX2EC2E52DX2EP2E22E22CA2752882DN2E527K2E223J2AA27827Q2E82E221W2DY2EO2E921V2E32AU22721U2DT2752822FK2752E82AL2FO2EK2272AL2E229H2D72272882EP21T2E921S2DY2BA2EX2E92E827K2FX2FH2EA22722M2FL2FU2272GB2E829X2E82FT29X2FW2E52G22F52E522K2272BA2FA2FY2ET2EE2G82E227K22I2DT2CG28222H2E02EL2E92F62E92CG2DV2HC2E222E22722D2B12FE22C2HJ2HL2E922B2272742AT2ES2AT');local new_IllIIlllIlIllIllIl=(bit or bit32);local new_IlIllllIlIllIIIlIIllIllI=new_IllIIlllIlIllIllIl and new_IllIIlllIlIllIllIl.bxor or function(new_IllIIlllIlIllIllIl,new_IlIllllIIIIlIIIIIIlI)local new_IlIIIlIlllIlIllIlIIII,new_IlIllllIlIllIIIlIIllIllI,new_IIlIlIlllIIIIIllIl=1,0,10 while new_IllIIlllIlIllIllIl>0 and new_IlIllllIIIIlIIIIIIlI>0 do local new_IllIlIIlIlIIllllIIIlIII,new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl%2,new_IlIllllIIIIlIIIIIIlI%2 if new_IllIlIIlIlIIllllIIIlIII~=new_IIlIlIlllIIIIIllIl then new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIlIllIIIlIIllIllI+new_IlIIIlIlllIlIllIlIIII end new_IllIIlllIlIllIllIl,new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII=(new_IllIIlllIlIllIllIl-new_IllIlIIlIlIIllllIIIlIII)/2,(new_IlIllllIIIIlIIIIIIlI-new_IIlIlIlllIIIIIllIl)/2,new_IlIIIlIlllIlIllIlIIII*2 end if new_IllIIlllIlIllIllIl<new_IlIllllIIIIlIIIIIIlI then new_IllIIlllIlIllIllIl=new_IlIllllIIIIlIIIIIIlI end while new_IllIIlllIlIllIllIl>0 do local new_IlIllllIIIIlIIIIIIlI=new_IllIIlllIlIllIllIl%2 if new_IlIllllIIIIlIIIIIIlI>0 then new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIlIllIIIlIIllIllI+new_IlIIIlIlllIlIllIlIIII end new_IllIIlllIlIllIllIl,new_IlIIIlIlllIlIllIlIIII=(new_IllIIlllIlIllIllIl-new_IlIllllIIIIlIIIIIIlI)/2,new_IlIIIlIlllIlIllIlIIII*2 end return new_IlIllllIlIllIIIlIIllIllI end local function new_IlIllllIIIIlIIIIIIlI(new_IlIIIlIlllIlIllIlIIII,new_IllIIlllIlIllIllIl,new_IlIllllIIIIlIIIIIIlI)if new_IlIllllIIIIlIIIIIIlI then local new_IllIIlllIlIllIllIl=(new_IlIIIlIlllIlIllIlIIII/2^(new_IllIIlllIlIllIllIl-1))%2^((new_IlIllllIIIIlIIIIIIlI-1)-(new_IllIIlllIlIllIllIl-1)+1);return new_IllIIlllIlIllIllIl-new_IllIIlllIlIllIllIl%1;else local new_IllIIlllIlIllIllIl=2^(new_IllIIlllIlIllIllIl-1);return(new_IlIIIlIlllIlIllIlIIII%(new_IllIIlllIlIllIllIl+new_IllIIlllIlIllIllIl)>=new_IllIIlllIlIllIllIl)and 1 or 0;end;end;local new_IllIIlllIlIllIllIl=1;local function new_IlIIIlIlllIlIllIlIIII()local new_IIlIlIlllIIIIIllIl,new_IllIlIIlIlIIllllIIIlIII,new_IlIIIlIlllIlIllIlIIII,new_IlIllllIIIIlIIIIIIlI=new_IIIIllIllIIIlIIIlIIIIll(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+3);new_IIlIlIlllIIIIIllIl=new_IlIllllIlIllIIIlIIllIllI(new_IIlIlIlllIIIIIllIl,79)new_IllIlIIlIlIIllllIIIlIII=new_IlIllllIlIllIIIlIIllIllI(new_IllIlIIlIlIIllllIIIlIII,79)new_IlIIIlIlllIlIllIlIIII=new_IlIllllIlIllIIIlIIllIllI(new_IlIIIlIlllIlIllIlIIII,79)new_IlIllllIIIIlIIIIIIlI=new_IlIllllIlIllIIIlIIllIllI(new_IlIllllIIIIlIIIIIIlI,79)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+4;return(new_IlIllllIIIIlIIIIIIlI*16777216)+(new_IlIIIlIlllIlIllIlIIII*65536)+(new_IllIlIIlIlIIllllIIIlIII*256)+new_IIlIlIlllIIIIIllIl;end;local function new_IllIlIIIlIII()local new_IlIIIlIlllIlIllIlIIII=new_IlIllllIlIllIIIlIIllIllI(new_IIIIllIllIIIlIIIlIIIIll(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl),79);new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;return new_IlIIIlIlllIlIllIlIIII;end;local function new_IIlIIIlIllIIlll()local new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII=new_IIIIllIllIIIlIIIlIIIIll(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+2);new_IlIllllIIIIlIIIIIIlI=new_IlIllllIlIllIIIlIIllIllI(new_IlIllllIIIIlIIIIIIlI,79)new_IlIIIlIlllIlIllIlIIII=new_IlIllllIlIllIIIlIIllIllI(new_IlIIIlIlllIlIllIlIIII,79)new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+2;return(new_IlIIIlIlllIlIllIlIIII*256)+new_IlIllllIIIIlIIIIIIlI;end;local function new_lIlIlIIIllIlIIlIllI()local new_IlIllllIlIllIIIlIIllIllI=new_IlIIIlIlllIlIllIlIIII();local new_IllIIlllIlIllIllIl=new_IlIIIlIlllIlIllIlIIII();local new_IIlIlIlllIIIIIllIl=1;local new_IlIllllIlIllIIIlIIllIllI=(new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,1,20)*(2^32))+new_IlIllllIlIllIIIlIIllIllI;local new_IlIIIlIlllIlIllIlIIII=new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,21,31);local new_IllIIlllIlIllIllIl=((-1)^new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,32));if(new_IlIIIlIlllIlIllIlIIII==0)then if(new_IlIllllIlIllIIIlIIllIllI==0)then return new_IllIIlllIlIllIllIl*0;else new_IlIIIlIlllIlIllIlIIII=1;new_IIlIlIlllIIIIIllIl=0;end;elseif(new_IlIIIlIlllIlIllIlIIII==2047)then return(new_IlIllllIlIllIIIlIIllIllI==0)and(new_IllIIlllIlIllIllIl*(1/0))or(new_IllIIlllIlIllIllIl*(0/0));end;return new_IIIlIllllIIIllIllll(new_IllIIlllIlIllIllIl,new_IlIIIlIlllIlIllIlIIII-1023)*(new_IIlIlIlllIIIIIllIl+(new_IlIllllIlIllIIIlIIllIllI/(2^52)));end;local new_Illlllll=new_IlIIIlIlllIlIllIlIIII;local function new_IIIlIllllIIIllIllll(new_IlIIIlIlllIlIllIlIIII)local new_IlIllllIIIIlIIIIIIlI;if(not new_IlIIIlIlllIlIllIlIIII)then new_IlIIIlIlllIlIllIlIIII=new_Illlllll();if(new_IlIIIlIlllIlIllIlIIII==0)then return'';end;end;new_IlIllllIIIIlIIIIIIlI=new_IIlIlIlllIIIIIllIl(new_lIlllIIlllIIIIlIII,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1);new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII;local new_IlIIIlIlllIlIllIlIIII={}for new_IllIIlllIlIllIllIl=1,#new_IlIllllIIIIlIIIIIIlI do new_IlIIIlIlllIlIllIlIIII[new_IllIIlllIlIllIllIl]=new_llllllllIllllIlllII(new_IlIllllIlIllIIIlIIllIllI(new_IIIIllIllIIIlIIIlIIIIll(new_IIlIlIlllIIIIIllIl(new_IlIllllIIIIlIIIIIIlI,new_IllIIlllIlIllIllIl,new_IllIIlllIlIllIllIl)),79))end return new_IIIIllIlIIlIIIIIlII(new_IlIIIlIlllIlIllIlIIII);end;local new_IllIIlllIlIllIllIl=new_IlIIIlIlllIlIllIlIIII;local function new_Illlllll(...)return{...},new_llIIlllIlIlIIIlllIIllIIll('#',...)end local function new_llllllllIllllIlllII()local new_llIIlllIlIlIIIlllIIllIIll={};local new_lIlllIIlllIIIIlIII={};local new_IllIIlllIlIllIllIl={};local new_IIIIllIllIIIlIIIlIIIIll={[#{{294;243;590;992};{332;957;100;785};}]=new_lIlllIIlllIIIIlIII,[#{{548;773;809;936};"1 + 1 = 111";"1 + 1 = 111";}]=nil,[#{"1 + 1 = 111";{700;808;208;757};"1 + 1 = 111";"1 + 1 = 111";}]=new_IllIIlllIlIllIllIl,[#{"1 + 1 = 111";}]=new_llIIlllIlIlIIIlllIIllIIll,};local new_IllIIlllIlIllIllIl=new_IlIIIlIlllIlIllIlIIII()local new_IIlIlIlllIIIIIllIl={}for new_IlIllllIIIIlIIIIIIlI=1,new_IllIIlllIlIllIllIl do local new_IlIIIlIlllIlIllIlIIII=new_IllIlIIIlIII();local new_IllIIlllIlIllIllIl;if(new_IlIIIlIlllIlIllIlIIII==0)then new_IllIIlllIlIllIllIl=(new_IllIlIIIlIII()~=0);elseif(new_IlIIIlIlllIlIllIlIIII==3)then new_IllIIlllIlIllIllIl=new_lIlIlIIIllIlIIlIllI();elseif(new_IlIIIlIlllIlIllIlIIII==1)then new_IllIIlllIlIllIllIl=new_IIIlIllllIIIllIllll();end;new_IIlIlIlllIIIIIllIl[new_IlIllllIIIIlIIIIIIlI]=new_IllIIlllIlIllIllIl;end;new_IIIIllIllIIIlIIIlIIIIll[3]=new_IllIlIIIlIII();for new_IIIIllIllIIIlIIIlIIIIll=1,new_IlIIIlIlllIlIllIlIIII()do local new_IllIIlllIlIllIllIl=new_IllIlIIIlIII();if(new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,1,1)==0)then local new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,2,3);local new_IllIlIIlIlIIllllIIIlIII=new_IlIllllIIIIlIIIIIIlI(new_IllIIlllIlIllIllIl,4,6);local new_IllIIlllIlIllIllIl={new_IIlIIIlIllIIlll(),new_IIlIIIlIllIIlll(),nil,nil};if(new_IlIllllIlIllIIIlIIllIllI==0)then new_IllIIlllIlIllIllIl[#("uU1")]=new_IIlIIIlIllIIlll();new_IllIIlllIlIllIllIl[#("I3ln")]=new_IIlIIIlIllIIlll();elseif(new_IlIllllIlIllIIIlIIllIllI==1)then new_IllIIlllIlIllIllIl[#("bk5")]=new_IlIIIlIlllIlIllIlIIII();elseif(new_IlIllllIlIllIIIlIIllIllI==2)then new_IllIIlllIlIllIllIl[#("CCz")]=new_IlIIIlIlllIlIllIlIIII()-(2^16)elseif(new_IlIllllIlIllIIIlIIllIllI==3)then new_IllIIlllIlIllIllIl[#("ShH")]=new_IlIIIlIlllIlIllIlIIII()-(2^16)new_IllIIlllIlIllIllIl[#("JQW3")]=new_IIlIIIlIllIIlll();end;if(new_IlIllllIIIIlIIIIIIlI(new_IllIlIIlIlIIllllIIIlIII,1,1)==1)then new_IllIIlllIlIllIllIl[#("5V")]=new_IIlIlIlllIIIIIllIl[new_IllIIlllIlIllIllIl[#("BG")]]end if(new_IlIllllIIIIlIIIIIIlI(new_IllIlIIlIlIIllllIIIlIII,2,2)==1)then new_IllIIlllIlIllIllIl[#("dH4")]=new_IIlIlIlllIIIIIllIl[new_IllIIlllIlIllIllIl[#("rdl")]]end if(new_IlIllllIIIIlIIIIIIlI(new_IllIlIIlIlIIllllIIIlIII,3,3)==1)then new_IllIIlllIlIllIllIl[#("kv5A")]=new_IIlIlIlllIIIIIllIl[new_IllIIlllIlIllIllIl[#("xe0L")]]end new_llIIlllIlIlIIIlllIIllIIll[new_IIIIllIllIIIlIIIlIIIIll]=new_IllIIlllIlIllIllIl;end end;for new_IllIIlllIlIllIllIl=1,new_IlIIIlIlllIlIllIlIIII()do new_lIlllIIlllIIIIlIII[new_IllIIlllIlIllIllIl-1]=new_llllllllIllllIlllII();end;return new_IIIIllIllIIIlIIIlIIIIll;end;local function new_IIIlIllllIIIllIllll(new_IllIIlllIlIllIllIl,new_IlIIIlIlllIlIllIlIIII,new_IllIlIIIlIII)new_IllIIlllIlIllIllIl=(new_IllIIlllIlIllIllIl==true and new_llllllllIllllIlllII())or new_IllIIlllIlIllIllIl;return(function(...)local new_IlIllllIlIllIIIlIIllIllI=new_IllIIlllIlIllIllIl[1];local new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[3];local new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl[2];local new_llllllllIllllIlllII=new_Illlllll local new_IlIIIlIlllIlIllIlIIII=1;local new_IIlIIIlIllIIlll=-1;local new_lIlIlIIIllIlIIlIllI={};local new_IIIIllIllIIIlIIIlIIIIll={...};local new_lIlllIIlllIIIIlIII=new_llIIlllIlIlIIIlllIIllIIll('#',...)-1;local new_IllIIlllIlIllIllIl={};local new_IlIllllIIIIlIIIIIIlI={};for new_IllIIlllIlIllIllIl=0,new_lIlllIIlllIIIIlIII do if(new_IllIIlllIlIllIllIl>=new_IIlIlIlllIIIIIllIl)then new_lIlIlIIIllIlIIlIllI[new_IllIIlllIlIllIllIl-new_IIlIlIlllIIIIIllIl]=new_IIIIllIllIIIlIIIlIIIIll[new_IllIIlllIlIllIllIl+1];else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_IIIIllIllIIIlIIIlIIIIll[new_IllIIlllIlIllIllIl+#{{311;373;604;964};}];end;end;local new_IllIIlllIlIllIllIl=new_lIlllIIlllIIIIlIII-new_IIlIlIlllIIIIIllIl+1 local new_IllIIlllIlIllIllIl;local new_IIlIlIlllIIIIIllIl;while true do new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("P")];if new_IIlIlIlllIIIIIllIl<=#("x5HoznD6QVU1")then if new_IIlIlIlllIIIIIllIl<=#("lcPAD")then if new_IIlIlIlllIIIIIllIl<=#("db")then if new_IIlIlIlllIIIIIllIl<=#("")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Kz")]]=new_IllIIlllIlIllIllIl[#("cxY")];elseif new_IIlIlIlllIIIIIllIl>#("d")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("rF")]]=new_IllIIlllIlIllIllIl[#("TAj")];else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("VH")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("ElO")]][new_IllIIlllIlIllIllIl[#("KqiB")]];end;elseif new_IIlIlIlllIIIIIllIl<=#("5vL")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("uZ")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("iFq")]];elseif new_IIlIlIlllIIIIIllIl==#("5xeE")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("2E")]][new_IllIIlllIlIllIllIl[#{{525;111;766;49};{742;869;750;37};"1 + 1 = 111";}]]=new_IllIIlllIlIllIllIl[#("Jr05")];else do return end;end;elseif new_IIlIlIlllIIIIIllIl<=#("ZiXUkgnQ")then if new_IIlIlIlllIIIIIllIl<=#("DRdpCD")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("OX")]][new_IllIIlllIlIllIllIl[#("res")]]=new_IllIIlllIlIllIllIl[#("kbrr")];elseif new_IIlIlIlllIIIIIllIl==#("cZH2vjp")then local new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl[#("bo")]new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IllIIlllIlIllIllIl+1,new_IIlIIIlIllIIlll))else local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#{{116;213;167;12};"1 + 1 = 111";}];local new_IlIllllIlIllIIIlIIllIllI=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("j2n")]];new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII+1]=new_IlIllllIlIllIIIlIIllIllI;new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIlIllIIIlIIllIllI[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{150;285;955;601};}]];end;elseif new_IIlIlIlllIIIIIllIl<=#("sE12iUyQxZ")then if new_IIlIlIlllIIIIIllIl>#("31Qsr0uUm")then local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Cb")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("02Z")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("BS")]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("IPf")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("qQ")]][new_IllIIlllIlIllIllIl[#("vD6")]]=new_IllIIlllIlIllIllIl[#("Jfjn")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("tP")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";{243;813;31;458};"1 + 1 = 111";}]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";"1 + 1 = 111";}]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("DQD")]][new_IllIIlllIlIllIllIl[#("qRXF")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("R6")]]=new_IllIIlllIlIllIllIl[#("p2V")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("A6")]]=new_IllIIlllIlIllIllIl[#("B04")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("fr")]]=new_IllIIlllIlIllIllIl[#("dMs")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("er")]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("mxP")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("rz")]][new_IllIIlllIlIllIllIl[#("vxs")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("xuCN")]];else local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("RG")]local new_IlIllllIlIllIIIlIIllIllI,new_IllIIlllIlIllIllIl=new_llllllllIllllIlllII(new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("AMQ")])))new_IIlIIIlIllIIlll=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1 local new_IllIIlllIlIllIllIl=0;for new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII,new_IIlIIIlIllIIlll do new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIlIllIIIlIIllIllI[new_IllIIlllIlIllIllIl];end;end;elseif new_IIlIlIlllIIIIIllIl>#("2P4h43HHM7P")then local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("kZ")]new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("4Lc")]))else local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("8u")]local new_IlIllllIlIllIIIlIIllIllI,new_IllIIlllIlIllIllIl=new_llllllllIllllIlllII(new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("0VT")])))new_IIlIIIlIllIIlll=new_IllIIlllIlIllIllIl+new_IlIIIlIlllIlIllIlIIII-1 local new_IllIIlllIlIllIllIl=0;for new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII,new_IIlIIIlIllIIlll do new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl+1;new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIlIllIIIlIIllIllI[new_IllIIlllIlIllIllIl];end;end;elseif new_IIlIlIlllIIIIIllIl<=#("tBRpuHSebQBfJbxHoc")then if new_IIlIlIlllIIIIIllIl<=#{"1 + 1 = 111";{926;235;975;938};"1 + 1 = 111";"1 + 1 = 111";{969;892;160;206};{778;89;836;399};{298;865;140;487};"1 + 1 = 111";{396;934;18;226};{489;620;355;883};"1 + 1 = 111";{857;959;697;559};{666;833;528;497};{148;4;577;799};{157;925;557;339};}then if new_IIlIlIlllIIIIIllIl<=#("oMcFXbiuloZJ2")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("3e")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("zOH")]];elseif new_IIlIlIlllIIIIIllIl>#("arJ6o0la2sKs1n")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("1I")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("hz0")]][new_IllIIlllIlIllIllIl[#("rVV6")]];else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Jp")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("VgL")]];end;elseif new_IIlIlIlllIIIIIllIl<=#("5JyKEi5mHny4XpKh")then local new_IllIIlllIlIllIllIl=new_IllIIlllIlIllIllIl[#("Dt")]new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IllIIlllIlIllIllIl+1,new_IIlIIIlIllIIlll))elseif new_IIlIlIlllIIIIIllIl==#("xu00l4CjxoTT4Fk4C")then local new_IlIIIlIlllIlIllIlIIII=new_IllIIlllIlIllIllIl[#("IO")]new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII]=new_IlIllllIIIIlIIIIIIlI[new_IlIIIlIlllIlIllIlIIII](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IlIIIlIlllIlIllIlIIII+1,new_IllIIlllIlIllIllIl[#("jfZ")]))else new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("ox")]][new_IllIIlllIlIllIllIl[#("oNl")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("rZ1s")]];end;elseif new_IIlIlIlllIIIIIllIl<=#("PC9zyeebT15yUsly6GxbU")then if new_IIlIlIlllIIIIIllIl<=#("5Ag3lENTmava5Pm77WW")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("ov")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";{10;609;79;600};"1 + 1 = 111";}]];elseif new_IIlIlIlllIIIIIllIl==#("lLn9EBHGJPIAF9GJrE2L")then local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("K8")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("lxF")]][new_IllIIlllIlIllIllIl[#("ieNu")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("RN")]]=new_IllIIlllIlIllIllIl[#("XGi")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("2o")]]=new_IllIIlllIlIllIllIl[#("2ZC")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("uT")]]=new_IllIIlllIlIllIllIl[#("ZQE")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("SG")]]=new_IllIIlllIlIllIllIl[#("HLS")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("Ao")]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("b6o")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("vF")]][new_IllIIlllIlIllIllIl[#("Wgi")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("bPin")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";{386;282;641;621};}]][new_IllIIlllIlIllIllIl[#("KNh")]]=new_IllIIlllIlIllIllIl[#("Eg47")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{{184;164;447;416};"1 + 1 = 111";}]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("F3W")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("36")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("3a4")]][new_IllIIlllIlIllIllIl[#{{541;86;452;31};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]];else do return end;end;elseif new_IIlIlIlllIIIIIllIl<=#("aO5bUxGl8ILpLDumhzV6gjI")then if new_IIlIlIlllIIIIIllIl==#("5F5jOPD3lUl6r7UdbuKg6j")then new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("UT")]][new_IllIIlllIlIllIllIl[#("8s2")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("0KOb")]];else local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("zt")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("Oqg")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#{{555;58;986;332};"1 + 1 = 111";}]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("joJ")]))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("PR")]][new_IllIIlllIlIllIllIl[#("r1M")]]=new_IllIIlllIlIllIllIl[#("MKEU")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#{{508;983;257;617};"1 + 1 = 111";}]][new_IllIIlllIlIllIllIl[#("hQe")]]=new_IllIIlllIlIllIllIl[#{{679;270;20;667};"1 + 1 = 111";{112;712;746;24};{360;429;370;336};}];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("RZ")]][new_IllIIlllIlIllIllIl[#("x5S")]]=new_IllIIlllIlIllIllIl[#("mdCn")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("zZ")]][new_IllIIlllIlIllIllIl[#("Scd")]]=new_IllIIlllIlIllIllIl[#("SlnU")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];do return end;end;elseif new_IIlIlIlllIIIIIllIl==#("GlxkehOs0gDfpCxHsfSe0ry4")then local new_IIIIllIllIIIlIIIlIIIIll;local new_llIIlllIlIlIIIlllIIllIIll,new_lIlIlIIIllIlIIlIllI;local new_lIlllIIlllIIIIlIII;local new_IIlIlIlllIIIIIllIl;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("92")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("3Sd")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("yi")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("QCt")]][new_IllIIlllIlIllIllIl[#("k0X5")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("mS")]]=new_IllIIlllIlIllIllIl[#("d4k")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("q8")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#("aKc")]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("8L")];new_lIlllIIlllIIIIlIII=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("dvh")]];new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl+1]=new_lIlllIIlllIIIIlIII;new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_lIlllIIlllIIIIlIII[new_IllIIlllIlIllIllIl[#{{252;882;507;823};"1 + 1 = 111";"1 + 1 = 111";{36;276;365;175};}]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Ns")]]=new_IllIIlllIlIllIllIl[#("rHN")];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#("XH")]new_llIIlllIlIlIIIlllIIllIIll,new_lIlIlIIIllIlIIlIllI=new_llllllllIllllIlllII(new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IllIIlllIlIllIllIl[#("6o2")])))new_IIlIIIlIllIIlll=new_lIlIlIIIllIlIIlIllI+new_IIlIlIlllIIIIIllIl-1 new_IIIIllIllIIIlIIIlIIIIll=0;for new_IllIIlllIlIllIllIl=new_IIlIlIlllIIIIIllIl,new_IIlIIIlIllIIlll do new_IIIIllIllIIIlIIIlIIIIll=new_IIIIllIllIIIlIIIlIIIIll+1;new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl]=new_llIIlllIlIlIIIlllIIllIIll[new_IIIIllIllIIIlIIIlIIIIll];end;new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IIlIlIlllIIIIIllIl=new_IllIIlllIlIllIllIl[#{{773;433;582;199};{23;386;333;405};}]new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl]=new_IlIllllIIIIlIIIIIIlI[new_IIlIlIlllIIIIIllIl](new_IllIlIIlIlIIllllIIIlIII(new_IlIllllIIIIlIIIIIIlI,new_IIlIlIlllIIIIIllIl+1,new_IIlIIIlIllIIlll))new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("bu")]]=new_IllIlIIIlIII[new_IllIIlllIlIllIllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]];new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;new_IllIIlllIlIllIllIl=new_IlIllllIlIllIIIlIIllIllI[new_IlIIIlIlllIlIllIlIIII];new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("Er")]]=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("nkP")]][new_IllIIlllIlIllIllIl[#("JALH")]];else local new_IlIllllIlIllIIIlIIllIllI=new_IllIIlllIlIllIllIl[#("VF")];local new_IlIIIlIlllIlIllIlIIII=new_IlIllllIIIIlIIIIIIlI[new_IllIIlllIlIllIllIl[#("kce")]];new_IlIllllIIIIlIIIIIIlI[new_IlIllllIlIllIIIlIIllIllI+1]=new_IlIIIlIlllIlIllIlIIII;new_IlIllllIIIIlIIIIIIlI[new_IlIllllIlIllIIIlIIllIllI]=new_IlIIIlIlllIlIllIlIIII[new_IllIIlllIlIllIllIl[#("Blyi")]];end;new_IlIIIlIlllIlIllIlIIII=new_IlIIIlIlllIlIllIlIIII+1;end;end);end;return new_IIIlIllllIIIllIllll(true,{},new_IllllIllIllIIlIll())();end)(string.byte,table.insert,setmetatable);
+end)
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = Unban
+
+CombatFrame.Name = "CombatFrame"
+CombatFrame.Parent = DHFBack
+CombatFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+CombatFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
+CombatFrame.Size = UDim2.new(0, 378, 0, 235)
+CombatFrame.Visible = false
+
+UICorner_10.CornerRadius = UDim.new(0, 6)
+UICorner_10.Parent = CombatFrame
+
+CombatScrollingFrame.Name = "CombatScrollingFrame"
+CombatScrollingFrame.Parent = CombatFrame
+CombatScrollingFrame.Active = true
+CombatScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CombatScrollingFrame.BackgroundTransparency = 1.000
+CombatScrollingFrame.BorderSizePixel = 0
+CombatScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+
+CombatTabTitle.Name = "CombatTabTitle"
+CombatTabTitle.Parent = CombatScrollingFrame
+CombatTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CombatTabTitle.BackgroundTransparency = 1.000
+CombatTabTitle.BorderSizePixel = 0
+CombatTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
+CombatTabTitle.Size = UDim2.new(0, 200, 0, 32)
+CombatTabTitle.Font = Enum.Font.SciFi
+CombatTabTitle.Text = "Combat Tab"
+CombatTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+CombatTabTitle.TextScaled = true
+CombatTabTitle.TextSize = 20.000
+CombatTabTitle.TextWrapped = true
+
+FistReach.Name = "FistReach"
+FistReach.Parent = CombatScrollingFrame
+FistReach.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FistReach.BorderSizePixel = 0
+FistReach.Position = UDim2.new(0.0291005298, 0, 0.0765957385, 0)
+FistReach.Size = UDim2.new(0, 355, 0, 28)
+FistReach.Font = Enum.Font.Code
+FistReach.Text = "Fist Reack"
+FistReach.TextColor3 = Color3.fromRGB(255, 255, 255)
+FistReach.TextSize = 20.000
+FistReach.TextWrapped = true
+FistReach.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/aZHK690D'))()
+end)
+
+UICorner_11.CornerRadius = UDim.new(0, 3)
+UICorner_11.Parent = FistReach
+
+BigKnife.Name = "BigKnife"
+BigKnife.Parent = CombatScrollingFrame
+BigKnife.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BigKnife.BorderSizePixel = 0
+BigKnife.Position = UDim2.new(0.0291005298, 0, 0.148936167, 0)
+BigKnife.Size = UDim2.new(0, 355, 0, 28)
+BigKnife.Font = Enum.Font.Code
+BigKnife.Text = "Super Knife"
+BigKnife.TextColor3 = Color3.fromRGB(255, 255, 255)
+BigKnife.TextSize = 20.000
+BigKnife.TextWrapped = true
+BigKnife.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(50, 50, 50)
+end)
+
+UICorner_12.CornerRadius = UDim.new(0, 3)
+UICorner_12.Parent = BigKnife
+
+BigSledge.Name = "BigSledge"
+BigSledge.Parent = CombatScrollingFrame
+BigSledge.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BigSledge.BorderSizePixel = 0
+BigSledge.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
+BigSledge.Size = UDim2.new(0, 355, 0, 28)
+BigSledge.Font = Enum.Font.Code
+BigSledge.Text = "Super Sledge"
+BigSledge.TextColor3 = Color3.fromRGB(255, 255, 255)
+BigSledge.TextSize = 20.000
+BigSledge.TextWrapped = true
+BigSledge.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Backpack["[SledgeHammer]"].Handle.Size = Vector3.new(50, 50, 50)
+end)
+
+UICorner_13.CornerRadius = UDim.new(0, 3)
+UICorner_13.Parent = BigSledge
+
+KnifePP.Name = "KnifePP"
+KnifePP.Parent = CombatScrollingFrame
+KnifePP.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+KnifePP.BorderSizePixel = 0
+KnifePP.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
+KnifePP.Size = UDim2.new(0, 355, 0, 28)
+KnifePP.Font = Enum.Font.Code
+KnifePP.Text = "PP Knife"
+KnifePP.TextColor3 = Color3.fromRGB(255, 255, 255)
+KnifePP.TextSize = 20.000
+KnifePP.TextWrapped = true
+KnifePP.MouseButton1Down:connect(function()
+	local Plr = game.Players.LocalPlayer
+	local LastPos = Plr.Character.HumanoidRootPart.CFrame
+	wait(0.1)
+	Plr.Character.HumanoidRootPart.CFrame = CFrame.new(803.5, 48, -547, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	Plr.Character["[Knife]"].Handle.Orientation = Vector3.new(0, 180, 0)
+	wait(0.2)
+	Plr.Character["[Knife]"].Handle.Position = Vector3.new(804.3, 47, -547)
+	Plr.Character.HumanoidRootPart.CFrame = LastPos
+
+end)
+
+UICorner_14.CornerRadius = UDim.new(0, 3)
+UICorner_14.Parent = KnifePP
+
+StopSignPP.Name = "StopSignPP"
+StopSignPP.Parent = CombatScrollingFrame
+StopSignPP.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+StopSignPP.BorderSizePixel = 0
+StopSignPP.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
+StopSignPP.Size = UDim2.new(0, 355, 0, 28)
+StopSignPP.Font = Enum.Font.Code
+StopSignPP.Text = "PP Stop Sign"
+StopSignPP.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopSignPP.TextSize = 20.000
+StopSignPP.TextWrapped = true
+StopSignPP.MouseButton1Down:connect(function()
+	local Plr = game.Players.LocalPlayer
+	local LastPos = Plr.Character.HumanoidRootPart.CFrame
+	local pp = Plr.Character["[StopSign]"]
+	wait(0.1)
+	pp.Sign:Destroy()
+	--pp.GripRight = Vector3.new(0, 0, 1)
+	--pp.GripForward = Vector3.new(1, 0, 0)
+	--pp.GripUp = Vector3.new(0, 1, 0)
+	--pp.GripPos = Vector3.new(-1, 2, 1.45)
+
+	pp.Grip = CFrame.new(-1, 2, 1.45000005, 0, -0, -1, -0, 1, -0, 1, 0, -0)
+end)
+
+UICorner_15.CornerRadius = UDim.new(0, 3)
+UICorner_15.Parent = StopSignPP
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = CombatScrollingFrame
+Aimlock.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Aimlock.BorderSizePixel = 0
+Aimlock.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
+Aimlock.Size = UDim2.new(0, 355, 0, 28)
+Aimlock.Font = Enum.Font.Code
+Aimlock.Text = "Aim Lock (Right Click)"
+Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.TextSize = 20.000
+Aimlock.TextWrapped = true
+Aimlock.MouseButton1Down:connect(function()
+	local CC = game:GetService'Workspace'.CurrentCamera
+	local Plr
+	local enabled = false
+	local accomidationfactor = 0.165
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local placemarker = Instance.new("Part", game.Workspace)
+	local guimain = Instance.new("Folder", game.CoreGui)
+
+	function makemarker(Parent, Adornee, Color, Size, Size2)
+		local e = Instance.new("BillboardGui", Parent)
+		e.Name = "PP"
+		e.Adornee = Adornee
+		e.Size = UDim2.new(Size, Size2, Size, Size2)
+		e.AlwaysOnTop = true
+		local a = Instance.new("Frame", e)
+		a.Size = UDim2.new(1, 0, 1, 0)
+		a.BackgroundTransparency = 0.4
+		a.BackgroundColor3 = Color
+		local g = Instance.new("UICorner", a)
+		g.CornerRadius = UDim.new(50, 50)
+		return(e)
+	end
+
+	local data = game.Players:GetPlayers()
+	function noob(player)
+		local character
+		repeat wait() until player.Character
+		local handler = makemarker(guimain, player.Character:WaitForChild("Head"), Color3.fromRGB(255, 255, 255), 0.3, 3)
+		handler.Name = player.Name
+		player.CharacterAdded:connect(function(Char) handler.Adornee = Char:WaitForChild("Head") end)
+
+		local TextLabel = Instance.new("TextLabel", handler)
+		TextLabel.BackgroundTransparency = 1
+		TextLabel.Position = UDim2.new(0, 0, 0, -50)
+		TextLabel.Size = UDim2.new(0, 100, 0, 100)
+		TextLabel.Font = Enum.Font.SourceSansSemibold
+		TextLabel.TextSize = 14
+		TextLabel.TextColor3 = Color3.new(1, 1, 1)
+		TextLabel.TextStrokeTransparency = 0
+		TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
+		TextLabel.Text = 'Name: '..player.Name
+		TextLabel.ZIndex = 10
+
+		spawn(function()
+			while wait() do
+				if player.Character then
+					TextLabel.Text = player.Name.." | Bounty: "..tostring(player:WaitForChild("leaderstats").Wanted.Value).." | "..tostring(math.floor(player.Character:WaitForChild("Humanoid").Health))
+				end
+			end
+		end)
+	end
+
+	for i = 1, #data do
+		if data[i] ~= game.Players.LocalPlayer then
+			noob(data[i])
+		end
+	end
+
+	game.Players.PlayerAdded:connect(function(Player)
+		noob(Player)
+	end)
+
+	spawn(function()
+		placemarker.Anchored = true
+		placemarker.CanCollide = false
+		placemarker.Size = Vector3.new(0.1, 0.1, 0.1)
+		placemarker.Transparency = 1
+		makemarker(placemarker, placemarker, Color3.fromRGB(0, 0, 255), 0.15, 0)
+	end)    
+
+	local UserInputService = game:GetService'UserInputService'
+
+	UserInputService.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton2 then
+			enabled = true 
+			Plr = getClosestPlayerToCursor()
+			guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton2 then
+			enabled = false
+			guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		end
+	end)
+
+	function getClosestPlayerToCursor()
+		local closestPlayer
+		local shortestDistance = math.huge
+
+		for i, v in pairs(game.Players:GetPlayers()) do
+			if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("Head") then
+				local pos = CC:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+				local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
+				if magnitude < shortestDistance then
+					closestPlayer = v
+					shortestDistance = magnitude
+				end
+			end
+		end
+		return closestPlayer
+	end
+
+	game:GetService'RunService'.Stepped:connect(function()
+		if enabled and Plr.Character and Plr.Character:FindFirstChild("Head") then
+			placemarker.CFrame = CFrame.new(Plr.Character.Head.Position+(Plr.Character.Head.Velocity*accomidationfactor))
+		else
+			placemarker.CFrame = CFrame.new(0, 9999, 0)
+		end
+	end)
+
+	local mt = getrawmetatable(game)
+	local old = mt.__namecall
+	setreadonly(mt, false)
+	mt.__namecall = newcclosure(function(...)
+		local args = {...}
+		if enabled and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" then
+			args[3] = Plr.Character.Head.Position+(Plr.Character.Head.Velocity*accomidationfactor)
+			return old(unpack(args))
+		end
+		return old(...)
+	end)
+end)
+
+UICorner_16.CornerRadius = UDim.new(0, 3)
+UICorner_16.Parent = Aimlock
+
+TeleportsFrame.Name = "TeleportsFrame"
+TeleportsFrame.Parent = DHFBack
+TeleportsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TeleportsFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
+TeleportsFrame.Size = UDim2.new(0, 378, 0, 235)
+TeleportsFrame.Visible = false
+
+UICorner_17.CornerRadius = UDim.new(0, 6)
+UICorner_17.Parent = TeleportsFrame
+
+TeleportsScrollingFrame.Name = "TeleportsScrollingFrame"
+TeleportsScrollingFrame.Parent = TeleportsFrame
+TeleportsScrollingFrame.Active = true
+TeleportsScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsScrollingFrame.BackgroundTransparency = 1.000
+TeleportsScrollingFrame.BorderSizePixel = 0
+TeleportsScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+
+TeleportsTabTitle.Name = "TeleportsTabTitle"
+TeleportsTabTitle.Parent = TeleportsScrollingFrame
+TeleportsTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsTabTitle.BackgroundTransparency = 1.000
+TeleportsTabTitle.BorderSizePixel = 0
+TeleportsTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
+TeleportsTabTitle.Size = UDim2.new(0, 200, 0, 32)
+TeleportsTabTitle.Font = Enum.Font.SciFi
+TeleportsTabTitle.Text = "Teleports Tab"
+TeleportsTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportsTabTitle.TextScaled = true
+TeleportsTabTitle.TextSize = 20.000
+TeleportsTabTitle.TextWrapped = true
+
+-- for tps
+
+local Plr = game.Players.LocalPlayer
+
+function TP(cframe)
+	Plr.Character.HumanoidRootPart.CFrame = cframe
+end
+
+
+AdminBase.Name = "AdminBase"
+AdminBase.Parent = TeleportsScrollingFrame
+AdminBase.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AdminBase.BorderSizePixel = 0
+AdminBase.Position = UDim2.new(0.0291005298, 0, 0.0765957385, 0)
+AdminBase.Size = UDim2.new(0, 355, 0, 28)
+AdminBase.Font = Enum.Font.Code
+AdminBase.Text = "Admin Base"
+AdminBase.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminBase.TextSize = 20.000
+AdminBase.TextWrapped = true
+AdminBase.MouseButton1Click:connect(function()
+	TP(CFrame.new(-729.9, -37.6, -885))
+end)
+
+UICorner_18.CornerRadius = UDim.new(0, 3)
+UICorner_18.Parent = AdminBase
+
+Shop1.Name = "Shop1"
+Shop1.Parent = TeleportsScrollingFrame
+Shop1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Shop1.BorderSizePixel = 0
+Shop1.Position = UDim2.new(0.0291005298, 0, 0.148936167, 0)
+Shop1.Size = UDim2.new(0, 355, 0, 28)
+Shop1.Font = Enum.Font.Code
+Shop1.Text = "Gun Shop"
+Shop1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shop1.TextSize = 20.000
+Shop1.TextWrapped = true
+Shop1.MouseButton1Click:connect(function()
+	TP(CFrame.new(-582, 7.1, -739))
+end)
+
+UICorner_19.CornerRadius = UDim.new(0, 3)
+UICorner_19.Parent = Shop1
+
+Shop2.Name = "Shop2"
+Shop2.Parent = TeleportsScrollingFrame
+Shop2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Shop2.BorderSizePixel = 0
+Shop2.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
+Shop2.Size = UDim2.new(0, 355, 0, 28)
+Shop2.Font = Enum.Font.Code
+Shop2.Text = "Other Gun Shop"
+Shop2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shop2.TextSize = 20.000
+Shop2.TextWrapped = true
+Shop2.MouseButton1Click:connect(function()
+	TP(CFrame.new(481.5, 48, -621.5))
+end)
+
+UICorner_20.CornerRadius = UDim.new(0, 3)
+UICorner_20.Parent = Shop2
+
+Taco.Name = "Taco"
+Taco.Parent = TeleportsScrollingFrame
+Taco.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Taco.BorderSizePixel = 0
+Taco.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
+Taco.Size = UDim2.new(0, 355, 0, 28)
+Taco.Font = Enum.Font.Code
+Taco.Text = "Taco"
+Taco.TextColor3 = Color3.fromRGB(255, 255, 255)
+Taco.TextSize = 20.000
+Taco.TextWrapped = true
+Taco.MouseButton1Click:connect(function()
+	TP(CFrame.new(584.5401, 51.061409, -479.443848))
+end)
+
+UICorner_21.CornerRadius = UDim.new(0, 3)
+UICorner_21.Parent = Taco
+
+PlayGround.Name = "PlayGround"
+PlayGround.Parent = TeleportsScrollingFrame
+PlayGround.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PlayGround.BorderSizePixel = 0
+PlayGround.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
+PlayGround.Size = UDim2.new(0, 355, 0, 28)
+PlayGround.Font = Enum.Font.Code
+PlayGround.Text = "PlayGround"
+PlayGround.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayGround.TextSize = 20.000
+PlayGround.TextWrapped = true
+PlayGround.MouseButton1Click:connect(function()
+	TP(CFrame.new(-217.894958, 29.3668556, -742.85022))
+end)
+
+UICorner_22.CornerRadius = UDim.new(0, 3)
+UICorner_22.Parent = PlayGround
+
+Bank.Name = "Bank"
+Bank.Parent = TeleportsScrollingFrame
+Bank.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Bank.BorderSizePixel = 0
+Bank.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
+Bank.Size = UDim2.new(0, 355, 0, 28)
+Bank.Font = Enum.Font.Code
+Bank.Text = "Bank"
+Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bank.TextSize = 20.000
+Bank.TextWrapped = true
+Bank.MouseButton1Click:connect(function()
+	TP(CFrame.new(-485.7, 23.6, -285.2))
+end)
+
+UICorner_23.CornerRadius = UDim.new(0, 3)
+UICorner_23.Parent = Bank
+
+AutoFarmsFrame.Name = "AutoFarmsFrame"
+AutoFarmsFrame.Parent = DHFBack
+AutoFarmsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+AutoFarmsFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
+AutoFarmsFrame.Size = UDim2.new(0, 378, 0, 235)
+AutoFarmsFrame.Visible = false
+
+UICorner_24.CornerRadius = UDim.new(0, 6)
+UICorner_24.Parent = AutoFarmsFrame
+
+AutoFarmsScrollingFrame.Name = "AutoFarmsScrollingFrame"
+AutoFarmsScrollingFrame.Parent = AutoFarmsFrame
+AutoFarmsScrollingFrame.Active = true
+AutoFarmsScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmsScrollingFrame.BackgroundTransparency = 1.000
+AutoFarmsScrollingFrame.BorderSizePixel = 0
+AutoFarmsScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+
+AutoFarmsTabTitle.Name = "AutoFarmsTabTitle"
+AutoFarmsTabTitle.Parent = AutoFarmsScrollingFrame
+AutoFarmsTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmsTabTitle.BackgroundTransparency = 1.000
+AutoFarmsTabTitle.BorderSizePixel = 0
+AutoFarmsTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
+AutoFarmsTabTitle.Size = UDim2.new(0, 200, 0, 32)
+AutoFarmsTabTitle.Font = Enum.Font.SciFi
+AutoFarmsTabTitle.Text = "AutoFarms Tab"
+AutoFarmsTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmsTabTitle.TextScaled = true
+AutoFarmsTabTitle.TextSize = 20.000
+AutoFarmsTabTitle.TextWrapped = true
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = AutoFarmsScrollingFrame
+AutoFarm.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Position = UDim2.new(0.0291005298, 0, 0.0680851117, 0)
+AutoFarm.Size = UDim2.new(0, 355, 0, 78)
+AutoFarm.Font = Enum.Font.Code
+AutoFarm.Text = "AutoFarm"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextSize = 20.000
+AutoFarm.TextWrapped = true
+AutoFarm.MouseButton1Down:connect(function()
+	local plr = game.Players.LocalPlayer
+
+	local ATMEnabled,HospitalEnabled,ShoeEnabled = false,false,false
+
+	if messagebox("Enable ATM Farm?","Settings",4) == 6 then ATMEnabled = true end
+	if messagebox("Enable Hospital Farm?","Settings",4) == 6 then HospitalEnabled = true end
+	if messagebox("Enable Shoe Farm?","Settings",4) == 6 then ShoeEnabled = true end
+
+	repeat wait() until plr.Character:FindFirstChild("FULLY_LOADED_CHAR")
+
+	for i,v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("Seat") then
+			v:Destroy()
+		end
+	end
+
+	function DeleteAntiCheat()
+		for i,v in pairs(plr.Character:GetChildren()) do
+			if v.ClassName == "Script" and v.Name ~= "Health" then
+				v:Destroy()
+			end
+		end
+	end
+
+	plr.CharacterAdded:Connect(function(character)
+		repeat wait() until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("FULLY_LOADED_CHAR")
+		DeleteAntiCheat()
+		wait(1)
+		reset = false
+	end)
+	DeleteAntiCheat()
+
+	local reset = false
+	spawn(function()
+		while wait() do
+			pcall(function()if plr.Character.Humanoid.Health <= 0 then reset = true end end)
+		end
+	end)
+
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+
+	game:GetService('RunService').Stepped:connect(function()
+		pcall(function()plr.Character.Humanoid:ChangeState(11)end)
+		setsimulationradius(math.huge)
+	end)
+
+	local function CompleteHospitalJob(Colour,Patient)
+		repeat
+			fireclickdetector(game.Workspace.Ignored.HospitalJob[Colour].ClickDetector)
+			wait(0.1)
+			if Patient:FindFirstChild("ClickDetector") then
+				fireclickdetector(Patient.ClickDetector)
+			end
+		until Patient.Name == "Thank you!" or Patient.Name == "Wrong bottle!"
+	end
+
+	local function OtherJobs()
+		if HospitalEnabled then
+			for i,v in pairs(game.Workspace.Ignored.HospitalJob:GetChildren()) do
+				if v.ClassName == "Model" then
+					plr.Character.HumanoidRootPart.CFrame = CFrame.new(113.1,22.79,-478.97)
+					if string.find(v.Name, "Red") then CompleteHospitalJob("Red",v)
+					elseif string.find(v.Name, "Blue") then CompleteHospitalJob("Blue",v)
+					elseif string.find(v.Name, "Green") then CompleteHospitalJob("Green",v) end
+				end
+			end
+		end
+		if ShoeEnabled then
+			for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+				if v.Name == "MeshPart" then
+					v.Name = "ShoeGrabbing"
+					repeat
+						wait()
+						pcall(function()
+							plr.Character.HumanoidRootPart.CFrame = v.CFrame
+							fireclickdetector(v.ClickDetector)
+						end)
+					until not game.Workspace.Ignored.Drop:FindFirstChild("ShoeGrabbing")
+				end
+			end
+			if plr.Character.BodyEffects.ShoesCollect.Value > 9 then
+				fireclickdetector(game.Workspace.Ignored["Clean the shoes on the floor and come to me for cash"].ClickDetector)
+			end
+		end
+	end
+
+	while wait(0.5) do
+		OtherJobs()
+		if ATMEnabled then
+			for i,v in pairs(game.Workspace.Cashiers:GetChildren()) do
+				if v.Humanoid.Health > 0 then
+					wait(5)
+					spawn(function()
+						while v.Humanoid.Health > 0 do
+							wait()
+							pcall(function()plr.Character.HumanoidRootPart.CFrame = v.Head.CFrame * CFrame.new(0, -2, 1.5)end)
+						end
+					end)
+					repeat
+						pcall(function()plr.Character.Humanoid:EquipTool(plr.Backpack.Combat)end)
+						wait(0.1)
+						pcall(function()
+							plr.Character.Combat:Activate()
+							wait(2)
+							plr.Character.Combat:Deactivate()
+							wait(1)
+						end)
+					until v.Humanoid.Health <= 0
+					wait(0.1)
+					for ii,vv in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+						if vv.Name ~= "MoneyDrop" then continue end
+						if (plr.Character.HumanoidRootPart.Position - vv.Position).Magnitude > 25 then continue end
+						vv.Name = "Grabbing"
+						vv.Anchored = true
+						while game.Workspace.Ignored.Drop:FindFirstChild("Grabbing") do
+							wait()
+							pcall(function()
+								plr.character.HumanoidRootPart.CFrame = vv.CFrame
+								if not reset then fireclickdetector(vv.ClickDetector) end
+							end)
+						end
+					end
+					OtherJobs()
+				end
+			end
+		end
+	end
+
+end)
+
+UICorner_25.CornerRadius = UDim.new(0, 3)
+UICorner_25.Parent = AutoFarm
+
+P90AutoFarm.Name = "P90AutoFarm"
+P90AutoFarm.Parent = AutoFarmsScrollingFrame
+P90AutoFarm.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+P90AutoFarm.BorderSizePixel = 0
+P90AutoFarm.Position = UDim2.new(0.0291005298, 0, 0.255319178, 0)
+P90AutoFarm.Size = UDim2.new(0, 355, 0, 76)
+P90AutoFarm.Font = Enum.Font.Code
+P90AutoFarm.Text = "P90 AutoFarm"
+P90AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+P90AutoFarm.TextSize = 20.000
+P90AutoFarm.TextWrapped = true
+P90AutoFarm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/E6LCcnrP'),true))()
+end)
+
+UICorner_26.CornerRadius = UDim.new(0, 3)
+UICorner_26.Parent = P90AutoFarm
+
+TargetFrame.Name = "TargetFrame"
+TargetFrame.Parent = DHFBack
+TargetFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+TargetFrame.Position = UDim2.new(0.238658771, 0, 0.213375792, 0)
+TargetFrame.Size = UDim2.new(0, 378, 0, 235)
+TargetFrame.Visible = false
+
+UICorner_27.CornerRadius = UDim.new(0, 6)
+UICorner_27.Parent = TargetFrame
+
+TargetScrollingFrame.Name = "TargetScrollingFrame"
+TargetScrollingFrame.Parent = TargetFrame
+TargetScrollingFrame.Active = true
+TargetScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TargetScrollingFrame.BackgroundTransparency = 1.000
+TargetScrollingFrame.BorderSizePixel = 0
+TargetScrollingFrame.Size = UDim2.new(0, 378, 0, 235)
+
+GoTo.Name = "GoTo"
+GoTo.Parent = TargetScrollingFrame
+GoTo.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+GoTo.BorderSizePixel = 0
+GoTo.Position = UDim2.new(0.0291005298, 0, 0.219148949, 0)
+GoTo.Size = UDim2.new(0, 355, 0, 28)
+GoTo.Font = Enum.Font.Code
+GoTo.Text = "GoTo"
+GoTo.TextColor3 = Color3.fromRGB(255, 255, 255)
+GoTo.TextSize = 20.000
+GoTo.TextWrapped = true
+
+UICorner_28.CornerRadius = UDim.new(0, 3)
+UICorner_28.Parent = GoTo
+
+Kill.Name = "Kill"
+Kill.Parent = TargetScrollingFrame
+Kill.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Kill.BorderSizePixel = 0
+Kill.Position = UDim2.new(0.0291005298, 0, 0.291489363, 0)
+Kill.Size = UDim2.new(0, 355, 0, 28)
+Kill.Font = Enum.Font.Code
+Kill.Text = "Kill"
+Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kill.TextSize = 20.000
+Kill.TextWrapped = true
+
+UICorner_29.CornerRadius = UDim.new(0, 3)
+UICorner_29.Parent = Kill
+
+PlayGround_2.Name = "PlayGround"
+PlayGround_2.Parent = TargetScrollingFrame
+PlayGround_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PlayGround_2.BorderSizePixel = 0
+PlayGround_2.Position = UDim2.new(0.0291005298, 0, 0.363829792, 0)
+PlayGround_2.Size = UDim2.new(0, 355, 0, 28)
+PlayGround_2.Font = Enum.Font.Code
+PlayGround_2.Text = "Im Too Lazy to make it"
+PlayGround_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayGround_2.TextSize = 20.000
+PlayGround_2.TextWrapped = true
+
+UICorner_30.CornerRadius = UDim.new(0, 3)
+UICorner_30.Parent = PlayGround_2
+
+Bank_2.Name = "Bank"
+Bank_2.Parent = TargetScrollingFrame
+Bank_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Bank_2.BorderSizePixel = 0
+Bank_2.Position = UDim2.new(0.0291005298, 0, 0.438297898, 0)
+Bank_2.Size = UDim2.new(0, 355, 0, 28)
+Bank_2.Font = Enum.Font.Code
+Bank_2.Text = "Help"
+Bank_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bank_2.TextSize = 20.000
+Bank_2.TextWrapped = true
+
+UICorner_31.CornerRadius = UDim.new(0, 3)
+UICorner_31.Parent = Bank_2
+
+Target_3.Name = "Target"
+Target_3.Parent = TargetScrollingFrame
+Target_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Target_3.BorderSizePixel = 0
+Target_3.Position = UDim2.new(0.0291005298, 0, 0.0914893597, 0)
+Target_3.Size = UDim2.new(0, 355, 0, 25)
+Target_3.Font = Enum.Font.SourceSans
+Target_3.Text = ""
+Target_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Target_3.TextSize = 14.000
+
+UICorner_32.CornerRadius = UDim.new(0, 4)
+UICorner_32.Parent = Target_3
+
+TargetTabTitle.Name = "TargetTabTitle"
+TargetTabTitle.Parent = TargetScrollingFrame
+TargetTabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TargetTabTitle.BackgroundTransparency = 1.000
+TargetTabTitle.BorderSizePixel = 0
+TargetTabTitle.Position = UDim2.new(0.235449746, 0, 0, 0)
+TargetTabTitle.Size = UDim2.new(0, 200, 0, 32)
+TargetTabTitle.Font = Enum.Font.SciFi
+TargetTabTitle.Text = "Target Tab"
+TargetTabTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+TargetTabTitle.TextScaled = true
+TargetTabTitle.TextSize = 20.000
+TargetTabTitle.TextWrapped = true
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = DaHoodFucker
+OpenFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenFrame.BackgroundTransparency = 1.000
+OpenFrame.BorderSizePixel = 0
+OpenFrame.Position = UDim2.new(0.382299274, 0, 0, 0)
+OpenFrame.Size = UDim2.new(0, 135, 0, 34)
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = OpenFrame
+OpenButton.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+OpenButton.BorderSizePixel = 0
+OpenButton.Position = UDim2.new(0.575661719, 0, 0.279053897, 0)
+OpenButton.Size = UDim2.new(0, 100, 0, 27)
+OpenButton.Font = Enum.Font.SourceSans
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14.000
+OpenButton.TextWrapped = true
+OpenButton.MouseButton1Down:connect(function()
+	DHFBack.Visible = true
+	OpenFrame.Visible = false
+end)
+
+UICorner_33.Parent = OpenButton
