@@ -424,8 +424,16 @@ Button_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Button_2.Position = UDim2.new(0.00270270277, 0, 0.867549658, 0)
 Button_2.Size = UDim2.new(0, 368, 0, 37)
 Button_2.Font = Enum.Font.GothamSemibold
+Button_2.Text = "Anti-AFK"
 Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button_2.TextSize = 20.000
+Button_2.MouseButton1Click:Connect(function()
+	local VirtualUser=game:service'VirtualUser'
+		game:service'Players'.LocalPlayer.Idled:connect(function()
+	VirtualUser:CaptureController()
+	VirtualUser:ClickButton2(Vector2.new())
+end)
+end)
 
 UICorner_19.CornerRadius = UDim.new(0, 10)
 UICorner_19.Parent = Button_2
