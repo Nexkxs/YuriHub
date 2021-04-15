@@ -1580,6 +1580,13 @@ Visible.MouseButton1Click:Connect(function()
 		Main:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Quint", 0.5)
 		Tabs.Visible = false
 		WelcomeHolder.Visible = false
+		PlayerTabHolder.Visible = false
+		CombatTabHolder.Visible = false
+		SettingsTabHolder.Visible = false
+		AutoFarmsTabHolder.Visible = false
+		TargetTabHolder.Visible = false
+		ExtrasTabHolder.Visible = false
+		TeleportsTabHolder.Visible = false
 	end
 	if on == false then
 		Visible.BackgroundColor3 = Color3.fromRGB(225,0,0)
@@ -1628,12 +1635,19 @@ typewrite(textlabel, "Thank you for using Yuri Hub! <3")
 
 -- Righshift to close
 
-local frame = Main -- path to the frame
-local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+local Plr = game.Players.LocalPlayer
+local open = false
 
-mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
-	key = key:lower() -- i do this in all my key events, though i don't remember why
-	if key == 'RightShift' then -- if key pressed is h
-		frame.Visible = not frame.Visible -- flip between visible/invisible
+Plr:GetMouse().KeyDown:Connect(function(K)
+	if open == false then
+		if K == "RightShift" then
+			open = true
+			Main.Visible = true
+		end
+	elseif open == true then
+		if K == "RightShift" then
+			open = false
+			Main.Visible = false
+		end
 	end
 end)
