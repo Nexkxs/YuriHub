@@ -1,0 +1,1173 @@
+local UiGiantSim = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Head = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Header = Instance.new("TextLabel")
+local Game = Instance.new("TextLabel")
+local Tabs = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UIPadding = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local MainButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local QuestButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AutoBuyButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local MiscButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Tab = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Button = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local SliderHolder = Instance.new("Frame")
+local SliderButton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Slider = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local SliderText = Instance.new("TextLabel")
+local ToggleHolder = Instance.new("Frame")
+local ToggleFrame = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local circle = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local ToggleOn = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local ToggleFrame_2 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local circle_2 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local ToggleOff = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local MainTab = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local Button_2 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local AutoSwingHolder = Instance.new("Frame")
+local AutoSwingToggleRed = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local circle_3 = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local AutoSwingToggleGreen = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local circle_4 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local AutoSwingToggle = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local MainHeader = Instance.new("TextLabel")
+local AutoArenaHolder = Instance.new("Frame")
+local AutoArenaToggleRed = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local circle_5 = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local AutoArenaToggleGreen = Instance.new("Frame")
+local UICorner_27 = Instance.new("UICorner")
+local circle_6 = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local AutoArenaToggle = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local AutoBossHolder = Instance.new("Frame")
+local AutoBossToggleRed = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local circle_7 = Instance.new("Frame")
+local UICorner_31 = Instance.new("UICorner")
+local AutoBossToggleGreen = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local circle_8 = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local AutoBossToggle = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local AutoDemonHolder = Instance.new("Frame")
+local AutoDemonToggleRed = Instance.new("Frame")
+local UICorner_35 = Instance.new("UICorner")
+local circle_9 = Instance.new("Frame")
+local UICorner_36 = Instance.new("UICorner")
+local AutoDemonToggleGreen = Instance.new("Frame")
+local UICorner_37 = Instance.new("UICorner")
+local circle_10 = Instance.new("Frame")
+local UICorner_38 = Instance.new("UICorner")
+local AutoDemonToggle = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local QuestTab = Instance.new("Frame")
+local UICorner_40 = Instance.new("UICorner")
+local InstantQuestButton = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local QuestHeader = Instance.new("TextLabel")
+local GoldenEggButton = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local AutoBuyTab = Instance.new("Frame")
+local UICorner_43 = Instance.new("UICorner")
+local _100KWeapon = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local AutoBuyHeader = Instance.new("TextLabel")
+local _100KSkin = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local _10MSkin = Instance.new("TextButton")
+local UICorner_46 = Instance.new("UICorner")
+local _50MWeapon = Instance.new("TextButton")
+local UICorner_47 = Instance.new("UICorner")
+local _20MPet = Instance.new("TextButton")
+local UICorner_48 = Instance.new("UICorner")
+local MiscTab = Instance.new("Frame")
+local UICorner_49 = Instance.new("UICorner")
+local _2KPet = Instance.new("TextButton")
+local UICorner_50 = Instance.new("UICorner")
+local MiscHeader = Instance.new("TextLabel")
+local _2KSpell = Instance.new("TextButton")
+local UICorner_51 = Instance.new("UICorner")
+local AutoEggsHolder = Instance.new("Frame")
+local AutoEggsToggleRed = Instance.new("Frame")
+local UICorner_52 = Instance.new("UICorner")
+local circle_11 = Instance.new("Frame")
+local UICorner_53 = Instance.new("UICorner")
+local AutoEggsToggleGreen = Instance.new("Frame")
+local UICorner_54 = Instance.new("UICorner")
+local circle_12 = Instance.new("Frame")
+local UICorner_55 = Instance.new("UICorner")
+local AutoEggsToggle = Instance.new("TextButton")
+local UICorner_56 = Instance.new("UICorner")
+local WelcomeTab = Instance.new("Frame")
+local UICorner_57 = Instance.new("UICorner")
+local Welcome = Instance.new("TextLabel")
+local Visible = Instance.new("TextButton")
+local UICorner_58 = Instance.new("UICorner")
+
+UiGiantSim.Name = "UiGiantSim"
+UiGiantSim.Parent = game.CoreGui
+UiGiantSim.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = UiGiantSim
+Main.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.258211702, 0, 0.195571959, 0)
+Main.Size = UDim2.new(0, 530, 0, 329)
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Main
+
+Head.Name = "Head"
+Head.Parent = Main
+Head.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Head.BorderSizePixel = 0
+Head.Size = UDim2.new(0, 142, 0, 74)
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = Head
+
+Header.Name = "Header"
+Header.Parent = Head
+Header.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Header.BackgroundTransparency = 1.000
+Header.BorderSizePixel = 0
+Header.Size = UDim2.new(0, 142, 0, 46)
+Header.Font = Enum.Font.GothamBlack
+Header.Text = "Yuri Hub"
+Header.TextColor3 = Color3.fromRGB(255, 255, 255)
+Header.TextSize = 20.000
+Header.TextWrapped = true
+
+Game.Name = "Game"
+Game.Parent = Head
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.BorderSizePixel = 0
+Game.Position = UDim2.new(0, 0, 0.485156327, 0)
+Game.Size = UDim2.new(0, 142, 0, 10)
+Game.Font = Enum.Font.GothamBold
+Game.Text = "Giant Simulator"
+Game.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game.TextScaled = true
+Game.TextSize = 20.000
+Game.TextWrapped = true
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(0, 0, 0.158054709, 0)
+Tabs.Size = UDim2.new(0, 142, 0, 277)
+
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = Tabs
+
+UIPadding.Parent = Tabs
+UIPadding.PaddingLeft = UDim.new(0, 10)
+
+UIListLayout.Parent = Tabs
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 7)
+
+MainButton.Name = "MainButton"
+MainButton.Parent = Tabs
+MainButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MainButton.Position = UDim2.new(0.0704225376, 0, 0, 0)
+MainButton.Size = UDim2.new(0, 122, 0, 30)
+MainButton.Font = Enum.Font.GothamSemibold
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 14.000
+MainButton.MouseButton1Click:Connect(function()
+	MainTab.Visible = true
+	QuestTab.Visible = false
+	AutoBuyTab.Visible = false
+	MiscTab.Visible = false
+	WelcomeTab.Visible = false
+end)
+
+UICorner_4.Parent = MainButton
+
+QuestButton.Name = "QuestButton"
+QuestButton.Parent = Tabs
+QuestButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+QuestButton.Position = UDim2.new(0.0704225376, 0, 0, 0)
+QuestButton.Size = UDim2.new(0, 122, 0, 30)
+QuestButton.Font = Enum.Font.GothamSemibold
+QuestButton.Text = "Quest"
+QuestButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuestButton.TextSize = 14.000
+QuestButton.MouseButton1Click:Connect(function()
+	MainTab.Visible = false
+	QuestTab.Visible = true
+	AutoBuyTab.Visible = false
+	MiscTab.Visible = false
+	WelcomeTab.Visible = false
+end)
+
+UICorner_5.Parent = QuestButton
+
+AutoBuyButton.Name = "AutoBuyButton"
+AutoBuyButton.Parent = Tabs
+AutoBuyButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AutoBuyButton.Position = UDim2.new(0.0704225376, 0, 0, 0)
+AutoBuyButton.Size = UDim2.new(0, 122, 0, 30)
+AutoBuyButton.Font = Enum.Font.GothamSemibold
+AutoBuyButton.Text = "AutoBuy"
+AutoBuyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBuyButton.TextSize = 14.000
+AutoBuyButton.MouseButton1Click:Connect(function()
+	MainTab.Visible = false
+	QuestTab.Visible = false
+	AutoBuyTab.Visible = true
+	MiscTab.Visible = false
+	WelcomeTab.Visible = false
+end)
+
+UICorner_6.Parent = AutoBuyButton
+
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = Tabs
+MiscButton.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MiscButton.Position = UDim2.new(0.0704225376, 0, 0, 0)
+MiscButton.Size = UDim2.new(0, 122, 0, 30)
+MiscButton.Font = Enum.Font.GothamSemibold
+MiscButton.Text = "Misc"
+MiscButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiscButton.TextSize = 14.000
+MiscButton.MouseButton1Click:Connect(function()
+	MainTab.Visible = false
+	QuestTab.Visible = false
+	AutoBuyTab.Visible = false
+	MiscTab.Visible = true
+	WelcomeTab.Visible = false
+end)
+
+UICorner_7.Parent = MiscButton
+
+Tab.Name = "Tab"
+Tab.Parent = Main
+Tab.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+Tab.BackgroundTransparency = 1.000
+Tab.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+Tab.Size = UDim2.new(0, 370, 0, 302)
+Tab.Visible = false
+
+UICorner_8.CornerRadius = UDim.new(0, 12)
+UICorner_8.Parent = Tab
+
+Button.Name = "Button"
+Button.Parent = Tab
+Button.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Button.Size = UDim2.new(0, 368, 0, 37)
+Button.Font = Enum.Font.GothamSemibold
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextSize = 20.000
+
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = Button
+
+SliderHolder.Name = "SliderHolder"
+SliderHolder.Parent = Tab
+SliderHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SliderHolder.BackgroundTransparency = 1.000
+SliderHolder.Position = UDim2.new(0, 0, 0.420529813, 0)
+SliderHolder.Size = UDim2.new(0, 368, 0, 63)
+
+SliderButton.Name = "SliderButton"
+SliderButton.Parent = SliderHolder
+SliderButton.BackgroundColor3 = Color3.fromRGB(167, 0, 0)
+SliderButton.BackgroundTransparency = 1.000
+SliderButton.Position = UDim2.new(0, 0, 0.539980948, 0)
+SliderButton.Size = UDim2.new(0, 367, 0, 15)
+SliderButton.Font = Enum.Font.SourceSans
+SliderButton.Text = ""
+SliderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(0, 12)
+UICorner_10.Parent = SliderButton
+
+Slider.Name = "Slider"
+Slider.Parent = SliderButton
+Slider.BackgroundColor3 = Color3.fromRGB(167, 0, 2)
+Slider.Size = UDim2.new(0, 367, 0, 15)
+
+UICorner_11.Parent = Slider
+
+SliderText.Name = "SliderText"
+SliderText.Parent = SliderHolder
+SliderText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SliderText.BackgroundTransparency = 1.000
+SliderText.BorderSizePixel = 0
+SliderText.Position = UDim2.new(0, 0, -0.00804162025, 0)
+SliderText.Size = UDim2.new(0, 368, 0, 27)
+SliderText.Font = Enum.Font.GothamBlack
+SliderText.Text = "Slider"
+SliderText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SliderText.TextSize = 20.000
+SliderText.TextWrapped = true
+
+ToggleHolder.Name = "ToggleHolder"
+ToggleHolder.Parent = Tab
+ToggleHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleHolder.BackgroundTransparency = 1.000
+ToggleHolder.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+ToggleHolder.Size = UDim2.new(0, 368, 0, 87)
+
+ToggleFrame.Name = "ToggleFrame"
+ToggleFrame.Parent = ToggleHolder
+ToggleFrame.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+ToggleFrame.Position = UDim2.new(0.811314404, 0, 0.52775836, 0)
+ToggleFrame.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_12.CornerRadius = UDim.new(0, 15)
+UICorner_12.Parent = ToggleFrame
+
+circle.Name = "circle"
+circle.Parent = ToggleFrame
+circle.BackgroundColor3 = Color3.fromRGB(48, 255, 25)
+circle.Position = UDim2.new(0.537999988, 0, 0.0900000036, 0)
+circle.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_13.CornerRadius = UDim.new(0, 25)
+UICorner_13.Parent = circle
+
+ToggleOn.Name = "ToggleOn"
+ToggleOn.Parent = ToggleHolder
+ToggleOn.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ToggleOn.Position = UDim2.new(0.00543478271, 0, 0.519524992, 0)
+ToggleOn.Size = UDim2.new(0, 285, 0, 33)
+ToggleOn.Font = Enum.Font.GothamSemibold
+ToggleOn.Text = "ToggleOn"
+ToggleOn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleOn.TextSize = 20.000
+
+UICorner_14.CornerRadius = UDim.new(0, 10)
+UICorner_14.Parent = ToggleOn
+
+ToggleFrame_2.Name = "ToggleFrame"
+ToggleFrame_2.Parent = ToggleHolder
+ToggleFrame_2.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+ToggleFrame_2.Position = UDim2.new(0.81099999, 0, 0.0500000007, 0)
+ToggleFrame_2.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_15.CornerRadius = UDim.new(0, 15)
+UICorner_15.Parent = ToggleFrame_2
+
+circle_2.Name = "circle"
+circle_2.Parent = ToggleFrame_2
+circle_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+circle_2.Position = UDim2.new(0.0890000015, 0, 0.0900000036, 0)
+circle_2.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_16.CornerRadius = UDim.new(0, 25)
+UICorner_16.Parent = circle_2
+
+ToggleOff.Name = "ToggleOff"
+ToggleOff.Parent = ToggleHolder
+ToggleOff.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ToggleOff.Position = UDim2.new(0.00499999989, 0, 0.0500000007, 0)
+ToggleOff.Size = UDim2.new(0, 285, 0, 33)
+ToggleOff.Font = Enum.Font.GothamSemibold
+ToggleOff.Text = "ToggleOff"
+ToggleOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleOff.TextSize = 20.000
+
+UICorner_17.CornerRadius = UDim.new(0, 10)
+UICorner_17.Parent = ToggleOff
+
+MainTab.Name = "MainTab"
+MainTab.Parent = Main
+MainTab.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+MainTab.BackgroundTransparency = 1.000
+MainTab.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+MainTab.Size = UDim2.new(0, 370, 0, 302)
+MainTab.Visible = false
+
+UICorner_18.CornerRadius = UDim.new(0, 12)
+UICorner_18.Parent = MainTab
+
+Button_2.Name = "Button"
+Button_2.Parent = MainTab
+Button_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Button_2.Position = UDim2.new(0.00270270277, 0, 0.867549658, 0)
+Button_2.Size = UDim2.new(0, 368, 0, 37)
+Button_2.Font = Enum.Font.GothamSemibold
+Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.TextSize = 20.000
+
+UICorner_19.CornerRadius = UDim.new(0, 10)
+UICorner_19.Parent = Button_2
+
+AutoSwingHolder.Name = "AutoSwingHolder"
+AutoSwingHolder.Parent = MainTab
+AutoSwingHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoSwingHolder.BackgroundTransparency = 1.000
+AutoSwingHolder.Position = UDim2.new(-0.00270270277, 0, 0.129139066, 0)
+AutoSwingHolder.Size = UDim2.new(0, 368, 0, 87)
+
+AutoSwingToggleRed.Name = "AutoSwingToggleRed"
+AutoSwingToggleRed.Parent = AutoSwingHolder
+AutoSwingToggleRed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoSwingToggleRed.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoSwingToggleRed.Size = UDim2.new(0, 69, 0, 30)
+AutoSwingToggleRed.Visible = false
+
+UICorner_20.CornerRadius = UDim.new(0, 15)
+UICorner_20.Parent = AutoSwingToggleRed
+
+circle_3.Name = "circle"
+circle_3.Parent = AutoSwingToggleRed
+circle_3.BackgroundColor3 = Color3.fromRGB(48, 255, 25)
+circle_3.Position = UDim2.new(0.537999988, 0, 0.0900000036, 0)
+circle_3.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_21.CornerRadius = UDim.new(0, 25)
+UICorner_21.Parent = circle_3
+
+AutoSwingToggleGreen.Name = "AutoSwingToggleGreen"
+AutoSwingToggleGreen.Parent = AutoSwingHolder
+AutoSwingToggleGreen.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoSwingToggleGreen.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoSwingToggleGreen.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_22.CornerRadius = UDim.new(0, 15)
+UICorner_22.Parent = AutoSwingToggleGreen
+
+circle_4.Name = "circle"
+circle_4.Parent = AutoSwingToggleGreen
+circle_4.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+circle_4.Position = UDim2.new(0.0890000015, 0, 0.0900000036, 0)
+circle_4.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_23.CornerRadius = UDim.new(0, 25)
+UICorner_23.Parent = circle_4
+
+AutoSwingToggle.Name = "AutoSwingToggle"
+AutoSwingToggle.Parent = AutoSwingHolder
+AutoSwingToggle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoSwingToggle.Position = UDim2.new(0.00499999989, 0, -0.133908033, 0)
+AutoSwingToggle.Size = UDim2.new(0, 285, 0, 33)
+AutoSwingToggle.Font = Enum.Font.GothamSemibold
+AutoSwingToggle.Text = "Auto Swing"
+AutoSwingToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoSwingToggle.TextSize = 20.000
+local on = false
+
+AutoSwingToggle.MouseButton1Click:Connect(function()
+	on = not on
+	if on then
+		AutoSwingToggleGreen.Visible = false
+		AutoSwingToggleRed.Visible = true
+		on = true
+		_G.SwingLoop = true
+		while _G.SwingLoop do
+			wait()
+			game.ReplicatedStorage.Aero.AeroRemoteServices.GameService.WeaponAttackStart:FireServer()
+			game.ReplicatedStorage.Aero.AeroRemoteServices.GameService.WeaponAnimComplete:FireServer()
+		end
+	end
+	if on == false then
+		AutoSwingToggleRed.Visible = false
+		AutoSwingToggleGreen.Visible = true
+		on = false
+		_G.SwingLoop = false
+	end
+end)
+
+
+UICorner_24.CornerRadius = UDim.new(0, 10)
+UICorner_24.Parent = AutoSwingToggle
+
+MainHeader.Name = "MainHeader"
+MainHeader.Parent = MainTab
+MainHeader.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MainHeader.BackgroundTransparency = 1.000
+MainHeader.BorderSizePixel = 0
+MainHeader.Position = UDim2.new(0.308108121, 0, -0.0529801324, 0)
+MainHeader.Size = UDim2.new(0, 142, 0, 46)
+MainHeader.Font = Enum.Font.GothamBlack
+MainHeader.Text = "Main"
+MainHeader.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainHeader.TextSize = 20.000
+MainHeader.TextWrapped = true
+
+AutoArenaHolder.Name = "AutoArenaHolder"
+AutoArenaHolder.Parent = MainTab
+AutoArenaHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoArenaHolder.BackgroundTransparency = 1.000
+AutoArenaHolder.Position = UDim2.new(-0.00270270277, 0, 0.258278131, 0)
+AutoArenaHolder.Size = UDim2.new(0, 368, 0, 70)
+
+AutoArenaToggleRed.Name = "AutoArenaToggleRed"
+AutoArenaToggleRed.Parent = AutoArenaHolder
+AutoArenaToggleRed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoArenaToggleRed.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoArenaToggleRed.Size = UDim2.new(0, 69, 0, 30)
+AutoArenaToggleRed.Visible = false
+
+UICorner_25.CornerRadius = UDim.new(0, 15)
+UICorner_25.Parent = AutoArenaToggleRed
+
+circle_5.Name = "circle"
+circle_5.Parent = AutoArenaToggleRed
+circle_5.BackgroundColor3 = Color3.fromRGB(48, 255, 25)
+circle_5.Position = UDim2.new(0.537999988, 0, 0.0900000036, 0)
+circle_5.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_26.CornerRadius = UDim.new(0, 25)
+UICorner_26.Parent = circle_5
+
+AutoArenaToggleGreen.Name = "AutoArenaToggleGreen"
+AutoArenaToggleGreen.Parent = AutoArenaHolder
+AutoArenaToggleGreen.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoArenaToggleGreen.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoArenaToggleGreen.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_27.CornerRadius = UDim.new(0, 15)
+UICorner_27.Parent = AutoArenaToggleGreen
+
+circle_6.Name = "circle"
+circle_6.Parent = AutoArenaToggleGreen
+circle_6.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+circle_6.Position = UDim2.new(0.0890000015, 0, 0.0900000036, 0)
+circle_6.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_28.CornerRadius = UDim.new(0, 25)
+UICorner_28.Parent = circle_6
+
+AutoArenaToggle.Name = "AutoArenaToggle"
+AutoArenaToggle.Parent = AutoArenaHolder
+AutoArenaToggle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoArenaToggle.Position = UDim2.new(0.00499999989, 0, -0.133908033, 0)
+AutoArenaToggle.Size = UDim2.new(0, 285, 0, 33)
+AutoArenaToggle.Font = Enum.Font.GothamSemibold
+AutoArenaToggle.Text = "Auto Arena"
+AutoArenaToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoArenaToggle.TextSize = 20.000
+local on = false
+
+AutoArenaToggle.MouseButton1Click:Connect(function()
+	on = not on
+	if on then
+		AutoArenaToggleGreen.Visible = false
+		AutoArenaToggleRed.Visible = true
+		on = true
+		_G.Arena = true
+
+		while _G.Arena do
+			wait()
+			local A_1 = true
+			game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ArenaService.ArenaChoice:FireServer(A_1)
+		end
+	end
+	if on == false then
+		AutoArenaToggleGreen.Visible = true
+		AutoArenaToggleRed.Visible = false
+		on = false
+		_G.Arena = false
+	end
+end)
+
+
+UICorner_29.CornerRadius = UDim.new(0, 10)
+UICorner_29.Parent = AutoArenaToggle
+
+AutoBossHolder.Name = "AutoBossHolder"
+AutoBossHolder.Parent = MainTab
+AutoBossHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoBossHolder.BackgroundTransparency = 1.000
+AutoBossHolder.Position = UDim2.new(-0.00270270277, 0, 0.387417227, 0)
+AutoBossHolder.Size = UDim2.new(0, 368, 0, 56)
+
+AutoBossToggleRed.Name = "AutoBossToggleRed"
+AutoBossToggleRed.Parent = AutoBossHolder
+AutoBossToggleRed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoBossToggleRed.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoBossToggleRed.Size = UDim2.new(0, 69, 0, 30)
+AutoBossToggleRed.Visible = false
+
+UICorner_30.CornerRadius = UDim.new(0, 15)
+UICorner_30.Parent = AutoBossToggleRed
+
+circle_7.Name = "circle"
+circle_7.Parent = AutoBossToggleRed
+circle_7.BackgroundColor3 = Color3.fromRGB(48, 255, 25)
+circle_7.Position = UDim2.new(0.537999988, 0, 0.0900000036, 0)
+circle_7.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_31.CornerRadius = UDim.new(0, 25)
+UICorner_31.Parent = circle_7
+
+AutoBossToggleGreen.Name = "AutoBossToggleGreen"
+AutoBossToggleGreen.Parent = AutoBossHolder
+AutoBossToggleGreen.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoBossToggleGreen.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoBossToggleGreen.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_32.CornerRadius = UDim.new(0, 15)
+UICorner_32.Parent = AutoBossToggleGreen
+
+circle_8.Name = "circle"
+circle_8.Parent = AutoBossToggleGreen
+circle_8.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+circle_8.Position = UDim2.new(0.0890000015, 0, 0.0900000036, 0)
+circle_8.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_33.CornerRadius = UDim.new(0, 25)
+UICorner_33.Parent = circle_8
+
+AutoBossToggle.Name = "AutoBossToggle"
+AutoBossToggle.Parent = AutoBossHolder
+AutoBossToggle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoBossToggle.Position = UDim2.new(0.00499999989, 0, -0.133908033, 0)
+AutoBossToggle.Size = UDim2.new(0, 285, 0, 33)
+AutoBossToggle.Font = Enum.Font.GothamSemibold
+AutoBossToggle.Text = "Auto Boss"
+AutoBossToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBossToggle.TextSize = 20.000
+local on = false
+
+AutoBossToggle.MouseButton1Click:Connect(function()
+	on = not on
+	if on then
+		AutoBossToggleGreen.Visible = false
+		AutoBossToggleRed.Visible = true
+		on = true
+		_G.AutoBorock = true
+
+		while _G.AutoBorock do
+			wait()
+			for i,v in pairs(game:GetService("Workspace").NPC:GetDescendants()) do
+				if v.ClassName == "Model" and v.Name == "Borock" then
+					game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
+				end
+			end
+		end
+	end
+	if on == false then
+		AutoBossToggleGreen.Visible = true
+		AutoBossToggleRed.Visible = false
+		on = false
+		_G.AutoBorock = false
+	end
+end)
+
+
+UICorner_34.CornerRadius = UDim.new(0, 10)
+UICorner_34.Parent = AutoBossToggle
+
+AutoDemonHolder.Name = "AutoDemonHolder"
+AutoDemonHolder.Parent = MainTab
+AutoDemonHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoDemonHolder.BackgroundTransparency = 1.000
+AutoDemonHolder.Position = UDim2.new(-0.00270270277, 0, 0.519867539, 0)
+AutoDemonHolder.Size = UDim2.new(0, 368, 0, 43)
+
+AutoDemonToggleRed.Name = "AutoDemonToggleRed"
+AutoDemonToggleRed.Parent = AutoDemonHolder
+AutoDemonToggleRed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoDemonToggleRed.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoDemonToggleRed.Size = UDim2.new(0, 69, 0, 30)
+AutoDemonToggleRed.Visible = false
+
+UICorner_35.CornerRadius = UDim.new(0, 15)
+UICorner_35.Parent = AutoDemonToggleRed
+
+circle_9.Name = "circle"
+circle_9.Parent = AutoDemonToggleRed
+circle_9.BackgroundColor3 = Color3.fromRGB(48, 255, 25)
+circle_9.Position = UDim2.new(0.537999988, 0, 0.0900000036, 0)
+circle_9.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_36.CornerRadius = UDim.new(0, 25)
+UICorner_36.Parent = circle_9
+
+AutoDemonToggleGreen.Name = "AutoDemonToggleGreen"
+AutoDemonToggleGreen.Parent = AutoDemonHolder
+AutoDemonToggleGreen.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoDemonToggleGreen.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoDemonToggleGreen.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_37.CornerRadius = UDim.new(0, 15)
+UICorner_37.Parent = AutoDemonToggleGreen
+
+circle_10.Name = "circle"
+circle_10.Parent = AutoDemonToggleGreen
+circle_10.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+circle_10.Position = UDim2.new(0.0890000015, 0, 0.0900000036, 0)
+circle_10.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_38.CornerRadius = UDim.new(0, 25)
+UICorner_38.Parent = circle_10
+
+AutoDemonToggle.Name = "AutoDemonToggle"
+AutoDemonToggle.Parent = AutoDemonHolder
+AutoDemonToggle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoDemonToggle.Position = UDim2.new(0.00499999989, 0, -0.133908033, 0)
+AutoDemonToggle.Size = UDim2.new(0, 285, 0, 33)
+AutoDemonToggle.Font = Enum.Font.GothamSemibold
+AutoDemonToggle.Text = "Auto Demon"
+AutoDemonToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoDemonToggle.TextSize = 20.000
+local on = false
+
+AutoDemonToggle.MouseButton1Click:Connect(function()
+	on = not on
+	if on then
+		AutoDemonToggleGreen.Visible = false
+		AutoDemonToggleRed.Visible = true
+		on = true
+		_G.AutoDemonKing = true
+
+		while _G.AutoDemonKing do
+			wait()
+			for i,v in pairs(game:GetService("Workspace").NPC:GetDescendants()) do
+				if v.ClassName == "Model" and v.Name == "DemonKing" then
+					game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
+				end
+			end
+		end
+	end
+	if on == false then
+		AutoDemonToggleGreen.Visible = true
+		AutoDemonToggleRed.Visible = false
+		on = false
+		_G.AutoDemonKing = false
+	end
+end)
+
+UICorner_39.CornerRadius = UDim.new(0, 10)
+UICorner_39.Parent = AutoDemonToggle
+
+QuestTab.Name = "QuestTab"
+QuestTab.Parent = Main
+QuestTab.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+QuestTab.BackgroundTransparency = 1.000
+QuestTab.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+QuestTab.Size = UDim2.new(0, 370, 0, 302)
+QuestTab.Visible = false
+
+UICorner_40.CornerRadius = UDim.new(0, 12)
+UICorner_40.Parent = QuestTab
+
+InstantQuestButton.Name = "InstantQuestButton"
+InstantQuestButton.Parent = QuestTab
+InstantQuestButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+InstantQuestButton.Position = UDim2.new(0.00270270277, 0, 0.109271526, 0)
+InstantQuestButton.Size = UDim2.new(0, 368, 0, 37)
+InstantQuestButton.Font = Enum.Font.GothamSemibold
+InstantQuestButton.Text = "Instant Quest"
+InstantQuestButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantQuestButton.TextSize = 20.000
+InstantQuestButton.MouseButton1Click:Connect(function()
+	for i = 50, 250 do
+		local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.StartQuestRequest
+		Event:InvokeServer()
+		wait()
+		local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.EndQuestRequest
+		Event:InvokeServer()
+	end
+end)
+
+UICorner_41.CornerRadius = UDim.new(0, 10)
+UICorner_41.Parent = InstantQuestButton
+
+QuestHeader.Name = "QuestHeader"
+QuestHeader.Parent = QuestTab
+QuestHeader.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+QuestHeader.BackgroundTransparency = 1.000
+QuestHeader.BorderSizePixel = 0
+QuestHeader.Position = UDim2.new(0.308108121, 0, -0.0529801324, 0)
+QuestHeader.Size = UDim2.new(0, 142, 0, 46)
+QuestHeader.Font = Enum.Font.GothamBlack
+QuestHeader.Text = "Quest"
+QuestHeader.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuestHeader.TextSize = 20.000
+QuestHeader.TextWrapped = true
+
+GoldenEggButton.Name = "GoldenEggButton"
+GoldenEggButton.Parent = QuestTab
+GoldenEggButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GoldenEggButton.Position = UDim2.new(0.00270270277, 0, 0.251655638, 0)
+GoldenEggButton.Size = UDim2.new(0, 368, 0, 37)
+GoldenEggButton.Font = Enum.Font.GothamSemibold
+GoldenEggButton.Text = "TP Golden Egg"
+GoldenEggButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GoldenEggButton.TextSize = 20.000
+GoldenEggButton.MouseButton1Click:connect(function()
+	for i,v in pairs(game.Workspace:GetChildren())do
+		if v.Name == "Egg" then
+			v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+	end
+end)
+
+UICorner_42.CornerRadius = UDim.new(0, 10)
+UICorner_42.Parent = GoldenEggButton
+
+AutoBuyTab.Name = "AutoBuyTab"
+AutoBuyTab.Parent = Main
+AutoBuyTab.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+AutoBuyTab.BackgroundTransparency = 1.000
+AutoBuyTab.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+AutoBuyTab.Size = UDim2.new(0, 370, 0, 302)
+AutoBuyTab.Visible = false
+
+UICorner_43.CornerRadius = UDim.new(0, 12)
+UICorner_43.Parent = AutoBuyTab
+
+_100KWeapon.Name = "100KWeapon"
+_100KWeapon.Parent = AutoBuyTab
+_100KWeapon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_100KWeapon.Position = UDim2.new(0.00270270277, 0, 0.109271526, 0)
+_100KWeapon.Size = UDim2.new(0, 368, 0, 37)
+_100KWeapon.Font = Enum.Font.GothamSemibold
+_100KWeapon.Text = "100K Weapon"
+_100KWeapon.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100KWeapon.TextSize = 20.000
+_100KWeapon.MouseButton1Click:connect(function()
+	local A_1 = "weapon"
+	local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.OpenLegendaryCrate
+	Event:InvokeServer(A_1)
+end)
+
+UICorner_44.CornerRadius = UDim.new(0, 10)
+UICorner_44.Parent = _100KWeapon
+
+AutoBuyHeader.Name = "AutoBuyHeader"
+AutoBuyHeader.Parent = AutoBuyTab
+AutoBuyHeader.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoBuyHeader.BackgroundTransparency = 1.000
+AutoBuyHeader.BorderSizePixel = 0
+AutoBuyHeader.Position = UDim2.new(0.308108121, 0, -0.0529801324, 0)
+AutoBuyHeader.Size = UDim2.new(0, 142, 0, 46)
+AutoBuyHeader.Font = Enum.Font.GothamBlack
+AutoBuyHeader.Text = "Auto Buy"
+AutoBuyHeader.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBuyHeader.TextSize = 20.000
+AutoBuyHeader.TextWrapped = true
+
+_100KSkin.Name = "100KSkin"
+_100KSkin.Parent = AutoBuyTab
+_100KSkin.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_100KSkin.Position = UDim2.new(0.00270270277, 0, 0.251655638, 0)
+_100KSkin.Size = UDim2.new(0, 368, 0, 37)
+_100KSkin.Font = Enum.Font.GothamSemibold
+_100KSkin.Text = "100K Skin"
+_100KSkin.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100KSkin.TextSize = 20.000
+_100KSkin.MouseButton1Click:connect(function()
+	local A_1 = "skin"
+	local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.OpenLegendaryCrate
+	Event:InvokeServer(A_1)
+end)
+
+
+UICorner_45.CornerRadius = UDim.new(0, 10)
+UICorner_45.Parent = _100KSkin
+
+_10MSkin.Name = "10MSkin"
+_10MSkin.Parent = AutoBuyTab
+_10MSkin.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_10MSkin.Position = UDim2.new(0.00270270277, 0, 0.536000013, 0)
+_10MSkin.Size = UDim2.new(0, 368, 0, 37)
+_10MSkin.Font = Enum.Font.GothamSemibold
+_10MSkin.Text = "10M Skin"
+_10MSkin.TextColor3 = Color3.fromRGB(255, 255, 255)
+_10MSkin.TextSize = 20.000
+_10MSkin.MouseButton1Click:connect(function()
+	local A_1 = "skin"
+	local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.OpenMythicCrate
+	Event:InvokeServer(A_1)
+end)
+
+UICorner_46.CornerRadius = UDim.new(0, 10)
+UICorner_46.Parent = _10MSkin
+
+_50MWeapon.Name = "50MWeapon"
+_50MWeapon.Parent = AutoBuyTab
+_50MWeapon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_50MWeapon.Position = UDim2.new(0.00270270277, 0, 0.39403975, 0)
+_50MWeapon.Size = UDim2.new(0, 368, 0, 37)
+_50MWeapon.Font = Enum.Font.GothamSemibold
+_50MWeapon.Text = "50M Weapon"
+_50MWeapon.TextColor3 = Color3.fromRGB(255, 255, 255)
+_50MWeapon.TextSize = 20.000
+_50MWeapon.MouseButton1Click:connect(function()
+	local A_1 = "Weapon"
+	local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.OpenMythicCrate
+	Event:InvokeServer(A_1)
+end)
+
+UICorner_47.CornerRadius = UDim.new(0, 10)
+UICorner_47.Parent = _50MWeapon
+
+_20MPet.Name = "20MPet"
+_20MPet.Parent = AutoBuyTab
+_20MPet.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_20MPet.Position = UDim2.new(0.00270270277, 0, 0.685006618, 0)
+_20MPet.Size = UDim2.new(0, 368, 0, 37)
+_20MPet.Font = Enum.Font.GothamSemibold
+_20MPet.Text = "20M Pet"
+_20MPet.TextColor3 = Color3.fromRGB(255, 255, 255)
+_20MPet.TextSize = 20.000
+_20MPet.MouseButton1Click:connect(function()
+	local A_1 = "Pet"
+	local Event = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.OpenMythicCrate
+	Event:InvokeServer(A_1)
+end)
+
+UICorner_48.CornerRadius = UDim.new(0, 10)
+UICorner_48.Parent = _20MPet
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = Main
+MiscTab.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+MiscTab.BackgroundTransparency = 1.000
+MiscTab.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+MiscTab.Size = UDim2.new(0, 370, 0, 302)
+MiscTab.Visible = false
+
+UICorner_49.CornerRadius = UDim.new(0, 12)
+UICorner_49.Parent = MiscTab
+
+_2KPet.Name = "2KPet"
+_2KPet.Parent = MiscTab
+_2KPet.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_2KPet.Position = UDim2.new(0.00270270277, 0, 0.109271526, 0)
+_2KPet.Size = UDim2.new(0, 368, 0, 37)
+_2KPet.Font = Enum.Font.GothamSemibold
+_2KPet.Text = "2K Eggs Pet"
+_2KPet.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2KPet.TextSize = 20.000
+_2KPet.MouseButton1Click:Connect(function()
+	game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.OpenPetCrate:InvokeServer(6)
+end)
+
+UICorner_50.CornerRadius = UDim.new(0, 10)
+UICorner_50.Parent = _2KPet
+
+MiscHeader.Name = "MiscHeader"
+MiscHeader.Parent = MiscTab
+MiscHeader.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MiscHeader.BackgroundTransparency = 1.000
+MiscHeader.BorderSizePixel = 0
+MiscHeader.Position = UDim2.new(0.308108121, 0, -0.0529801324, 0)
+MiscHeader.Size = UDim2.new(0, 142, 0, 46)
+MiscHeader.Font = Enum.Font.GothamBlack
+MiscHeader.Text = "Easter Event"
+MiscHeader.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiscHeader.TextSize = 20.000
+MiscHeader.TextWrapped = true
+
+_2KSpell.Name = "2KSpell"
+_2KSpell.Parent = MiscTab
+_2KSpell.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_2KSpell.Position = UDim2.new(0.00270270277, 0, 0.251655638, 0)
+_2KSpell.Size = UDim2.new(0, 368, 0, 37)
+_2KSpell.Font = Enum.Font.GothamSemibold
+_2KSpell.Text = "2K Eggs Spells "
+_2KSpell.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2KSpell.TextSize = 20.000
+_2KSpell.MouseButton1Click:Connect(function()
+	game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.GameService.OpenArtifactCrate:InvokeServer(4)
+end)
+
+UICorner_51.CornerRadius = UDim.new(0, 10)
+UICorner_51.Parent = _2KSpell
+
+AutoEggsHolder.Name = "AutoEggsHolder"
+AutoEggsHolder.Parent = MiscTab
+AutoEggsHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoEggsHolder.BackgroundTransparency = 1.000
+AutoEggsHolder.Position = UDim2.new(-0.00270270277, 0, 0.417218536, 0)
+AutoEggsHolder.Size = UDim2.new(0, 368, 0, 54)
+
+AutoEggsToggleRed.Name = "AutoEggsToggleRed"
+AutoEggsToggleRed.Parent = AutoEggsHolder
+AutoEggsToggleRed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoEggsToggleRed.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoEggsToggleRed.Size = UDim2.new(0, 69, 0, 30)
+AutoEggsToggleRed.Visible = false
+
+UICorner_52.CornerRadius = UDim.new(0, 15)
+UICorner_52.Parent = AutoEggsToggleRed
+
+circle_11.Name = "circle"
+circle_11.Parent = AutoEggsToggleRed
+circle_11.BackgroundColor3 = Color3.fromRGB(48, 255, 25)
+circle_11.Position = UDim2.new(0.537999988, 0, 0.0900000036, 0)
+circle_11.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_53.CornerRadius = UDim.new(0, 25)
+UICorner_53.Parent = circle_11
+
+AutoEggsToggleGreen.Name = "AutoEggsToggleGreen"
+AutoEggsToggleGreen.Parent = AutoEggsHolder
+AutoEggsToggleGreen.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+AutoEggsToggleGreen.Position = UDim2.new(0.81099999, 0, -0.134000003, 0)
+AutoEggsToggleGreen.Size = UDim2.new(0, 69, 0, 30)
+
+UICorner_54.CornerRadius = UDim.new(0, 15)
+UICorner_54.Parent = AutoEggsToggleGreen
+
+circle_12.Name = "circle"
+circle_12.Parent = AutoEggsToggleGreen
+circle_12.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+circle_12.Position = UDim2.new(0.0890000015, 0, 0.0900000036, 0)
+circle_12.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_55.CornerRadius = UDim.new(0, 25)
+UICorner_55.Parent = circle_12
+
+AutoEggsToggle.Name = "AutoEggsToggle"
+AutoEggsToggle.Parent = AutoEggsHolder
+AutoEggsToggle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoEggsToggle.Position = UDim2.new(0.00499999989, 0, -0.133908033, 0)
+AutoEggsToggle.Size = UDim2.new(0, 285, 0, 33)
+AutoEggsToggle.Font = Enum.Font.GothamSemibold
+AutoEggsToggle.Text = "Auto Eggs"
+AutoEggsToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoEggsToggle.TextSize = 20.000
+local on = false
+
+AutoEggsToggle.MouseButton1Click:Connect(function()
+	on = not on
+	if on then
+		AutoEggsToggleGreen.Visible = false
+		AutoEggsToggleRed.Visible = true
+		on = true
+		_G.loop = true
+
+		while _G.loop do
+			for i,v in pairs(game.Workspace.Scene:GetDescendants()) do
+				if v.Name == "ResourceNode" then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+					game.Players.LocalPlayer.Character.Humanoid.Jump = true
+					wait(1)
+				end
+			end
+			wait(10)
+		end
+	end
+	if on == false then
+		AutoEggsToggleGreen.Visible = true
+		AutoEggsToggleRed.Visible = false
+		on = false
+		_G.loop = false
+	end
+end)
+
+UICorner_56.CornerRadius = UDim.new(0, 10)
+UICorner_56.Parent = AutoEggsToggle
+
+WelcomeTab.Name = "WelcomeTab"
+WelcomeTab.Parent = Main
+WelcomeTab.BackgroundColor3 = Color3.fromRGB(49, 50, 49)
+WelcomeTab.BackgroundTransparency = 1.000
+WelcomeTab.Position = UDim2.new(0.284905672, 0, 0.0395136774, 0)
+WelcomeTab.Size = UDim2.new(0, 370, 0, 302)
+
+UICorner_57.CornerRadius = UDim.new(0, 12)
+UICorner_57.Parent = WelcomeTab
+
+Welcome.Name = "Welcome"
+Welcome.Parent = WelcomeTab
+Welcome.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Welcome.BackgroundTransparency = 1.000
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.00270270277, 0, 0.129139066, 0)
+Welcome.Size = UDim2.new(0, 367, 0, 207)
+Welcome.Font = Enum.Font.GothamBlack
+Welcome.Text = ""
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.TextSize = 20.000
+Welcome.TextWrapped = true
+
+Visible.Name = "Visible"
+Visible.Parent = Main
+Visible.BackgroundColor3 = Color3.fromRGB(225, 0, 0)
+Visible.Position = UDim2.new(0.949226439, 0, 0.0210790187, 0)
+Visible.Size = UDim2.new(0, 19, 0, 19)
+Visible.Font = Enum.Font.SourceSans
+Visible.TextColor3 = Color3.fromRGB(0, 0, 0)
+Visible.TextSize = 14.000
+local on = false
+
+Visible.MouseButton1Click:Connect(function()
+	on = not on
+	if on then
+		Visible.BackgroundColor3 = Color3.fromRGB(0,225,0)
+		on = true
+		Main:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Quint", 0.5)
+		Tabs.Visible = false
+		WelcomeTab.Visible = false
+	end
+	if on == false then
+		Visible.BackgroundColor3 = Color3.fromRGB(225,0,0)
+		on = false
+		Main:TweenSize(UDim2.new(0, 530, 0, 329), "Out", "Quint", 0.5)
+		wait(0.3)
+		Main:TweenSize(UDim2.new(0, 530, 0, 329), "Out", "Quint", 0.5)
+		Tabs.Visible = true
+	end
+end)
+
+Visible.MouseButton1Click:Connect(function()
+	MainTab.Visible = false
+	QuestTab.Visible = false
+	AutoBuyTab.Visible = false
+	MiscTab.Visible = false
+end)
+
+UICorner_58.CornerRadius = UDim.new(1, 30)
+UICorner_58.Parent = Visible
+
+
+
+-- Misc
+
+local textlabel = Welcome
+
+
+local function typewrite(object,text)
+	for i = 1, #text,1 do
+		object.Text = string.sub(text, 1, i)
+
+		wait(0.5)
+	end
+end
+
+typewrite(textlabel, "Thank you for using Yuri Hub! <3")
