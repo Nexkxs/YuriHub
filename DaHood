@@ -1640,12 +1640,12 @@ local open = false
 
 Plr:GetMouse().KeyDown:Connect(function(K)
 	if open == false then
-		if K == "RightShift" then
+		if K == "u" then
 			open = true
 			Main.Visible = true
 		end
 	elseif open == true then
-		if K == "RightShift" then
+		if K == "u" then
 			open = false
 			Main.Visible = false
 		end
