@@ -746,39 +746,7 @@ FistButton.Text = "Fist Reach"
 FistButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 FistButton.TextSize = 20.000
 FistButton.MouseButton1Click:connect(function()
-	for i,v in ipairs(LP.Character:GetDescendants()) do
-		if v:IsA("MeshPart") then v.Massless = true
-			v.CanCollide = false
-			v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
-
-		end
-	end
-
-	for i,v in ipairs(game.workspace:GetDescendants()) do
-		if v:IsA("Seat") then 
-			v.Disabled = true
-		end
-	end
-	x = 35
-	y = 35
-	z = 35
-
-
-
-	LP.Character.RightHand.Size = penis
-
-	LP.Character.RightHand.Transparency = 1
-	local selectionBox = Instance.new("SelectionBox",LP.Character.RightHand)
-	selectionBox.Adornee = LP.Character.RightHand
-	selectionBox.Color3 = Color3.new(1, 0.333333, 1)
-
-	LP.Character.LeftHand.Size = penis
-	LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
-
-	LP.Character.LeftHand.Transparency = 1
-	local selectionBox = Instance.new("SelectionBox",LP.Character.LeftHand)
-	selectionBox.Adornee = LP.Character.LeftHand
-	selectionBox.Color3 = Color3.new(1, 0.333333, 1)
+loadstring(game:HttpGet('https://pastebin.com/raw/aZHK690D'))()
 end)
 
 UICorner_29.CornerRadius = UDim.new(0, 10)
