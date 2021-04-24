@@ -1130,6 +1130,7 @@ Visible.BackgroundColor3 = Color3.fromRGB(225, 0, 0)
 Visible.Position = UDim2.new(0.949226439, 0, 0.0210790187, 0)
 Visible.Size = UDim2.new(0, 19, 0, 19)
 Visible.Font = Enum.Font.SourceSans
+Visible.Text = ""
 Visible.TextColor3 = Color3.fromRGB(0, 0, 0)
 Visible.TextSize = 14.000
 local on = false
